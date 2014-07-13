@@ -7,14 +7,20 @@
         <link rel="stylesheet" href="css/foundation.css" />
     </head>
     <body>
-        <?
 
-        ?>
         <p> <? echo "php stuff in short tags" ?> </p>
+
+        <h1 class="color-primary">Our Story</h1>
+        <p>This is a paragraph</p>
+
         <a class="button" href="">How Dis?</a>
-        <div class="background-primary small-padding-3">
-            <a class="button secondary margin-0" href="">How Dis?</a>
-        </div>
+
+        <section class="row">
+            <div class="background-primary small-padding-3 medium-10 small-12 column medium-centered small-margin-5">
+                <a class="button secondary margin-0" href="">How Dis?</a>
+            </div>
+        </section>
+
         <form class="row">
             <fieldset>
                 <legend>Customer Info:</legend>
