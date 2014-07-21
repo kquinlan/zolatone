@@ -9,7 +9,7 @@
     </head>
     <body>
 
-        <? include 'includes/footer.php' ?>
+        <? require_once 'common/footer.php' ?>
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation.min.js"></script>
