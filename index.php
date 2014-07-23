@@ -10,6 +10,7 @@
     </head>
     <body>
 
+        <!-- Our Story -->
         <section class="row">
             <div class="medium-8 columns small-centered small-padding-top-3 small-padding-bottom-3">
                 <h1 class="color-primary text-center">Our Story</h1>
