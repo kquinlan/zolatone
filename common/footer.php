@@ -6,8 +6,8 @@
 	<footer class="color-white">
 
 		<div class="background-secondary">
-			<div class="row small-padding-1">
-				<div class="medium-6 columns">
+			<div class="row">
+				<div class="medium-6 columns small-padding-1">
 					<b>CONNECT</b>
 					<!-- Facebook Icon -->
 					<div class="icon small-margin-left-1">
@@ -28,7 +28,7 @@
 						</object>
 					</div>
 				</div>
-				<div class="medium-6 columns">
+				<div class="medium-6 columns small-padding-1">
 					<!-- Where to Buy Icon -->
 					<div class="icon small-margin-right-1">
 						<object data="img/buyicon-white.svg">
@@ -42,7 +42,7 @@
 
 		<div class="background-brown">
 
-			<div class="row small-padding-1">
+			<div class="row small-padding-top-1 small-padding-bottom-1">
 
 				<!-- First column -->
 				<div class="medium-6 large-3 columns">
@@ -112,13 +112,15 @@
 				</div>
 			</div>
 
-			<div class="row small-padding-1">
+			<!-- Back to Top Link -->
+			<div class="row small-padding-top-1 small-padding-bottom-1">
 				<div class="medium-6 columns">
 					<a href="" class="color-white">BACK TO TOP</a>
 				</div>
 			</div>
 
-			<div class="row small-padding-1">
+			<!-- Tagline -->
+			<div class="row small-padding-top-1 small-padding-bottom-1">
 				<div class="medium-6 columns">
 					<p class="small-margin-0"><b>The World is Not Monotone, That’s why there’s Zolatone</b></p>
 				</div>
