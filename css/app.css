@@ -1,0 +1,25 @@
+/* app.css */
+
+/* Helpful Background Classes */
+.background-primary {
+  background-color: #f79320;
+}
+.background-secondary {
+  background-color: #907F6F;
+}
+.background-brown {
+  background-color: #5C4731;
+}
+
+/* Helpful Foreground Classes */
+.color-primary {
+  color: #f79320;
+}
+.color-brown {
+  color: #5C4731;
+}
+.color-white {
+  color: #fff;
+}
+
+/* Icons */

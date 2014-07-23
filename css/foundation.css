@@ -1,3 +1,5 @@
+/* foundation.css */
+
 meta.foundation-version {
   font-family: "/5.3.0/"; }
 
@@ -1827,95 +1829,6 @@ select {
     .inline-list > li > * {
       display: block; }
 
-div.icon-bar {
-  width: 100%;
-  font-size: 0;
-  display: inline-block;
-  background: #333333; }
-  div.icon-bar > * {
-    text-align: center;
-    font-size: 1rem;
-    width: 25%;
-    margin: 0 auto;
-    display: block;
-    padding: 1.25rem;
-    float: left; }
-    div.icon-bar > * i, div.icon-bar > * img {
-      display: block;
-      margin: 0 auto; }
-      div.icon-bar > * i + label, div.icon-bar > * img + label {
-        margin-top: .0625rem; }
-    div.icon-bar > * i {
-      font-size: 1.875rem;
-      vertical-align: middle; }
-    div.icon-bar > * img {
-      width: 1.875rem;
-      height: 1.875rem; }
-  div.icon-bar.label-right > * i, div.icon-bar.label-right > * img {
-    margin: 0 0.0625rem 0 0;
-    display: inline-block; }
-    div.icon-bar.label-right > * i + label, div.icon-bar.label-right > * img + label {
-      margin-top: 0; }
-  div.icon-bar.label-right > * label {
-    display: inline-block; }
-  div.icon-bar.vertical.label-right > * {
-    text-align: left; }
-  div.icon-bar.vertical {
-    height: 100%;
-    width: auto; }
-    div.icon-bar.vertical .item {
-      width: auto;
-      margin: auto;
-      float: none; }
-  div.icon-bar > * {
-    font-size: 1rem;
-    padding: 1.25rem; }
-    div.icon-bar > * i + label, div.icon-bar > * img + label {
-      margin-top: .0625rem; }
-    div.icon-bar > * i {
-      font-size: 1.875rem; }
-    div.icon-bar > * img {
-      width: 1.875rem;
-      height: 1.875rem; }
-  div.icon-bar > *:hover {
-    background: #f79320; }
-  div.icon-bar > * label {
-    color: white; }
-  div.icon-bar > * i {
-    color: white; }
-
-/* toolbar styles */
-.icon-bar.two-up .item {
-  width: 50%; }
-.icon-bar.two-up.vertical .item {
-  width: auto; }
-.icon-bar.three-up .item {
-  width: 33.3333%; }
-.icon-bar.three-up.vertical .item {
-  width: auto; }
-.icon-bar.four-up .item {
-  width: 25%; }
-.icon-bar.four-up.vertical .item {
-  width: auto; }
-.icon-bar.five-up .item {
-  width: 20%; }
-.icon-bar.five-up.vertical .item {
-  width: auto; }
-.icon-bar.six-up .item {
-  width: 16.66667%; }
-.icon-bar.six-up.vertical .item {
-  width: auto; }
-
-.color-primary {
-  color: #f79320;
-}
-.color-brown {
-  color: #5C4731;
-}
-.color-white {
-  color: #fff;
-}
-
 .text-left {
   text-align: left !important; }
 
@@ -1939,7 +1852,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .small-only-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; } 
+
+  .small-only-hide {
+    display: none !important;} }
 @media only screen {
   .small-text-left {
     text-align: left !important; }
@@ -1951,7 +1867,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .small-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; } 
+
+  .small-hide {
+    display: none !important;} }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .medium-only-text-left {
     text-align: left !important; }
@@ -1963,7 +1882,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .medium-only-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; } 
+
+  .medium-only-hide {
+    display: none !important;} }
 @media only screen and (min-width: 40.063em) {
   .medium-text-left {
     text-align: left !important; }
@@ -1975,7 +1897,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .medium-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .medium-hide {
+    display: none !important;} }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .large-only-text-left {
     text-align: left !important; }
@@ -1987,7 +1912,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .large-only-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .large-only-hide {
+    display: none !important;} }
 @media only screen and (min-width: 64.063em) {
   .large-text-left {
     text-align: left !important; }
@@ -1999,7 +1927,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .large-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .large-hide {
+    display: none !important;} }
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .xlarge-only-text-left {
     text-align: left !important; }
@@ -2011,7 +1942,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .xlarge-only-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .xlarge-only-hide {
+    display: none !important;} }
 @media only screen and (min-width: 90.063em) {
   .xlarge-text-left {
     text-align: left !important; }
@@ -2023,7 +1957,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .xlarge-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .xlarge-hide {
+    display: none !important;} }
 @media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -2035,7 +1972,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .xxlarge-only-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .xxlarge-only-hide {
+    display: none !important;} }
 @media only screen and (min-width: 120.063em) {
   .xxlarge-text-left {
     text-align: left !important; }
@@ -2047,7 +1987,10 @@ div.icon-bar {
     text-align: center !important; }
 
   .xxlarge-text-justify {
-    text-align: justify !important; } }
+    text-align: justify !important; }
+
+  .xxlarge-hide {
+    display: none !important;} }
 /* Typography resets */
 div,
 dl,
@@ -2789,17 +2732,6 @@ button, .button {
 @media only screen and (min-width: 40.063em) {
   button, .button {
     display: inline-block; } }
-
-/* Helpful Background Classes */
-.background-primary {
-  background-color: #f79320;
-}
-.background-secondary {
-  background-color: #907F6F;
-}
-.background-brown {
-  background-color: #5C4731;
-}
 
 /* Standard Forms */
 form {
