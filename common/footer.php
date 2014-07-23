@@ -3,14 +3,38 @@
 <head>
 </head>
 <body>
-	<section class="color-white">
+	<footer class="color-white">
 
 		<div class="background-secondary">
 			<div class="row small-padding-1">
 				<div class="medium-6 columns">
 					<b>CONNECT</b>
+					<!-- Facebook Icon -->
+					<div class="icon small-margin-left-1">
+						<object data="img/facebook.svg">
+							<img src="img/facebook.png" />
+						</object>
+					</div>
+					<!-- Twitter Icon -->
+					<div class="icon small-margin-left-1">
+						<object data="img/twitter.svg">
+							<img src="img/twitter.png" />
+						</object>
+					</div>
+					<!-- YouTube Icon -->
+					<div class="icon small-margin-left-1">
+						<object data="img/youtube.svg">
+							<img src="img/youtube.png" />
+						</object>
+					</div>
 				</div>
 				<div class="medium-6 columns">
+					<!-- Where to Buy Icon -->
+					<div class="icon small-margin-right-1">
+						<object data="img/buyicon-white.svg">
+							<img src="img/buyicon-white.png" />
+						</object>
+					</div>
 					<b>WHERE TO BUY</b>
 				</div>
 			</div>
@@ -20,6 +44,7 @@
 
 			<div class="row small-padding-1">
 
+				<!-- First column -->
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
 						<a href="">Home</a>
@@ -35,6 +60,7 @@
 					</p>
 				</div>
 
+				<!-- Second column -->
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
 						<a href="">Ideas</a>
@@ -50,6 +76,7 @@
 					</p>
 				</div>
 
+				<!-- Third column -->
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
 						<a href="" class="">Sample Room</a>
@@ -65,6 +92,7 @@
 					</p>
 				</div>
 
+				<!-- Fourth column -->
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
 						Master Coating Technologies
@@ -101,6 +129,6 @@
 			
 		</div>
 
-	</section>
+	</footer>
 </body>
 </html>

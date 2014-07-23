@@ -23,3 +23,9 @@
 }
 
 /* Icons */
+footer .icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 42px;
+	height: 42px;
+}
