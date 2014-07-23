@@ -22,46 +22,46 @@
 
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
-						<a href="" class="color-white">Home</a>
+						<a href="">Home</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">About</a>
+						<a href="">About</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">Finishes</a>
+						<a href="">Finishes</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">Order a Brochure</a>
-					</p>
-				</div>
-
-				<div class="medium-6 large-3 columns">
-					<p class="small-margin-0">
-						<a href="" class="color-white">Ideas</a>
-					</p>
-					<p class="small-margin-0">
-						<a href="" class="color-white">Tech Info</a>
-					</p>
-					<p class="small-margin-0">
-						<a href="" class="color-white">Videos</a>
-					</p>
-					<p class="small-margin-0">
-						<a href="" class="color-white">LEED</a>
+						<a href="">Order a Brochure</a>
 					</p>
 				</div>
 
 				<div class="medium-6 large-3 columns">
 					<p class="small-margin-0">
-						<a href="" class="color-white">Sample Room</a>
+						<a href="">Ideas</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">Contact Us</a>
+						<a href="">Tech Info</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">Privacy Policy</a>
+						<a href="">Videos</a>
 					</p>
 					<p class="small-margin-0">
-						<a href="" class="color-white">Careers</a>
+						<a href="">LEED</a>
+					</p>
+				</div>
+
+				<div class="medium-6 large-3 columns">
+					<p class="small-margin-0">
+						<a href="" class="">Sample Room</a>
+					</p>
+					<p class="small-margin-0">
+						<a href="">Contact Us</a>
+					</p>
+					<p class="small-margin-0">
+						<a href="">Privacy Policy</a>
+					</p>
+					<p class="small-margin-0">
+						<a href="">Careers</a>
 					</p>
 				</div>
 

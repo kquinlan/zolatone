@@ -2016,7 +2016,7 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #f79320;
+  color: inherit;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
