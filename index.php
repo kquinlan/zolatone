@@ -10,6 +10,8 @@
     </head>
     <body>
 
+        <? require_once 'common/header.php' ?>
+
         <!-- Our Story -->
         <section class="row">
             <div class="medium-8 columns small-centered small-padding-top-4 small-padding-bottom-4">
