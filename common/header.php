@@ -1,9 +1,12 @@
 <!-- header.php -->
 <header>
 <!-- Main Navigation -->
+<nav class="main small-only-hide">
+	Main Nav
+</nav>
 
 <!-- Mobile Navigation -->
-<nav class="mobile">
+<nav class="mobile medium-hide">
 	<div class="off-canvas-wrap" data-offcanvas>
 		<div class="inner-wrap">
 
