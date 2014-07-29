@@ -29,3 +29,17 @@ footer .icon {
 	width: 42px;
 	height: 42px;
 }
+
+/* Navigation */
+nav.mobile {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	overflow-y: auto;
+}
+
+.right-off-canvas-toggle:before { 
+	content:'\2630';
+	font-size: 3em;
+ }
