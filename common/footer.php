@@ -7,28 +7,28 @@
 				<b>CONNECT</b>
 				<!-- Facebook Icon -->
 				<div class="icon small-margin-left-1">
-					<object data="img/facebook.svg">
-						<img src="img/facebook.png" />
+					<object data="/img/facebook.svg">
+						<img src="/img/facebook.png" />
 					</object>
 				</div>
 				<!-- Twitter Icon -->
 				<div class="icon small-margin-left-1">
-					<object data="img/twitter.svg">
-						<img src="img/twitter.png" />
+					<object data="/img/twitter.svg">
+						<img src="/img/twitter.png" />
 					</object>
 				</div>
 				<!-- YouTube Icon -->
 				<div class="icon small-margin-left-1">
-					<object data="img/youtube.svg">
-						<img src="img/youtube.png" />
+					<object data="/img/youtube.svg">
+						<img src="/img/youtube.png" />
 					</object>
 				</div>
 			</div>
 			<div class="medium-6 columns small-padding-1">
 				<!-- Where to Buy Icon -->
 				<div class="icon small-margin-right-1">
-					<object data="img/buyicon-white.svg">
-						<img src="img/buyicon-white.png" />
+					<object data="/img/buyicon-white.svg">
+						<img src="/img/buyicon-white.png" />
 					</object>
 				</div>
 				<b>WHERE TO BUY</b>

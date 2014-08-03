@@ -1,5 +1,10 @@
 /* app.css */
 
+body {
+	background-color: #ddd;
+	min-width: 320px;
+}
+
 /* Helpful Background Classes */
 .background-primary {
   background-color: #f79320;
@@ -32,14 +37,37 @@ footer .icon {
 
 /* Navigation */
 nav.mobile {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 1000;
 	overflow-y: auto;
 }
+	nav.mobile img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 180px;
+	}
 
 .right-off-canvas-toggle:before { 
 	content:'\2630';
 	font-size: 3em;
  }
+ nav.main {
+
+ }
+ 	nav.main ul {
+ 		list-style: none;
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+	 	nav.main ul li {
+	 		display: inline-block;
+	 	}
+ 	nav.main h1, nav.mobile h1 {
+ 		display: none;
+ 	}
+	nav.main img {
+		width: 240px;
+	}

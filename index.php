@@ -4,13 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zolatone | Welcome</title>
-        <link rel="stylesheet" href="css/foundation.css" />
-        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="/css/foundation.css" />
+        <link rel="stylesheet" href="/css/app.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
     </head>
     <body>
 
-        <? require_once 'common/header.php' ?>
+        <? require_once '/common/header.php' ?>
 
         <!-- Our Story -->
         <section class="row">
@@ -22,10 +22,10 @@
             </div>    
         </section>
 
-        <? require_once 'common/footer.php' ?>
+        <? require_once '/common/footer.php' ?>
 
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/foundation.min.js"></script>
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/foundation.min.js"></script>
         <script>
             $(document).foundation();
         </script>
