@@ -64,7 +64,49 @@ nav.mobile {
  	}
 	 	nav.main ul li {
 	 		display: inline-block;
+	 		position: relative;
 	 	}
+	 		nav.main ul li a {
+		 		display: inline-block;
+		 		padding: 0.4rem 0.6rem;
+		 		font-weight: bold;
+		 		-webkit-transition: -webkit-background-color 500ms ease;
+				-moz-transition: -moz-background-color 500ms ease;
+				-ms-transition: -ms-background-color 500ms ease;
+				-o-transition: -o-background-color 500ms ease;
+				transition: background-color 500ms ease;
+		 	}
+		 	nav.main ul li a:hover {
+		 		background-color: #fff;
+		 		text-decoration: none;
+		 	}
+
+		 	/* Dropdown Styles */
+		 	nav.main ul li ul {
+			    background: #fff;
+			    list-style: none;
+			    position: absolute;
+			    right: 0;
+			    display: none;
+			    z-index: 999;
+			    color: #5C4731;
+			    width: 12em;
+			}
+			nav.main ul li ul li {
+				display: block;
+				text-align: left;
+			}
+		 	nav.main ul li:hover ul { 
+			    display: block;
+			}
+			nav.main ul li:hover a { 
+			    background: #fff;
+			}
+			nav.main ul li:hover ul a { 
+			    text-decoration: none;
+			    font-size: 0.8rem;
+			}
+
  	nav.main h1, nav.mobile h1 {
  		display: none;
  	}

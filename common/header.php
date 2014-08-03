@@ -13,26 +13,35 @@
 			</a>
 		</div>
 		
-		<!-- Business Nav -->
-		<section class="text-right small-padding-top-1">
-			<ul>
-				<li><a href="">Subscribe</a></li>
-				<li><a href="">Where to Buy</a></li>
-				<li><a href="">FAQ</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</section>
+		<div class="small-8 columns color-white small-padding-top-1">
+			<!-- Business Nav -->
+			<section class="text-right ">
+				<ul>
+					<li><a href="">Subscribe</a></li>
+					<li><a href="">Where to Buy</a></li>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</section>
 
-		<!-- Site Nav -->
-		<section class="text-right small-padding-top-1">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Finishes Ideas</a></li>
-				<li><a href="">Tech Info</a></li>
-				<li><a href="">Sample Room</a></li>
-			</ul>
-		</section>
+			<!-- Site Nav -->
+			<section class="text-right">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Finishes Ideas</a></li>
+					<li>
+						<a href="">Tech Info</a>
+						<ul>
+							<li><a href="">Technical Documents</a></li>
+							<li><a href="">Videos</a></li>
+							<li><a href="">LEED</a></li>
+						</ul>
+					</li>
+					<li><a href="">Sample Room</a></li>
+				</ul>
+			</section>
+		</div>
 
 	</div>
 </nav>
