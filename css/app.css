@@ -1,7 +1,6 @@
 /* app.css */
 
 body {
-	background-color: #ddd;
 	min-width: 320px;
 }
 
@@ -55,7 +54,7 @@ nav.mobile {
 	font-size: 3em;
  }
  nav.main {
-
+ 	background-color: #eee;
  }
  	nav.main ul {
  		list-style: none;
@@ -87,6 +86,7 @@ nav.mobile {
 			    list-style: none;
 			    position: absolute;
 			    right: 0;
+			    text-align: left;
 			    display: none;
 			    z-index: 999;
 			    color: #5C4731;
