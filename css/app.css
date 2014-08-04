@@ -111,6 +111,10 @@ nav.mobile {
 			    display: block;
 			}
 
+	nav.main .subscribe .button {
+		padding: 0.55em;
+	}
+
  	nav.main h1, nav.mobile h1 {
  		display: none;
  	}

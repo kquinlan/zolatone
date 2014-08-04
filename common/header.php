@@ -2,7 +2,41 @@
 <header>
 
 <!-- Main Navigation -->
-<nav class="main small-only-hide">
+<nav class="main small-only-hide background-secondary">
+	<section class="subscribe background-primary small-padding-top-1">
+		<div class="row">
+			<!-- Don't want to miss out? -->	
+			<div class="medium-5 columns color-white">
+				<h3 class="color-white">Don't want to miss out?</h3>
+				<hr />
+				<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
+			</div>
+
+			<!-- Sign Up -->
+			<div class="medium-6 columns color-white">
+				<h3 class="color-white">Sign Up</h3>
+				<form>
+
+					<div class="row">
+						<div class="medium-6 columns left">
+							<input type="text" placeholder="Name" required />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="medium-6 columns">
+							<input type="email" placeholder="Email Address" required />
+						</div>
+						<div class="medium-4 columns left small-padding-0">
+							<input type="submit" value="Subscribe" class="button secondary" required />
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</section>
+	
 	<div class="row">
 
 		<!-- Header Logo -->
