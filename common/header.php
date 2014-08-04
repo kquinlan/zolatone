@@ -38,7 +38,13 @@
 							<li><a href="">LEED</a></li>
 						</ul>
 					</li>
-					<li><a href="">Sample Room</a></li>
+					<li>
+						<a href="">Sample Room</a>
+						<ul>
+							<li><a href="">Log In or Sign Up</a></li>
+							<li><a href="">My Saved Samples</a></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 		</div>

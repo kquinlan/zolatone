@@ -36,7 +36,7 @@ footer .icon {
 
 /* Navigation */
 nav.mobile {
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	z-index: 1000;
@@ -96,6 +96,9 @@ nav.mobile {
 				display: block;
 				text-align: left;
 			}
+			nav.main ul li:hover { 
+			    color: #f79320;
+			}
 		 	nav.main ul li:hover ul { 
 			    display: block;
 			}
@@ -105,6 +108,7 @@ nav.mobile {
 			nav.main ul li:hover ul a { 
 			    text-decoration: none;
 			    font-size: 0.8rem;
+			    display: block;
 			}
 
  	nav.main h1, nav.mobile h1 {
