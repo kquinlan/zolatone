@@ -127,6 +127,47 @@ width: 240px;
 		z-index: 1000;
 	}
 
+/* Image Slider Styles */
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: relative;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+.rslides .content {
+	position: absolute;
+	text-shadow: 0 0 8px #000;
+}
+.rslides .content h2, .rslides .content p {
+	color: #fff;
+}
+
 /* Shared UI Styles */
 .close {
 	width: 25px;

@@ -12,6 +12,29 @@
 
         <? require_once '/common/header.php' ?>
 
+        <ul class="rslides">
+            <li>
+                <section class="content row small-padding-top-5 small-margin-top-5">
+                    <div class="text-center">
+                        <h2>The World’s not Monotone,</h2>
+                        <h2>That’s why there’s Zolatone.</h2>
+                        <p>Paint with Texture, Patina and Dimension</p>
+                    </div>
+                </section>
+                <img src="/img/county-fair.jpg" alt="">
+            </li>
+            <li>
+                <section class="content row small-padding-top-5 small-margin-top-5">
+                    <div class="text-center">
+                        <h2>The World’s not Monotone,</h2>
+                        <h2>That’s why there’s Zolatone.</h2>
+                        <p>Paint with Texture, Patina and Dimension</p>
+                    </div>
+                </section>
+                <img src="/img/city-lights.jpg" alt="">
+            </li>
+        </ul>
+
         <!-- Our Story -->
         <section class="row">
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-4">
@@ -28,9 +51,29 @@
         <script src="/js/foundation.min.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script>
+            // Optional params for foundation
             $(document).foundation();
 
-            // Subscribe panel display
+            $(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 1000,            // Integer: Speed of the transition, in milliseconds
+                timeout: 6000,          // Integer: Time between slide transitions, in milliseconds
+                pager: false,           // Boolean: Show pager, true or false
+                nav: false,             // Boolean: Show navigation, true or false
+                random: false,          // Boolean: Randomize the order of the slides, true or false
+                pause: false,           // Boolean: Pause on hover, true or false
+                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+                prevText: "Previous",   // String: Text for the "previous" button
+                nextText: "Next",       // String: Text for the "next" button
+                maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+                manualControls: "",     // Selector: Declare custom pager navigation
+                namespace: "rslides",   // String: Change the default namespace used
+                before: function(){},   // Function: Before callback
+                after: function(){}     // Function: After callback
+            });
+
+            // Subscribe panel display events
             $('.close').click(function() { $('.subscribe-panel').slideUp(); });
             $('.subscribe-button').click(function() { $('.subscribe-panel').slideDown(); });
         </script>
