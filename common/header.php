@@ -3,7 +3,14 @@
 
 <!-- Main Navigation -->
 <nav class="main small-only-hide background-secondary">
-	<section class="subscribe background-primary small-padding-top-1">
+
+	<!-- Subscription Section -->
+	<section class="subscribe-panel background-primary small-padding-top-1">
+
+		<div class="close right small-margin-right-1">
+			<img src="/img/close-white.png" />
+		</div>
+
 		<div class="row">
 			<!-- Don't want to miss out? -->	
 			<div class="medium-5 columns color-white">
@@ -51,7 +58,7 @@
 			<!-- Business Nav -->
 			<section class="text-right ">
 				<ul>
-					<li><a href="">Subscribe</a></li>
+					<li><a class="subscribe-button">Subscribe</a></li>
 					<li><a href="">Where to Buy</a></li>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">Contact</a></li>
@@ -124,7 +131,7 @@
 						<a href="#">My Saved Samples</a>
 					</ul>
 				</li>
-				<li><a href="#">Subscribe</a></li>
+				<li><a class="subscribe-button">Subscribe</a></li>
 				<li><a href="#">Where To Buy</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Contact</a></li>
@@ -136,5 +143,45 @@
 		</div>
 	</div>
 </nav>
+
+<!-- Subscription Section -->
+<section class="mobile subscribe-panel background-primary small-padding-top-1 medium-hide">
+
+	<div class="close right small-margin-right-1">
+		<img src="/img/close-white.png" />
+	</div>
+
+	<div class="row">
+		<!-- Don't want to miss out? -->	
+		<div class="small-12 columns color-white">
+			<h3 class="color-white">Don't want to miss out?</h3>
+			<hr />
+			<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
+		</div>
+
+		<!-- Sign Up -->
+		<div class="small-12 columns color-white">
+			<h3 class="color-white">Sign Up</h3>
+			<form>
+
+				<div class="row">
+					<div class="small-12 columns left">
+						<input type="text" placeholder="Name" required />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<input type="email" placeholder="Email Address" required />
+					</div>
+					<div class="small-11 columns left">
+						<input type="submit" value="Subscribe" class="button secondary" required />
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</section>
 
 </header>

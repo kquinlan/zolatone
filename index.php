@@ -29,6 +29,10 @@
         <script src="/js/responsiveslides.min.js"></script>
         <script>
             $(document).foundation();
+
+            // Subscribe panel display
+            $('.close').click(function() { $('.subscribe-panel').slideUp(); });
+            $('.subscribe-button').click(function() { $('.subscribe-panel').slideDown(); });
         </script>
     </body>
 </html>

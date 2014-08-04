@@ -53,71 +53,87 @@ nav.mobile {
 	content:'\2630';
 	font-size: 3em;
  }
- nav.main {
- 	background-color: #eee;
- }
- 	nav.main ul {
- 		list-style: none;
- 		margin: 0;
- 		padding: 0;
+
+nav.main ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	nav.main ul li {
+		display: inline-block;
+		position: relative;
+	}
+		nav.main ul li a {
+ 		display: inline-block;
+ 		padding: 0.4rem 0.6rem;
+ 		font-weight: bold;
+ 		-webkit-transition: -webkit-background-color 500ms ease;
+		-moz-transition: -moz-background-color 500ms ease;
+		-ms-transition: -ms-background-color 500ms ease;
+		-o-transition: -o-background-color 500ms ease;
+		transition: background-color 500ms ease;
  	}
-	 	nav.main ul li {
-	 		display: inline-block;
-	 		position: relative;
-	 	}
-	 		nav.main ul li a {
-		 		display: inline-block;
-		 		padding: 0.4rem 0.6rem;
-		 		font-weight: bold;
-		 		-webkit-transition: -webkit-background-color 500ms ease;
-				-moz-transition: -moz-background-color 500ms ease;
-				-ms-transition: -ms-background-color 500ms ease;
-				-o-transition: -o-background-color 500ms ease;
-				transition: background-color 500ms ease;
-		 	}
-		 	nav.main ul li a:hover {
-		 		background-color: #fff;
-		 		text-decoration: none;
-		 	}
+ 	nav.main ul li a:hover {
+ 		background-color: #fff;
+ 		text-decoration: none;
+ 	}
 
-		 	/* Dropdown Styles */
-		 	nav.main ul li ul {
-			    background: #fff;
-			    list-style: none;
-			    position: absolute;
-			    right: 0;
-			    text-align: left;
-			    display: none;
-			    z-index: 999;
-			    color: #5C4731;
-			    width: 12em;
-			}
-			nav.main ul li ul li {
-				display: block;
-				text-align: left;
-			}
-			nav.main ul li:hover { 
-			    color: #f79320;
-			}
-		 	nav.main ul li:hover ul { 
-			    display: block;
-			}
-			nav.main ul li:hover a { 
-			    background: #fff;
-			}
-			nav.main ul li:hover ul a { 
-			    text-decoration: none;
-			    font-size: 0.8rem;
-			    display: block;
-			}
-
-	nav.main .subscribe .button {
-		padding: 0.55em;
+ 	/* Dropdown Styles */
+ 	nav.main ul li ul {
+	    background: #fff;
+	    list-style: none;
+	    position: absolute;
+	    right: 0;
+	    text-align: left;
+	    display: none;
+	    z-index: 999;
+	    color: #5C4731;
+	    width: 12em;
+	}
+	nav.main ul li ul li {
+		display: block;
+		text-align: left;
+	}
+	nav.main ul li:hover { 
+	    color: #f79320;
+	}
+ 	nav.main ul li:hover ul { 
+	    display: block;
+	}
+	nav.main ul li:hover a { 
+	    background: #fff;
+	}
+	nav.main ul li:hover ul a { 
+	    text-decoration: none;
+	    font-size: 0.8rem;
+	    display: block;
 	}
 
- 	nav.main h1, nav.mobile h1 {
- 		display: none;
- 	}
-	nav.main img {
-		width: 240px;
+nav.main h1, nav.mobile h1 {
+	display: none;
+}
+nav.main img {
+width: 240px;
+}
+
+.subscribe-panel {
+	display: none;
+}
+	.subscribe-panel .button {
+		padding: 0.55em;
+	}
+	.subscribe-panel.mobile {
+		position: fixed;
+		z-index: 1000;
+	}
+
+/* Shared UI Styles */
+.close {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+	.close img {
+		width: 100%;
+		height: 100%;
 	}
