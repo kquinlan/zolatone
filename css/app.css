@@ -1,5 +1,4 @@
 /* app.css */
-
 body {
 	min-width: 320px;
 }
@@ -40,7 +39,8 @@ nav.mobile {
 	height: 100%;
 	width: 100%;
 	z-index: 1000;
-	overflow-y: auto;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 	nav.mobile img {
 		position: absolute;
@@ -54,67 +54,72 @@ nav.mobile {
 	font-size: 3em;
  }
 
-nav.main ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+nav.main {
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	right: 0;
 }
-	nav.main ul li {
-		display: inline-block;
-		position: relative;
+	nav.main ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
-		nav.main ul li a {
- 		display: inline-block;
- 		padding: 0.4rem 0.6rem;
- 		font-weight: bold;
- 		-webkit-transition: -webkit-background-color 500ms ease;
-		-moz-transition: -moz-background-color 500ms ease;
-		-ms-transition: -ms-background-color 500ms ease;
-		-o-transition: -o-background-color 500ms ease;
-		transition: background-color 500ms ease;
- 	}
- 	nav.main ul li a:hover {
- 		background-color: #fff;
- 		text-decoration: none;
- 	}
+	nav.main h1, nav.mobile h1 {
+		display: none;
+	}
+	nav.main img {
+	width: 240px;
+	}
+		nav.main ul li {
+			display: inline-block;
+			position: relative;
+		}
+			nav.main ul li a {
+	 		display: inline-block;
+	 		padding: 0.4rem 0.6rem;
+	 		font-weight: bold;
+	 		-webkit-transition: -webkit-background-color 500ms ease;
+			-moz-transition: -moz-background-color 500ms ease;
+			-ms-transition: -ms-background-color 500ms ease;
+			-o-transition: -o-background-color 500ms ease;
+			transition: background-color 500ms ease;
+	 	}
+	 	nav.main ul li a:hover {
+	 		background-color: #fff;
+	 		text-decoration: none;
+	 	}
 
- 	/* Dropdown Styles */
- 	nav.main ul li ul {
-	    background: #fff;
-	    list-style: none;
-	    position: absolute;
-	    right: 0;
-	    text-align: left;
-	    display: none;
-	    z-index: 999;
-	    color: #5C4731;
-	    width: 12em;
-	}
-	nav.main ul li ul li {
-		display: block;
-		text-align: left;
-	}
-	nav.main ul li:hover { 
-	    color: #f79320;
-	}
- 	nav.main ul li:hover ul { 
-	    display: block;
-	}
-	nav.main ul li:hover a { 
-	    background: #fff;
-	}
-	nav.main ul li:hover ul a { 
-	    text-decoration: none;
-	    font-size: 0.8rem;
-	    display: block;
-	}
-
-nav.main h1, nav.mobile h1 {
-	display: none;
-}
-nav.main img {
-width: 240px;
-}
+	 	/* Dropdown Styles */
+	 	nav.main ul li ul {
+		    background: #fff;
+		    list-style: none;
+		    position: absolute;
+		    right: 0;
+		    text-align: left;
+		    display: none;
+		    z-index: 999;
+		    color: #5C4731;
+		    width: 12em;
+		}
+		nav.main ul li ul li {
+			display: block;
+			text-align: left;
+		}
+		nav.main ul li:hover { 
+		    color: #f79320;
+		}
+	 	nav.main ul li:hover ul { 
+		    display: block;
+		}
+		nav.main ul li:hover a { 
+		    background: #fff;
+		}
+		nav.main ul li:hover ul a { 
+		    text-decoration: none;
+		    font-size: 0.8rem;
+		    display: block;
+		}
 
 .subscribe-panel {
 	display: none;
@@ -133,6 +138,8 @@ width: 240px;
 	list-style: none;
 	overflow: hidden;
 	width: 100%;
+	height: 100%;
+	max-height: 640px;
 	padding: 0;
 	margin: 0;
 }
@@ -142,8 +149,11 @@ width: 240px;
 	position: relative;
 	display: none;
 	width: 100%;
+	height: 100%;
 	left: 0;
 	top: 0;
+	background-size: cover;
+	background-position: center center;
 }
 
 .rslides li:first-child {
@@ -152,20 +162,31 @@ width: 240px;
 	float: left;
 }
 
-.rslides img {
-	display: block;
-	height: auto;
-	float: left;
-	width: 100%;
-	border: 0;
-}
-
 .rslides .content {
 	position: absolute;
-	text-shadow: 0 0 8px #000;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+	padding: 2rem;
+	-webkit-text-shadow: 1px 1px 4px #000;
+	-moz-text-shadow: 1px 1px 4px #000;
+	-ms-text-shadow: 1px 1px 4px #000;
+	-o-text-shadow: 1px 1px 4px #000;
+	text-shadow: 1px 1px 4px #000;
 }
-.rslides .content h2, .rslides .content p {
+	.rslides .content *{
+		padding: 0;
+		margin: 0;
+	}
+.rslides .content h3, .rslides .content p {
 	color: #fff;
+}
+
+.county-fair {
+	background-image: url('/img/county-fair.jpg');
+}
+.city-lights {
+	background-image: url('/img/city-lights.jpg');
 }
 
 /* Shared UI Styles */

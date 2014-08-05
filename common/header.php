@@ -2,7 +2,7 @@
 <header>
 
 <!-- Main Navigation -->
-<nav class="main small-only-hide background-secondary">
+<nav class="main small-only-hide">
 
 	<!-- Subscription Section -->
 	<section class="subscribe-panel background-primary small-padding-top-1">
@@ -107,7 +107,7 @@
 		<!-- Off Canvas Button -->
 		<section class="right toggle">
 			<p class="small-padding-right-1">
-				<a class="right-off-canvas-toggle" href="" ></a>
+				<a class="right-off-canvas-toggle color-white" ></a>
 			</p>
 		</section>
 

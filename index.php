@@ -13,25 +13,11 @@
         <? require_once '/common/header.php' ?>
 
         <ul class="rslides">
-            <li>
-                <section class="content row small-padding-top-5 small-margin-top-5">
-                    <div class="text-center">
-                        <h2>The World’s not Monotone,</h2>
-                        <h2>That’s why there’s Zolatone.</h2>
-                        <p>Paint with Texture, Patina and Dimension</p>
-                    </div>
-                </section>
-                <img src="/img/county-fair.jpg" alt="">
+            <li class="county-fair">
+                <? require '/common/tagline.php' ?>
             </li>
-            <li>
-                <section class="content row small-padding-top-5 small-margin-top-5">
-                    <div class="text-center">
-                        <h2>The World’s not Monotone,</h2>
-                        <h2>That’s why there’s Zolatone.</h2>
-                        <p>Paint with Texture, Patina and Dimension</p>
-                    </div>
-                </section>
-                <img src="/img/city-lights.jpg" alt="">
+            <li class="city-lights">
+                <? require '/common/tagline.php' ?>
             </li>
         </ul>
 
