@@ -121,7 +121,7 @@
 				<p class="small-margin-0"><b>The World is Not Monotone, That’s why there’s Zolatone</b></p>
 			</div>
 			<div class="medium-6 columns">
-				<p class="small-margin-0 large-push-6 large-padding-left-1"><b>&copy; Zolatone 2014</b></p>
+				<p class="small-margin-0 large-push-6 small-6 large-padding-left-1"><b>&copy; Zolatone 2014</b></p>
 			</div>
 		</div>
 		

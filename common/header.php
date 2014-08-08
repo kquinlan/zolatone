@@ -70,7 +70,8 @@
 				<ul>
 					<li><a href="">Home</a></li>
 					<li><a href="">About</a></li>
-					<li><a href="">Finishes Ideas</a></li>
+					<li><a href="">Finishes</a></li>
+					<li><a href="">Ideas</a></li>
 					<li>
 						<a href="">Tech Info</a>
 						<ul>
@@ -147,6 +148,7 @@
 <!-- Subscription Section -->
 <section class="mobile subscribe-panel background-primary small-padding-top-1 medium-hide">
 
+	<!-- Close Button -->
 	<div class="close right small-margin-right-1">
 		<img src="/img/close-white.png" />
 	</div>
@@ -154,8 +156,8 @@
 	<div class="row">
 		<!-- Don't want to miss out? -->	
 		<div class="small-12 columns color-white">
-			<h3 class="color-white">Don't want to miss out?</h3>
-			<hr />
+			<h3 class="color-white small-margin-0">Don't want to miss out?</h3>
+			<hr class="small-only-hide" />
 			<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
 		</div>
 

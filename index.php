@@ -6,18 +6,17 @@
         <title>Zolatone | Welcome</title>
         <link rel="stylesheet" href="/css/foundation.css" />
         <link rel="stylesheet" href="/css/app.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
     </head>
     <body>
 
-        <? require_once '/common/header.php' ?>
+        <? require_once 'common/header.php' ?>
 
         <ul class="rslides">
             <li class="county-fair">
-                <? require '/common/tagline.php' ?>
+                <? require 'common/tagline.php' ?>
             </li>
             <li class="city-lights">
-                <? require '/common/tagline.php' ?>
+                <? require 'common/tagline.php' ?>
             </li>
         </ul>
 
@@ -31,8 +30,9 @@
             </div>    
         </section>
 
-        <? require_once '/common/footer.php' ?>
+        <? require_once 'common/footer.php' ?>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
@@ -42,7 +42,7 @@
 
             $(".rslides").responsiveSlides({
                 auto: true,             // Boolean: Animate automatically, true or false
-                speed: 1000,            // Integer: Speed of the transition, in milliseconds
+                speed: 1500,            // Integer: Speed of the transition, in milliseconds
                 timeout: 6000,          // Integer: Time between slide transitions, in milliseconds
                 pager: false,           // Boolean: Show pager, true or false
                 nav: false,             // Boolean: Show navigation, true or false
