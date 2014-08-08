@@ -128,3 +128,5 @@
 	</div>
 
 </footer>
+
+<!-- Site by Eric Gregoire https://twitter.com/GregOrEric -->

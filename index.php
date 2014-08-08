@@ -1,3 +1,4 @@
+<!-- index.php -->
 <!DOCTYPE html>
 <html class="no-js" lang="en" ng-app>
     <head>
@@ -35,11 +36,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/foundation.min.js"></script>
+        <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script>
             // Optional params for foundation
             $(document).foundation();
 
+            // Enhance responsiveness on mobile
+            $(function() {
+                FastClick.attach(document.body);
+            });
+
+            // Slider parameters
             $(".rslides").responsiveSlides({
                 auto: true,             // Boolean: Animate automatically, true or false
                 speed: 1500,            // Integer: Speed of the transition, in milliseconds
