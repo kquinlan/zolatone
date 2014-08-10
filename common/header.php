@@ -102,48 +102,45 @@
 		<img src="/img/zolatone-white.png">
 	</a>
 
-	<div class="off-canvas-wrap" data-offcanvas>
-		<div class="inner-wrap">
+	<!-- Off Canvas Button -->
+	<section class="right">
+		<p class="small-padding-right-1">
+			<a class="off-canvas-toggle color-white" ></a>
+		</p>
+	</section>
 
-		<!-- Off Canvas Button -->
-		<section class="right toggle">
-			<p class="small-padding-right-1">
-				<a class="right-off-canvas-toggle color-white" ></a>
-			</p>
-		</section>
+	<!-- Off Canvas Menu -->
+	<aside>
 
-		<!-- Off Canvas Menu -->
-		<aside class="right-off-canvas-menu">
-			<ul class="off-canvas-list">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Finishes</a></li>
-				<li><a href="#">Ideas</a></li>
-				<li><a href="#">Tech Info</a>
-					<ul>
-						<a href="#">Tech Docs</a>
-						<a href="#">Videos</a>
-						<a href="#">LEED</a>
-					</ul>
-				</li>	
-				<li><a href="#">Sample Room</a>
-					<ul>
-						<a href="#">Login / Sign Up</a>
-						<a href="#">My Saved Samples</a>
-					</ul>
-				</li>
-				<li><a class="subscribe-button">Subscribe</a></li>
-				<li><a href="#">Where To Buy</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</aside>
+		<ul class="off-canvas-list">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Finishes</a></li>
+			<li><a href="#">Ideas</a></li>
+			<li><a href="#">Tech Info</a>
+				<ul>
+					<a href="#">Tech Docs</a>
+					<a href="#">Videos</a>
+					<a href="#">LEED</a>
+				</ul>
+			</li>	
+			<li><a href="#">Sample Room</a>
+				<ul>
+					<a href="#">Login / Sign Up</a>
+					<a href="#">My Saved Samples</a>
+				</ul>
+			</li>
+			<li><a class="subscribe-button">Subscribe</a></li>
+			<li><a href="#">Where To Buy</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 
-		<a class="exit-off-canvas"></a>
+	</aside>
 
-		</div>
-	</div>
 </nav>
+
+<div class="exit"></div>
 
 <!-- Subscription Section -->
 <section class="mobile subscribe-panel background-primary small-padding-top-1 medium-hide">

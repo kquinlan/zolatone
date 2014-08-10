@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Zolatone | Welcome</title>
-        <link rel="stylesheet" href="/css/foundation.css" />
         <link rel="stylesheet" href="/css/app.css" />
+        <link rel="stylesheet" href="/css/foundation.css" />
     </head>
     <body>
 
@@ -67,9 +67,14 @@
                 after: function(){}     // Function: After callback
             });
 
+            // Navigation panel display events
+            $('.off-canvas-toggle').click(function () { $('nav.mobile aside').addClass('show'); });
+            $('nav.mobile aside').click(function () { $('nav.mobile aside').removeClass('show'); });
+            
+
             // Subscribe panel display events
-            $('.close').click(function() { $('.subscribe-panel').slideUp(); });
-            $('.subscribe-button').click(function() { $('.subscribe-panel').slideDown(); });
+            $('.close').click(function () { $('.subscribe-panel').slideUp(); });
+            $('.subscribe-button').click(function () { $('.subscribe-panel').slideDown(); });
         </script>
     </body>
 </html>

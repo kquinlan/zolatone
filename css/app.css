@@ -36,11 +36,9 @@ footer .icon {
 /* Navigation */
 nav.mobile {
 	position: fixed;
-	height: 100%;
 	width: 100%;
-	z-index: 1000;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	z-index: 1001;
 }
 	nav.mobile img {
 		position: absolute;
@@ -48,8 +46,50 @@ nav.mobile {
 		left: 0;
 		width: 180px;
 	}
+	nav.mobile aside {
+		background-color: #fff;
+		white-space: nowrap;
+		position: absolute;
+		width: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1001;
+		overflow-y: auto;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+		-webkit-transition: width 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		-moz-transition: width 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		-o-transition: width 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		transition: width 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	}
+	nav.mobile aside.show {
+		width: 12em;
+	}
 
-.right-off-canvas-toggle:before { 
+	nav.mobile ul {
+	  list-style-type: none;
+	  padding: 0;
+	  margin: 0; }
+	  nav.mobile ul li label {
+	    display: block;
+	    padding: 0.3rem 0.9375rem;
+	    color: #999999;
+	    text-transform: uppercase;
+	    font-size: 0.75rem;
+	    font-weight: bold;
+	    border-bottom: none;
+	    margin: 0; }
+	  nav.mobile ul li a {
+	    display: block;
+	    padding: 0.26667rem 0.66667rem;
+	    color: #555;
+	    transition: all 300ms ease; }
+	    nav.mobile ul li a:hover {
+	      background: #f79320;
+	      color: #fff; }
+
+.off-canvas-toggle:before { 
 	content:'\2630';
 	font-size: 3em;
 	color: #fff;
@@ -140,7 +180,7 @@ nav.main {
 .subscribe-panel {
 	display: none;
 	position: absolute;
-	z-index: 1000;
+	z-index: 1002;
 	left: 0;
 	right: 0;
 }
