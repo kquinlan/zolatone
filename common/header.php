@@ -95,19 +95,24 @@
 </nav>
 
 <!-- Mobile Navigation -->
-<nav class="mobile medium-hide">
 
-	<a href="/">
-		<h1>Zolatone</h1>
-		<img src="/img/zolatone-white.png">
-	</a>
+	<section class="input medium-hide">
 
-	<!-- Off Canvas Button -->
-	<section class="right">
-		<p class="small-padding-right-1">
-			<a class="off-canvas-toggle color-white" ></a>
-		</p>
+		<a href="/">
+			<h1>Zolatone</h1>
+			<img src="/img/zolatone-white.png">
+		</a>
+
+		<!-- Off Canvas Button -->
+		<section class="right">
+			<p class="small-padding-right-1">
+				<a class="off-canvas-toggle color-white" ></a>
+			</p>
+		</section>
+
 	</section>
+
+<nav class="mobile medium-hide">
 
 	<!-- Off Canvas Menu -->
 	<aside>

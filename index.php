@@ -36,6 +36,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/foundation.min.js"></script>
+        <script src="/js/transit.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script>
@@ -68,8 +69,15 @@
             });
 
             // Navigation panel display events
-            $('.off-canvas-toggle').click(function () { $('nav.mobile aside').addClass('show'); });
-            $('nav.mobile aside').click(function () { $('nav.mobile aside').removeClass('show'); });
+            $('.off-canvas-toggle').click(function () { 
+                $('nav.mobile aside, nav.mobile').addClass('show').transition({ x:'0' }); 
+            });
+            
+            $('nav.mobile aside, nav.mobile').click(function () { 
+                $('nav.mobile aside').transition({ x:'12em' }, function() { 
+                    $('nav.mobile').removeClass('show'); 
+                }) 
+            });
             
 
             // Subscribe panel display events
