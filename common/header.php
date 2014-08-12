@@ -69,7 +69,7 @@
 			<section class="text-right">
 				<ul>
 					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
+					<li><a href="/about">About</a></li>
 					<li><a href="">Finishes</a></li>
 					<li><a href="">Ideas</a></li>
 					<li>
@@ -121,7 +121,7 @@
 
 		<ul class="off-canvas-list">
 			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="/about">About</a></li>
 			<li><a href="#">Finishes</a></li>
 			<li><a href="#">Ideas</a></li>
 			<li><a href="#">Tech Info</a>
