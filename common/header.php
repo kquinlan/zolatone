@@ -89,7 +89,7 @@
 						<ul>
 							<li><a href="">Technical Documents</a></li>
 							<li><a href="">Videos</a></li>
-							<li><a href="">LEED</a></li>
+							<li><a href="/leed">LEED</a></li>
 						</ul>
 					</li>
 					<li>
@@ -140,7 +140,7 @@
 				<ul>
 					<li><a href="">Tech Docs</a></li>
 					<li><a href="">Videos</a></li>
-					<li><a href="">LEED</a></li>
+					<li><a href="/leed">LEED</a></li>
 				</ul>
 			</li>	
 			<li><a href="">Sample Room</a>

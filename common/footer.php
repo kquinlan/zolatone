@@ -42,68 +42,68 @@
 
 			<!-- First column -->
 			<div class="medium-6 large-3 columns">
-				<p class="small-margin-0">
-					<a href="">Home</a>
+				<p class="small-margin-0 text-smaller">
+					<a href="/">Home</a>
 				</p>
-				<p class="small-margin-0">
-					<a href="">About</a>
+				<p class="small-margin-0 text-smaller">
+					<a href="/about">About</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Finishes</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Order a Brochure</a>
 				</p>
 			</div>
 
 			<!-- Second column -->
-			<div class="medium-6 large-3 columns">
-				<p class="small-margin-0">
+			<div class="medium-3 large-3 columns">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Ideas</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Tech Info</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Videos</a>
 				</p>
-				<p class="small-margin-0">
-					<a href="">LEED</a>
+				<p class="small-margin-0 text-smaller">
+					<a href="/leed">LEED</a>
 				</p>
 			</div>
 
 			<!-- Third column -->
 			<div class="medium-6 large-3 columns">
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="" class="">Sample Room</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Contact Us</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					<a href="">Privacy Policy</a>
 				</p>
-				<p class="small-margin-0">
-					<a href="">Careers</a>
+				<p class="small-margin-0 text-smaller">
+					<a href="/careers">Careers</a>
 				</p>
 			</div>
 
 			<!-- Fourth column -->
 			<div class="medium-6 large-3 columns">
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					Master Coating Technologies
 				</p>
-				<p class="small-margin-0">
-					Toll Free / 1.800.765.6699
+				<p class="small-margin-0 text-smaller">
+					Toll Free / <a href="tel:+18007656699">1.800.765.6699</a>
 				</p>
-				<p class="small-margin-0">
-					International / 1.651.332.5350
+				<p class="small-margin-0 text-smaller">
+					International / <a href="tel:+16513325350">1.651.332.5350</a>
 				</p>
-				<p class="small-margin-0">
+				<p class="small-margin-0 text-smaller">
 					Fax / 651.414.6266
 				</p>
-				<p class="small-margin-0">
-					Email / info@zolatone.com
+				<p class="small-margin-0 text-smaller">
+					Email / <a href="mailto:info@zolatone.com">info@zolatone.com</a>
 				</p>
 			</div>
 		</div>
