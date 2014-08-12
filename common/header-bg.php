@@ -2,7 +2,7 @@
 <header>
 
 <!-- Main Navigation -->
-<nav class="main small-only-hide">
+<nav class="main small-only-hide background-light-brown">
 
 	<!-- Subscription Section -->
 	<section class="subscribe-panel background-primary small-padding-top-1">
@@ -44,7 +44,7 @@
 		</div>
 	</section>
 	
-	<div class="row background-light-brown">
+	<div class="row">
 
 		<!-- Header Logo -->
 		<div class="small-4 columns">
