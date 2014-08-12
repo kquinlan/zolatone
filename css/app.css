@@ -41,12 +41,12 @@ footer .icon {
 
 /* Navigation */
 
-section.input {
+section.menu-mobile {
 	position: fixed;
 	width: 100%;
 	z-index: 1001;
 }
-section.input img {
+section.menu-mobile img {
 	width: 180px;
 }
 
@@ -116,7 +116,7 @@ nav.main {
 		margin: 0;
 		padding: 0;
 	}
-	nav.main h1, section.input h1 {
+	nav.main h1, .menu-mobile h1 {
 		display: none;
 	}
 	nav.main img {

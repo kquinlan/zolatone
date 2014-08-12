@@ -96,7 +96,7 @@
 
 <!-- Mobile Navigation -->
 
-	<section class="input medium-hide row small-padding-0">
+	<section class="menu-mobile medium-hide row small-padding-0">
 	<div class="small-8 columns small-padding-0">
 		<a href="/">
 			<h1>Zolatone</h1>
@@ -107,7 +107,7 @@
 		<!-- Off Canvas Button -->
 	<div class="small-4 columns">
 		<section class="right">
-			<p>
+			<p class="small-margin-0">
 				<a class="off-canvas-toggle color-white" ></a>
 			</p>
 		</section>
