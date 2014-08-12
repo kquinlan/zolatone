@@ -31,6 +31,21 @@ body {
   color: #fff;
 }
 
+/* Helpful Type Classes */
+.text-tiny {
+	font-size: 66%;
+}
+.text-smaller {
+	font-size: 75%;
+}
+.text-larger {
+	font-size: 110%;
+}
+.content-border {
+	border-top: 1px solid #f79320; 
+	border-bottom: 1px solid #f79320
+}
+
 /* Icons */
 footer .icon {
 	display: inline-block;
@@ -258,9 +273,6 @@ nav.main {
 		.rslides .content *{
 			padding: 0;
 			margin: 0;
-		}
-		.rslides .content h3, .rslides .content p {
-			color: #fff;
 		}
 
 /* Shared UI Styles */
