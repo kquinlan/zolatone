@@ -96,20 +96,22 @@
 
 <!-- Mobile Navigation -->
 
-	<section class="input medium-hide">
-
+	<section class="input medium-hide row small-padding-0">
+	<div class="small-8 columns small-padding-0">
 		<a href="/">
 			<h1>Zolatone</h1>
 			<img src="/img/zolatone-white.png">
 		</a>
+		</div>
 
 		<!-- Off Canvas Button -->
+	<div class="small-4 columns">
 		<section class="right">
-			<p class="small-padding-right-1">
+			<p>
 				<a class="off-canvas-toggle color-white" ></a>
 			</p>
 		</section>
-
+	</div>
 	</section>
 
 <nav class="mobile medium-hide">

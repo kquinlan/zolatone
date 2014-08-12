@@ -1,6 +1,6 @@
 <!-- index.php -->
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,10 +33,9 @@
 
         <? require_once 'common/footer.php' ?>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.15/angular.min.js"></script>
         <script src="/js/vendor/jquery.js"></script>
-        <script src="/js/foundation.min.js"></script>
         <script src="/js/transit.min.js"></script>
+        <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script>
@@ -68,21 +67,36 @@
                 after: function(){}     // Function: After callback
             });
 
+            $(window).scroll(function(){
+              if ($(this).scrollTop() > 195) {
+                  $('section.input').addClass('fixed');
+              } else {
+                  $('section.input').removeClass('fixed');
+              }
+            });
+
             // Navigation panel display events
             $('.off-canvas-toggle').click(function () { 
-                $('nav.mobile aside, nav.mobile').addClass('show').transition({ x:'0' }); 
+                $('nav.mobile aside, nav.mobile').addClass('show').transition({ x:'0' }, 500, 'cubic-bezier(0,0.9,0.3,1)' ); 
             });
-            
+
             $('nav.mobile aside, nav.mobile').click(function () { 
                 $('nav.mobile aside').transition({ x:'12em' }, function() { 
                     $('nav.mobile').removeClass('show'); 
                 }) 
             });
             
-
             // Subscribe panel display events
-            $('.close').click(function () { $('.subscribe-panel').slideUp(); });
-            $('.subscribe-button').click(function () { $('.subscribe-panel').slideDown(); });
+            $('.subscribe-button').click(function () { 
+                $('.subscribe-panel').addClass('show').transition({ y:'0' }, 500, 'cubic-bezier(0,0.9,0.3,1)' ); 
+            });
+
+            $('.close').click(function () { 
+                $('.subscribe-panel').transition({ y:'-100%' }, function() { 
+                    $('.subscribe-panel').removeClass('show'); 
+                }) 
+            });
+
         </script>
     </body>
 </html>

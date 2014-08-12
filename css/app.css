@@ -45,14 +45,16 @@ section.input img {
 }
 
 nav.mobile {
+	display: none;
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 }
 nav.mobile.show {
+	display: block;
 	z-index: 1002;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(56,56,56,0.6);
 }
 	
 	nav.mobile aside {
@@ -185,6 +187,9 @@ nav.main {
 	z-index: 1002;
 	left: 0;
 	right: 0;
+}
+.subscribe-panel.show {
+	display: block;
 }
 	.subscribe-panel .button {
 		padding: 0.55em;
