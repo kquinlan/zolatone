@@ -10,19 +10,25 @@
     </head>
     <body>
 
-        <? require_once '../common/header-bg.php' ?>
+        <? require_once '../common/header.php' ?>
 
-        <ul class="rslides">
-            <li class="empty">
+        <ul class="rslides empty">
+            <li>
                 <section class="content">
                     <div class="text-center">
-                        <h2 class="color-light-brown no-shadow"><b>Your Future<br />With Zolatone</b></h2>
+                        <h2 class="color-white no-shadow"><b>Your Future<br />With Zolatone</b></h2>
                     </div>
                 </section>
             </li>
         </ul>
 
-        
+        <!-- Careers -->
+        <section class="row small-margin-bottom-4">
+            <div class="small-8 columns small-centered small-padding-top-4 small-padding-bottom-4">
+                <h1 class="color-primary text-center small-margin-bottom-1">Careers</h1>
+                <p>We are looking to expand our sales team! Zolatone needs motivated people to spread the word about our wold-class finishes. If you are an energetic sales professional and you would like to be a part of our team, please send a resume and cover letter to careers@mastercoating.com</p>
+            </div>
+        </section>
 
         <? require_once '../common/footer.php' ?>
 
