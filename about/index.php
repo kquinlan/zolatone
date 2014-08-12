@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="small-8 columns left" style="max-width: 200px">
-                    <p class="text-smaller small-padding-top-1">Outstanding durability, unmatched quality, and beautiful finishes make Zolatone the number one choice for projects large or small</p>
+                    <p class="text-smaller small-padding-top-1">Outstanding durability, unmatched quality, and beautiful finishes make Zolatone the number one hoice for projects large or small.</p>
                 </div>    
             </div>
 
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="small-8 columns left" style="max-width: 200px">
-                    <p class="text-smaller small-padding-top-1" >All of our finishes are low VOC and LEED compliant</p>
+                    <p class="text-smaller small-padding-top-1" >All of our finishes are low VOC and LEED compliant, because here at Zolatone we love the environment</p>
                 </div>    
             </div>    
 
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="small-8 columns left" style="max-width: 200px">
-                    <p class="text-smaller small-padding-top-1">Our friendly and knowledgeable customer service staff answers 252 calls on average a day</p>
+                    <p class="text-smaller small-padding-top-1">Our friendly and knowledgeable customer service staff is available to answer any and all questions you should have!</p>
                 </div>    
             </div>
 
