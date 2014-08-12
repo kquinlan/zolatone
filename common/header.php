@@ -68,7 +68,7 @@
 			<!-- Site Nav -->
 			<section class="text-right">
 				<ul>
-					<li><a href="">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="">Finishes</a></li>
 					<li><a href="">Ideas</a></li>
@@ -120,7 +120,7 @@
 	<aside>
 
 		<ul class="off-canvas-list">
-			<li><a href="#">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="#">Finishes</a></li>
 			<li><a href="#">Ideas</a></li>
