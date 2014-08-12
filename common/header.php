@@ -70,7 +70,19 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
-					<li><a href="">Finishes</a></li>
+					<li>
+						<a href="">Finishes</a>
+						<ul>
+							<li><a href="">Counterpointe</a></li>
+							<li><a href="">Lluminations</a></li>
+							<li><a href="">Metal</a></li>
+							<li><a href="">Polomyx</a></li>
+							<li><a href="">Polomyx Airless</a></li>
+							<li><a href="">Flex</a></li>
+							<li><a href="">Light Vision</a></li>
+							<li><a href="">Order a Brochure</a></li>
+						</ul>
+					</li>
 					<li><a href="">Ideas</a></li>
 					<li>
 						<a href="">Tech Info</a>
@@ -97,21 +109,21 @@
 <!-- Mobile Navigation -->
 
 	<section class="menu-mobile medium-hide row small-padding-0">
-	<div class="small-8 columns small-padding-0">
-		<a href="/">
-			<h1>Zolatone</h1>
-			<img src="/img/zolatone-white.png">
-		</a>
-		</div>
+		<div class="small-8 columns small-padding-0">
+			<a href="/">
+				<h1>Zolatone</h1>
+				<img src="/img/zolatone-white.png">
+			</a>
+			</div>
 
-		<!-- Off Canvas Button -->
-	<div class="small-4 columns">
-		<section class="right">
-			<p class="small-margin-0">
-				<a class="off-canvas-toggle color-white" ></a>
-			</p>
-		</section>
-	</div>
+			<!-- Off Canvas Button -->
+		<div class="small-4 columns">
+			<section class="right">
+				<p class="small-margin-0">
+					<a class="off-canvas-toggle color-white" ></a>
+				</p>
+			</section>
+		</div>
 	</section>
 
 <nav class="mobile medium-hide">
@@ -122,25 +134,37 @@
 		<ul class="off-canvas-list">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
-			<li><a href="#">Finishes</a></li>
-			<li><a href="#">Ideas</a></li>
-			<li><a href="#">Tech Info</a>
+			<li>
+				<a href="#">Finishes</a>
 				<ul>
-					<a href="#">Tech Docs</a>
-					<a href="#">Videos</a>
-					<a href="#">LEED</a>
+					<li><a href="">Counterpointe</a></li>
+					<li><a href="">Lluminations</a></li>
+					<li><a href="">Metal</a></li>
+					<li><a href="">Polomyx</a></li>
+					<li><a href="">Polomyx Airless</a></li>
+					<li><a href="">Flex</a></li>
+					<li><a href="">Light Vision</a></li>
+					<li><a href="">Order a Brochure</a></li>
+				</ul>
+			</li>
+			<li><a href="">Ideas</a></li>
+			<li><a href="">Tech Info</a>
+				<ul>
+					<li><a href="">Tech Docs</a></li>
+					<li><a href="">Videos</a></li>
+					<li><a href="">LEED</a></li>
 				</ul>
 			</li>	
-			<li><a href="#">Sample Room</a>
+			<li><a href="">Sample Room</a>
 				<ul>
-					<a href="#">Login / Sign Up</a>
-					<a href="#">My Saved Samples</a>
+					<li><a href="">Login / Sign Up</a></li>
+					<li><a href="">My Saved Samples</a></li>
 				</ul>
 			</li>
 			<li><a class="subscribe-button">Subscribe</a></li>
-			<li><a href="#">Where To Buy</a></li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="">Where To Buy</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Contact</a></li>
 		</ul>
 
 	</aside>
