@@ -44,7 +44,7 @@
 		</div>
 	</section>
 	
-	<div class="row">
+	<div class="row background-light-brown">
 
 		<!-- Header Logo -->
 		<div class="small-4 columns">
@@ -108,7 +108,7 @@
 
 <!-- Mobile Navigation -->
 
-	<section class="menu-mobile medium-hide row small-padding-0">
+	<section class="menu-mobile medium-hide row small-padding-0 background-light-brown">
 		<div class="small-8 columns small-padding-0">
 			<a href="/">
 				<h1>Zolatone</h1>

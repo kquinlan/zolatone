@@ -5,13 +5,16 @@ body {
 
 /* Helpful Background Classes */
 .background-primary {
-  background-color: #f79320;
+	background-color: #f79320;
 }
 .background-secondary {
-  background-color: #907F6F;
+ 	background-color: #907F6F;
 }
 .background-brown {
-  background-color: #5C4731;
+	background-color: #5C4731;
+}
+.background-light-brown {
+	background-color: #D1C8C0;
 }
 .background-darkened {
 	background-color: rgba(0,0,0,0.3);
@@ -22,13 +25,16 @@ body {
 
 /* Helpful Foreground Classes */
 .color-primary {
-  color: #f79320;
+	color: #f79320;
 }
 .color-brown {
-  color: #5C4731;
+	color: #5C4731;
+}
+.color-light-brown {
+	color: #D1C8C0;
 }
 .color-white {
-  color: #fff;
+	color: #fff;
 }
 
 /* Helpful Type Classes */
@@ -44,6 +50,13 @@ body {
 .content-border {
 	border-top: 3px solid #f79320; 
 	border-bottom: 3px solid #f79320
+}
+.no-shadow {
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	-ms-text-shadow: none;
+	-o-text-shadow: none;
+	text-shadow: none;
 }
 
 /* Icons */
@@ -238,6 +251,9 @@ nav.main {
 }
 .city-lights {
 	background-image: url('/img/city-lights.jpg');
+}
+.empty {
+	height: 380px;
 }
 
 /* Image Slider Styles */
