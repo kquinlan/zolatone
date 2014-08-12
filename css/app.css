@@ -13,6 +13,12 @@ body {
 .background-brown {
   background-color: #5C4731;
 }
+.background-darkened {
+	background-color: rgba(0,0,0,0.3);
+}
+.background-lightened {
+	background-color: rgba(255,255,255,0.3);
+}
 
 /* Helpful Foreground Classes */
 .color-primary {

@@ -1,7 +1,7 @@
 <!-- footer.php -->
-<footer class="color-white">
+<footer class="color-white background-brown">
 
-	<div class="background-secondary">
+	<div class="background-lightened">
 		<div class="row">
 			<div class="medium-6 columns small-padding-1">
 				<b>CONNECT</b>
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-	<div class="background-brown">
+	<div>
 
 		<div class="row small-padding-top-1 small-padding-bottom-1">
 
@@ -116,12 +116,14 @@
 		</div>
 
 		<!-- Tagline -->
-		<div class="row small-padding-top-1 small-padding-bottom-1">
-			<div class="medium-6 columns">
-				<p class="small-margin-0"><b>The World is Not Monotone, That’s why there’s Zolatone</b></p>
-			</div>
-			<div class="medium-6 columns">
-				<p class="small-margin-0 large-push-6 small-6 large-padding-left-1"><b>&copy; Zolatone 2014</b></p>
+		<div class="background-darkened">
+			<div class="row small-padding-top-1 small-padding-bottom-1">
+				<div class="medium-6 columns">
+					<p class="small-margin-0"><b>The World is Not Monotone, That’s why there’s Zolatone</b></p>
+				</div>
+				<div class="medium-6 columns">
+					<p class="small-margin-0 large-push-6 small-6 large-padding-left-1"><b>&copy; Zolatone 2014</b></p>
+				</div>
 			</div>
 		</div>
 		
