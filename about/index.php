@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>Zolatone | About Us</title>
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
@@ -37,7 +37,7 @@
                     <img src="/img/multi-color2.png" />
                 </object>
                 <p class="text-center text-smaller color-primary"><b>FINAL SPRAYED PRODUCT</b></p>
-            </div>    
+            </div>
 
         </section>
 

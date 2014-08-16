@@ -3,7 +3,7 @@
 <html lang="en" ng-app="zipCodes">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>Zolatone | Where to Buy</title>
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
@@ -31,8 +31,8 @@
         </section>
 
         <!-- Map Graphic -->
-        <section class="row small-margin-bottom-4">
-            <div class="medium-8 small-11 columns small-centered small-padding-bottom-4">
+        <section class="row small-margin-bottom-2">
+            <div class="medium-8 small-11 columns small-centered">
                 <object data="/img/map.svg">
                     <img src="/img/map.png" />
                 </object>
@@ -41,16 +41,18 @@
 
         <section ng-controller="zipCodesCtrl" class="row small-margin-bottom-4">
             <div class="medium-8 small-11 columns small-centered small-padding-bottom-4">
-                <div class="small-12 medium-6 columns">
-                    <input type="tel" placeholder="Zip Code" maxlength="5" ng-model="zipSearch" ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/" />
-                </div>
+                <form name="zipCode">
+                    <div class="small-12 medium-6 columns">
+                        <input type="tel" placeholder="Zip Code" ng-minlength="4" ng-required="true" maxlength="5" ng-model="zipSearch" ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/" />
+                    </div>
+                </form>
 
-                <div class="small-12 medium-6 columns">
+                <div ng-show="zipCode.$valid" class="small-12 medium-6 columns distributor">
                     <div ng-repeat="distributor in distributors | filter:zipSearch" class="small-padding-bottom-2">
                         <h3>{{ distributor.name }}</h3>
                         <p class="small-margin-0">{{ distributor.address }}</p>
                         <p class="small-margin-0">{{ distributor.phone }}</p>
-                        <p class="small-margin-0">{{ distributor.url }}</p>
+                        <a ng-href="{{ distributor.url }}" class="small-margin-0">{{ distributor.url }}</a>
                     </div>
                 </div>
             </div>
