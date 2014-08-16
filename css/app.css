@@ -1,7 +1,4 @@
 /* app.css */
-body {
-	min-width: 320px;
-}
 
 /* Helpful Background Classes */
 .background-primary {
@@ -311,4 +308,3 @@ nav.main {
 		width: 100%;
 		height: 100%;
 	}
-
