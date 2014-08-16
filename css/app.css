@@ -308,3 +308,8 @@ nav.main {
 		width: 100%;
 		height: 100%;
 	}
+
+/* Form Validations */
+form.zip-code-form.ng-dirty.ng-invalid-pattern input {
+	outline: 1px solid #FF9494;
+}

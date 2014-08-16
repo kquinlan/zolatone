@@ -59,7 +59,7 @@
 			<section class="text-right ">
 				<ul>
 					<li><a class="subscribe-button">Subscribe</a></li>
-					<li><a href="">Where to Buy</a></li>
+					<li><a href="/where-to-buy">Where to Buy</a></li>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>

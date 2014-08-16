@@ -39,22 +39,78 @@
             </div>
         </section>
 
-        <section ng-controller="zipCodesCtrl" class="row small-margin-bottom-4">
-            <div class="medium-8 small-11 columns small-centered small-padding-bottom-4">
-                <form name="zipCode">
-                    <div class="small-12 medium-6 columns">
-                        <input type="tel" placeholder="Zip Code" ng-minlength="4" ng-required="true" maxlength="5" ng-model="zipSearch" ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/" />
+        <!-- Zip Code Field -->
+        <section ng-controller="zipCodesCtrl" class="row">
+            <div class="medium-8 small-11 columns small-centered">
+                <form name="zipCode" class="zip-code-form">
+                    <div class="small-12 medium-5 columns">
+                        <input type="tel" placeholder="Zip Code" ng-required="true" maxlength="5" ng-model="zipSearch" ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/" />
                     </div>
                 </form>
 
-                <div ng-show="zipCode.$valid" class="small-12 medium-6 columns distributor">
+                <div ng-show="zipCode.$valid" class="small-12 medium-7 columns distributor">
                     <div ng-repeat="distributor in distributors | filter:zipSearch" class="small-padding-bottom-2">
-                        <h3>{{ distributor.name }}</h3>
-                        <p class="small-margin-0">{{ distributor.address }}</p>
+                        <h4>{{ distributor.name }}</h4>
+                        <p class="small-margin-0" ng-repeat="addressLine in distributor.address">{{ addressLine }}</p>
                         <p class="small-margin-0">{{ distributor.phone }}</p>
-                        <a ng-href="{{ distributor.url }}" class="small-margin-0">{{ distributor.url }}</a>
+                        <p class="small-margin-0">
+                            <a ng-href="{{ distributor.url }}" class="small-margin-0">{{ distributor.url }}</a>
+                        </p>
                     </div>
                 </div>
+                <hr />
+            </div>
+        </section>
+
+        <!-- International -->
+        <section class="row">
+            <div class="medium-8 small-11 columns small-centered small-padding-top-1 small-padding-bottom-4">
+                
+                <h1 class="color-primary text-center small-margin-bottom-1">International</h1>
+                <p>Not in the USA? No problem, contact one of our distributors near you below.</p>
+                    
+                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <p class="small-margin-0"><b>Architectural Options</b></p>
+                    <p class="small-margin-0 text-smaller">PMB 162</p>
+                    <p class="small-margin-0 text-smaller">405 Ave Esmeralda, Ste 2</p>
+                    <p class="small-margin-0 text-smaller">Guaynabo</p>
+                    <p class="small-margin-0 text-smaller">Puerto Rico</p>
+                    <p class="small-margin-0 text-smaller">1.866.683.9650</p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <p class="small-margin-0"><b>Kristal</b></p>
+                    <p class="small-margin-0 text-smaller">7 Hadafina St.</p>
+                    <p class="small-margin-0 text-smaller">Moshav Rishpon 46915</p>
+                    <p class="small-margin-0 text-smaller">Israel</p>
+                    <p class="small-margin-0 text-smaller">+972.9.95.9519663</p>
+                    <p class="small-margin-0 text-smaller">
+                        <a href="http://www.kristalpaint.com/" class="small-margin-0">www.kristalpaint.com</a>
+                    </p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <p class="small-margin-0"><b>The Woeller Group</b></p>
+                    <p class="small-margin-0 text-smaller">200 Trillium Drive, Kitchener</p>
+                    <p class="small-margin-0 text-smaller">Ontario, Canada N2E 1X7</p>
+                    <p class="small-margin-0 text-smaller">877.963.5537</p>
+                    <p class="small-margin-0 text-smaller">
+                        <a href="http://www.woeller.com/" class="small-margin-0">www.woeller.com</a>
+                    </p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <p class="small-margin-0"><b>Zone Architectural Products</b></p>
+                    <p class="small-margin-0 text-smaller">4A Edwin St</p>
+                    <p class="small-margin-0 text-smaller">Mount Eden</p>
+                    <p class="small-margin-0 text-smaller">Auckland</p>
+                    <p class="small-margin-0 text-smaller">New Zealand</p>
+                    <p class="small-margin-0 text-smaller">0800.508.800</p>
+                    <p class="small-margin-0 text-smaller">
+                        <a href="http://www.zonenz.net.nz/" class="small-margin-0">www.zonenz.net.nz</a>
+                    </p>
+                </div>
+
             </div>
         </section>
 

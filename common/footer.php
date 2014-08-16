@@ -31,7 +31,7 @@
 						<img src="/img/buyicon-white.png" />
 					</object>
 				</div>
-				<b>WHERE TO BUY</b>
+				<a href="/where-to-buy"><b>WHERE TO BUY</b></a>
 			</div>
 		</div>
 	</div>
