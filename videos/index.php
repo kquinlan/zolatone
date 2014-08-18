@@ -23,11 +23,68 @@
         </ul>
 
         <!-- Videos -->
+        <!-- Finishes -->
         <section class="row small-margin-bottom-4">
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
-                <h1 class="color-primary text-center small-margin-bottom-1"></h1>
+                <h1 class="color-primary text-center small-margin-bottom-1">Zolatone Video Resources</h1>
+                <p>View these short videos to learn how easy it is to apply, repair and maintain Zolatone finishes.</p>
 
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Counterpointe</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Lluminations</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Metal</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Polomyx</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Polomyx Airless</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Light Vision</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <h4 class="color-primary">Flex</h4>
+                    <hr />
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
+                    <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
+                </div>
             </div>
 
         </section>

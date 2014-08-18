@@ -31,64 +31,43 @@
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Counterpointe</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Lluminations</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Metal</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Polomyx</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Polomyx Airless</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Light Vision</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">Flex</h4>
                     <hr />
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
             </div>
 
@@ -104,26 +83,21 @@
                     <h4 class="color-primary">SP1000</h4>
                     <hr />
                     <p class="text-smaller">HIGH GLOSS ACRYLIC CLEARCOAT<br />Spray-applied clearcoat provides additional clean ability and stain resistance for previously painted, mason, metal, ceramic tile, glazed block and laminate. Compatible with all Zolatone finishes. May also be used over other water-based paints</p>
-                    <a class="text-smaller no-wrap" href="">Guide Spec</a> / 
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a> / 
-                    <a class="text-smaller no-wrap" href="">Consejos de Aplicacion</a>
+                    <p class="small-margin-0"><a class="text-smaller" href="">Guide Spec / Product Data Sheet / MSDS / Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">SP97</h4>
                     <hr />
                     <p class="text-smaller">MULTI-PURPOSE BASE COAT<br />Water based acrylic base coat for tile, glazed block, fiberglass, glass, masonite and plastic.</p>
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a>
+                    <a class="text-smaller" href="">\Product Data Sheet / MSDS</a>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary">SP203</h4>
                     <hr />
                     <p class="text-smaller">DRYWALL BASECOAT<br />For new drywall and plaster, smooth masonry, vinyl wall covering or any other previously painted surface.</p>
-                    <a class="text-smaller no-wrap" href="">Product Data Sheet</a> / 
-                    <a class="text-smaller no-wrap" href="">MSDS</a>
+                    <a class="text-smaller" href="">Product Data Sheet / MSDS</a>
                 </div>
 
         </section>
