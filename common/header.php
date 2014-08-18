@@ -71,7 +71,7 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
 					<li>
-						<a href="">Finishes</a>
+						<a href="">Finishes &#9662;</a>
 						<ul>
 							<li><a href="">Counterpointe</a></li>
 							<li><a href="">Lluminations</a></li>
@@ -85,7 +85,7 @@
 					</li>
 					<li><a href="">Ideas</a></li>
 					<li>
-						<a href="">Tech Info</a>
+						<a href="">Tech Info &#9662;</a>
 						<ul>
 							<li><a href="/technical-documents">Technical Documents</a></li>
 							<li><a href="/videos">Videos</a></li>
@@ -93,7 +93,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="">Sample Room</a>
+						<a href="">Sample Room &#9662;</a>
 						<ul>
 							<li><a href="">Log In or Sign Up</a></li>
 							<li><a href="">My Saved Samples</a></li>
