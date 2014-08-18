@@ -110,7 +110,7 @@
 		<!-- Back to Top Link -->
 		<div class="row small-padding-top-1 small-padding-bottom-1">
 			<div class="medium-6 columns">
-				<a href="" class="color-white">BACK TO TOP</a>
+				<a href="" class="color-white text-smaller">BACK TO TOP</a>
 			</div>
 		</div>
 
