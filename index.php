@@ -15,6 +15,10 @@
             <li class="lluminations">
                 <? require 'common/tagline.php' ?>
             </li>
+
+            <li class="elementary">
+                <? require 'common/tagline.php' ?>
+            </li>
         </ul>
 
         <!-- Our Story -->
