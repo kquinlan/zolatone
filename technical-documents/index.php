@@ -94,6 +94,7 @@
 
         </section>
 
+        <!-- Primers and Clear Coat -->
         <section class="row small-margin-bottom-4">
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-4">

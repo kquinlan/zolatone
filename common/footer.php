@@ -62,10 +62,10 @@
 					<a href="">Ideas</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Tech Info</a>
+					<a href="/technical-documents">Technical Documents</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Videos</a>
+					<a href="/videos">Videos</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="/leed">LEED</a>
