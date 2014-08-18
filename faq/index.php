@@ -26,7 +26,7 @@
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
                 <h1 class="color-primary text-center small-margin-bottom-1">Frequently Asked Questions</h1>
-                <p>Need help? Start by checking out some of Zolatone’s most frequently asked questions. If you still can’t find the answer to your question, give us a call at 1.800.765.6699 or send an email to info@zolatone.com and we’ll get back to you as soon as possible.</p>
+                <p>Need help? Start by checking out some of Zolatone’s most frequently asked questions. If you still can’t find the answer to your question, give us a call at 1.800.765.6699 or send an email to <a href="mailto:info@zolatone.com">info@zolatone.com</a> and we’ll get back to you as soon as possible.</p>
                 
                 <h4 class="color-primary border-primary-top small-margin-top-3">Why should I use Zolatone instead of regular paints?</h4>
                 <p class="small-margin-0">With Zolatone paints you’ll get more dimension, texture and patina than you would with a regular paint. But that’s not all, you’ll also get a longer lasting and more durable finish that holds up to the wear and tear of everyday use and traffic.</p>
