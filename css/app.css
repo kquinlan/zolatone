@@ -55,6 +55,9 @@
 	-o-text-shadow: none;
 	text-shadow: none;
 }
+.no-wrap {
+	white-space: nowrap;
+}
 
 /* Icons */
 footer .icon {

@@ -13,10 +13,10 @@
         <? require_once '../common/header.php' ?>
 
         <ul class="rslides">
-            <li class="county-fair">
+            <li class="lluminations">
                 <section class="content">
                     <div class="text-center">
-                        <h1 class="color-white"><b>About Us</b></h1>
+                        <h2 class="color-white"><b>About Us</b></h2>
                     </div>
                 </section>
             </li>

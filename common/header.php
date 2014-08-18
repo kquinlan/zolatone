@@ -87,7 +87,7 @@
 					<li>
 						<a href="">Tech Info</a>
 						<ul>
-							<li><a href="">Technical Documents</a></li>
+							<li><a href="/technical-documents">Technical Documents</a></li>
 							<li><a href="">Videos</a></li>
 							<li><a href="/leed">LEED</a></li>
 						</ul>
@@ -138,7 +138,7 @@
 			<li><a href="">Ideas</a></li>
 			<li><a href="">Tech Info</a>
 				<ul>
-					<li><a href="">Tech Docs</a></li>
+					<li><a href="/technical-documents">Tech Docs</a></li>
 					<li><a href="">Videos</a></li>
 					<li><a href="/leed">LEED</a></li>
 				</ul>

@@ -12,11 +12,11 @@
 
         <? require_once '../common/header.php' ?>
 
-        <ul class="rslides empty">
-            <li>
+        <ul class="rslides">
+            <li class="lluminations">
                 <section class="content">
                     <div class="text-center">
-                        <h2 class="color-white no-shadow"><b>Your Future<br />With Zolatone</b></h2>
+                        <h2 class="color-white"><b>Your Future<br />With Zolatone</b></h2>
                     </div>
                 </section>
             </li>

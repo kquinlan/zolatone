@@ -16,7 +16,7 @@
             <li class="lluminations">
                 <section class="content">
                     <div class="text-center">
-                        <h2 class="color-white no-shadow"><b>Where to Buy</b></h2>
+                        <h2 class="color-white"><b>Where to Buy</b></h2>
                     </div>
                 </section>
             </li>
