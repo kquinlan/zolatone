@@ -29,7 +29,7 @@
                 <h1 class="color-primary text-center small-margin-bottom-1">Contact Us</h1>
                 <p>Want more information, or a friendly person to talk to? Feel free to call our customer service team located in Eagan Minnesota. We can answer any questions you might have, or direct you to your local distributor.</p>
                 <h3 class="color-primary border-primary-top small-margin-top-3">Master Coating Technologies</h3>
-                
+
                 <p class="small-margin-0 text-smaller">
                     Toll Free / <a href="tel:+18007656699">1.800.765.6699</a>
                 </p>
@@ -42,6 +42,10 @@
                 <p class="small-margin-0 text-smaller">
                     Email / <a href="mailto:info@zolatone.com">info@zolatone.com</a>
                 </p>
+
+                <div class="large-12 columns small-padding-0 small-margin-top-3">
+                    <a href="/where-to-buy" class="button">Who is My Distributor?</a>
+                </div>
             </div>
 
         </section>
