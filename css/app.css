@@ -243,11 +243,8 @@ nav.main {
 	}
 
 /* Slider Images to Cycle */
-.county-fair {
-	background-image: url('/img/county-fair.jpg');
-}
-.city-lights {
-	background-image: url('/img/city-lights.jpg');
+.lluminations {
+	background-image: url('/img/slider/lluminations.jpg');
 }
 
 /* Image Slider Styles */
@@ -257,7 +254,7 @@ nav.main {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	max-height: 480px;
+	max-height: 640px;
 	padding: 0;
 	margin: 0;
 	background-color: #D1C8C0;
@@ -274,7 +271,7 @@ nav.main {
 		left: 0;
 		top: 0;
 		background-size: cover;
-		background-position: center center;
+		background-position: top left;
 	}
 	.rslides li:first-child {
 		position: relative;

@@ -13,10 +13,7 @@
         <? require_once 'common/header.php' ?>
 
         <ul class="rslides">
-            <li class="county-fair">
-                <? require 'common/tagline.php' ?>
-            </li>
-            <li class="city-lights">
+            <li class="lluminations">
                 <? require 'common/tagline.php' ?>
             </li>
         </ul>

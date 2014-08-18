@@ -12,8 +12,8 @@
 
         <? require_once '../common/header.php' ?>
 
-        <ul class="rslides empty">
-            <li>
+        <ul class="rslides">
+            <li class="lluminations">
                 <section class="content">
                     <div class="text-center">
                         <h2 class="color-white no-shadow"><b>Where to Buy</b></h2>
@@ -26,7 +26,7 @@
         <section class="row">
             <div class="medium-8 small-11 columns small-centered small-padding-top-4">
                 <h1 class="color-primary text-center small-margin-bottom-1">Where to Buy</h1>
-                <p>Buying our coatings is simple, just call our friends that distribute our product in your state. Start your journey to better walls. Enter your Zip Code below to locate your distributor.</p>
+                <p>Simply call our friends that distribute our product in your area, and start your journey to better walls with Zolatone. Enter your Zip Code below to locate your distributor.</p>
             </div>
         </section>
 
