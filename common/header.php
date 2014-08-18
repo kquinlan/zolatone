@@ -60,7 +60,7 @@
 				<ul>
 					<li><a class="subscribe-button">Subscribe</a></li>
 					<li><a href="/where-to-buy">Where to Buy</a></li>
-					<li><a href="">FAQ</a></li>
+					<li><a href="/faq">FAQ</a></li>
 					<li><a href="/contact-us">Contact</a></li>
 				</ul>
 			</section>
@@ -150,7 +150,7 @@
 			</li>
 			<li><a class="subscribe-button">Subscribe</a></li>
 			<li><a href="">Where To Buy</a></li>
-			<li><a href="">FAQ</a></li>
+			<li><a href="/faq">FAQ</a></li>
 			<li><a href="/contact-us">Contact</a></li>
 		</ul>
 
