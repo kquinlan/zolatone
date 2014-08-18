@@ -1,4 +1,3 @@
-<!-- footer.php -->
 <footer class="color-white background-brown">
 
 	<div class="background-lightened">

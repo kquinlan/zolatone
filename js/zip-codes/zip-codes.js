@@ -1,5 +1,3 @@
-// zip-codes.js
-
 angular.module('zipCodes', [])
 
 .controller('zipCodesCtrl', function($scope, $http) {
