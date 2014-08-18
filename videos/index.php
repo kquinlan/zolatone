@@ -29,56 +29,49 @@
                 <p>View these short videos to learn how easy it is to apply, repair and maintain Zolatone finishes.</p>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Counterpointe</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Counterpointe</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Lluminations</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Lluminations</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Metal</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Metal</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Polomyx</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Polomyx</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Polomyx Airless</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Polomyx Airless</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Light Vision</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Light Vision</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary">Flex</h4>
-                    <hr />
+                    <h4 class="color-primary border-primary-bottom">Flex</h4>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Application</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Touch Up / Spot Repair</a></p>
                     <p class="small-margin-0"><a class="text-smaller no-wrap" href="">Cleaning</a></p>
