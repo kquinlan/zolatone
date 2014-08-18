@@ -61,7 +61,7 @@
 					<li><a class="subscribe-button">Subscribe</a></li>
 					<li><a href="/where-to-buy">Where to Buy</a></li>
 					<li><a href="">FAQ</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="/contact-us">Contact</a></li>
 				</ul>
 			</section>
 
@@ -107,7 +107,6 @@
 </nav>
 
 <!-- Mobile Navigation -->
-
 	<section class="menu-mobile medium-hide row small-padding-0">
 		<div class="small-8 columns small-padding-0">
 			<a href="/">
@@ -152,7 +151,7 @@
 			<li><a class="subscribe-button">Subscribe</a></li>
 			<li><a href="">Where To Buy</a></li>
 			<li><a href="">FAQ</a></li>
-			<li><a href="">Contact</a></li>
+			<li><a href="/contact-us">Contact</a></li>
 		</ul>
 
 	</aside>

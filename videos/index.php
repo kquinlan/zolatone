@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <title>Zolatone | Technical Documents</title>
+        <title>Zolatone | Videos</title>
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
     </head>
@@ -22,8 +22,7 @@
             </li>
         </ul>
 
-        <!-- Videos -->
-        <!-- Finishes -->
+        <!-- Zolatone Video Resources -->
         <section class="row small-margin-bottom-4">
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">

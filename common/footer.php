@@ -78,7 +78,7 @@
 					<a href="" class="">Sample Room</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Contact Us</a>
+					<a href="/contact-us">Contact Us</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="">Privacy Policy</a>

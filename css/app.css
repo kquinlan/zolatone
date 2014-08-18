@@ -46,7 +46,13 @@
 }
 .content-border {
 	border-top: 3px solid #f79320; 
-	border-bottom: 3px solid #f79320
+	border-bottom: 3px solid #f79320;
+}
+.border-primary-top {
+	border-top: 3px solid #f79320;
+}
+.border-primary-bottom {
+	border-bottom: 3px solid #f79320;
 }
 .no-shadow {
 	-webkit-text-shadow: none;
@@ -68,7 +74,6 @@ footer .icon {
 }
 
 /* Navigation */
-
 section.menu-mobile {
 	position: absolute;
 	width: 100%;
