@@ -1,3 +1,7 @@
+html, body {
+	overflow-x: hidden;
+}
+
 /* Helpful Background Classes */
 .background-primary {
 	background-color: #f79320;
@@ -329,3 +333,31 @@ nav.main {
 form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	outline: 1px solid #FF9494;
 }
+
+/* Video Styles */
+.video-overlay {
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 2000;
+}
+.video-overlay.show {
+	display: block;
+}
+	.video-container {
+		margin: 4em auto;
+		width: 100%;
+		max-width: 800px;
+	}
+	.video-overlay .flex-video {
+		display: none;
+		height: auto;
+		background-color: #000;
+	}
+	.video-overlay .flex-video.show {
+		display: block;
+	}

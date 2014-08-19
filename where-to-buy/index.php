@@ -99,7 +99,7 @@
                     </p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2 large-only-clear">
                     <p class="small-margin-0"><b>Zone Architectural Products</b></p>
                     <p class="small-margin-0 text-smaller">4A Edwin St</p>
                     <p class="small-margin-0 text-smaller">Mount Eden</p>

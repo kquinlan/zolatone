@@ -1839,6 +1839,10 @@ select {
 .text-justify {
   text-align: justify !important; }
 
+.clear {
+  clear: both;
+}
+
 @media only screen and (max-width: 40em) {
   .small-only-text-left {
     text-align: left !important; }
@@ -1853,7 +1857,10 @@ select {
     text-align: justify !important; } 
 
   .small-only-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .small-only-clear {
+    clear: both; } }
 @media only screen {
   .small-text-left {
     text-align: left !important; }
@@ -1868,7 +1875,10 @@ select {
     text-align: justify !important; } 
 
   .small-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .small-clear {
+    clear: both; } }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .medium-only-text-left {
     text-align: left !important; }
@@ -1883,7 +1893,10 @@ select {
     text-align: justify !important; } 
 
   .medium-only-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .medium-only-clear {
+    clear: both; } }
 @media only screen and (min-width: 40.063em) {
   .medium-text-left {
     text-align: left !important; }
@@ -1898,7 +1911,10 @@ select {
     text-align: justify !important; }
 
   .medium-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .medium-clear {
+    clear: both; } }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .large-only-text-left {
     text-align: left !important; }
@@ -1913,7 +1929,10 @@ select {
     text-align: justify !important; }
 
   .large-only-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .large-only-clear {
+    clear: both; } }
 @media only screen and (min-width: 64.063em) {
   .large-text-left {
     text-align: left !important; }
@@ -1928,7 +1947,10 @@ select {
     text-align: justify !important; }
 
   .large-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .large-clear {
+    clear: both; } }
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
   .xlarge-only-text-left {
     text-align: left !important; }
@@ -1943,7 +1965,10 @@ select {
     text-align: justify !important; }
 
   .xlarge-only-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .xlarge-only-clear {
+    clear: both; } }
 @media only screen and (min-width: 90.063em) {
   .xlarge-text-left {
     text-align: left !important; }
@@ -1958,7 +1983,10 @@ select {
     text-align: justify !important; }
 
   .xlarge-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .xlarge-clear {
+    clear: both; } }
 @media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -1973,7 +2001,10 @@ select {
     text-align: justify !important; }
 
   .xxlarge-only-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .xxlarge-only-clear {
+    clear: both; } }
 @media only screen and (min-width: 120.063em) {
   .xxlarge-text-left {
     text-align: left !important; }
@@ -1988,7 +2019,10 @@ select {
     text-align: justify !important; }
 
   .xxlarge-hide {
-    display: none !important;} }
+    display: none !important;} 
+
+  .xxlarge-only-clear {
+    clear: both; } }
 /* Typography resets */
 div,
 dl,

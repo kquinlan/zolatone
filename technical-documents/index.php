@@ -80,7 +80,7 @@
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">SP97</h4>
                     <p class="text-smaller">MULTI-PURPOSE BASE COAT<br />Water based acrylic base coat for tile, glazed block, fiberglass, glass, masonite and plastic.</p>
-                    <a class="text-smaller" href="">\Product Data Sheet / MSDS</a>
+                    <a class="text-smaller" href="">Product Data Sheet / MSDS</a>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
