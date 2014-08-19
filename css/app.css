@@ -350,14 +350,34 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 }
 	.video-container {
 		margin: 4em auto;
-		width: 100%;
-		max-width: 800px;
 	}
 	.video-overlay .flex-video {
 		display: none;
-		height: auto;
-		background-color: #000;
 	}
 	.video-overlay .flex-video.show {
 		display: block;
+	}
+
+	@media only screen and (max-width: 40em) { 
+		.video-container {
+			width: 320px;
+		}
+	}
+
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+		.video-container {
+			width: 480px;
+		}
+	}
+
+	@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+		.video-container {
+			width: 640px;
+		}
+	}
+
+	@media only screen and (min-width: 90.063em) { 
+		.video-container {
+			width: 800px;
+		}
 	}
