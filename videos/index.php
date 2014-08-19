@@ -107,7 +107,7 @@
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Light Vision</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/niq4Eo-VmCI?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/niq4Eo-VmCI?autoplay=1" target="video-frame">Safety Additive</a>
                     </p>
                 </div>
 
@@ -117,7 +117,7 @@
                         <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/xNLJpgSS470?autoplay=1" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zp3Pb6gjJSI?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zp3Pb6gjJSI?autoplay=1" target="video-frame">Introducing Flex</a>
                     </p>
                 </div>
             </div>
