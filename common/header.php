@@ -83,9 +83,9 @@
 							<li><a href="">Order a Brochure</a></li>
 						</ul>
 					</li>
-					<li><a href="">Ideas</a></li>
+					<li><a href="/ideas">Ideas</a></li>
 					<li>
-						<a href="">Tech Info &#9662;</a>
+						<a href="/technical-documents">Tech Info &#9662;</a>
 						<ul>
 							<li><a href="/technical-documents">Technical Documents</a></li>
 							<li><a href="/videos">Videos</a></li>
@@ -93,10 +93,10 @@
 						</ul>
 					</li>
 					<li>
-						<a href="">Sample Room &#9662;</a>
+						<a href="/sample-room">Sample Room &#9662;</a>
 						<ul>
 							<li><a href="">Log In or Sign Up</a></li>
-							<li><a href="">My Saved Samples</a></li>
+							<li><a href="/sample-room">My Saved Samples</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -134,22 +134,22 @@
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="#">Finishes</a></li>
-			<li><a href="">Ideas</a></li>
-			<li><a href="">Tech Info</a>
+			<li><a href="/ideas">Ideas</a></li>
+			<li><a href="/technical-documents">Tech Info</a>
 				<ul>
 					<li><a href="/technical-documents">Tech Docs</a></li>
 					<li><a href="/videos">Videos</a></li>
 					<li><a href="/leed">LEED</a></li>
 				</ul>
 			</li>	
-			<li><a href="">Sample Room</a>
+			<li><a href="/sample-room">Sample Room</a>
 				<ul>
 					<li><a href="">Login / Sign Up</a></li>
-					<li><a href="">My Saved Samples</a></li>
+					<li><a href="/sample-room">My Saved Samples</a></li>
 				</ul>
 			</li>
 			<li><a class="subscribe-button">Subscribe</a></li>
-			<li><a href="">Where To Buy</a></li>
+			<li><a href="/where-to-buy">Where To Buy</a></li>
 			<li><a href="/faq">FAQ</a></li>
 			<li><a href="/contact-us">Contact</a></li>
 		</ul>

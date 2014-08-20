@@ -48,17 +48,17 @@
 					<a href="/about">About</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Finishes</a>
+					<a href="/finishes">Finishes</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Order a Brochure</a>
+					<a href="/order-brochure">Order a Brochure</a>
 				</p>
 			</div>
 
 			<!-- Second column -->
 			<div class="medium-3 large-3 columns">
 				<p class="small-margin-0 text-smaller">
-					<a href="">Ideas</a>
+					<a href="/ideas">Ideas</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="/technical-documents">Technical Documents</a>
@@ -74,13 +74,13 @@
 			<!-- Third column -->
 			<div class="medium-6 large-3 columns">
 				<p class="small-margin-0 text-smaller">
-					<a href="" class="">Sample Room</a>
+					<a href="/sample-room">Sample Room</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="/contact-us">Contact Us</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
-					<a href="">Privacy Policy</a>
+					<a href="/privacy-policy">Privacy Policy</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="/careers">Careers</a>
