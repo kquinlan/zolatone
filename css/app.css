@@ -64,6 +64,12 @@ footer .icon {
 	height: 42px;
 }
 
+.leed-logo {
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+}
+
 /* Navigation */
 section.menu-mobile {
 	position: absolute;

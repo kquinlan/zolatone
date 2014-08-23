@@ -18,10 +18,7 @@
                 </div>
             </section>
 
-            <ul class="slider">
-                <li class="lluminations"></li>
-                <li class="elementary"></li>
-            </ul>
+            <? require_once '../common/slider.php' ?>
         </div>
 
         <!-- Multi-color graphics -->
