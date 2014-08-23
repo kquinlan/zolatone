@@ -250,9 +250,19 @@ nav.main {
 /* Slider Images to Cycle */
 .lluminations {
 	background-image: url('/img/slider/lluminations.jpg');
+	background-position: top left;
 }
 .elementary {
 	background-image: url('/img/slider/elementary.jpg');
+	background-position: top left;
+}
+.alamo-plaza {
+	background-image: url('/img/slider/alamo-plaza.jpg');
+	background-position: top left;
+}
+.columns-counterpointe {
+	background-image: url('/img/slider/columns-counterpointe.jpg');
+	background-position: top right;
 }
 
 /* Image Slider Styles */
@@ -279,7 +289,6 @@ nav.main {
 			left: 0;
 			top: 0;
 			background-size: cover;
-			background-position: top left;
 		}
 		.slider li:first-child {
 			position: relative;
