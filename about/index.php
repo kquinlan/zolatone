@@ -11,15 +11,22 @@
 
         <? require_once '../common/header.php' ?>
 
-        <ul class="rslides">
-            <li class="lluminations">
-                <section class="content">
-                    <div class="text-center">
-                        <h2 class="color-white"><b>About Us</b></h2>
-                    </div>
-                </section>
-            </li>
-        </ul>
+        <div class="slider-container">
+            <section class="content">
+                <div class="text-center">
+                    <h2 class="color-white"><b>About Us</b></h2>
+                </div>
+            </section>
+
+            <ul class="slider">
+                <li class="lluminations"></li>
+                <li class="elementary"></li>
+            </ul>
+
+            <div class="to-content background-lightened small-padding-1">
+                <span>&#8595;</span>
+            </div>
+        </div>
 
         <!-- Multi-color graphics -->
         <section class="row small-padding-top-4 small-padding-bottom-2 small-8 large-6">

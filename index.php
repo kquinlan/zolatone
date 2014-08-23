@@ -11,20 +11,17 @@
 
         <? require_once 'common/header.php' ?>
 
-        <div style="height: 100%; width: 100%;">
-            <? require 'common/tagline.php' ?>
-            
-            <ul class="rslides">
-                <li class="lluminations"></li>
-                <li class="elementary"></li>
-            </ul>
+        <div class="slider-container">
+            <section class="content">
+                <div class="text-center">
+                    <h3 class="color-white"><b>The World’s not Monotone,</b></h3>
+                    <h3 class="color-white"><b>That’s why there’s Zolatone.</b></h3>
+                    <p class="color-white"><b>Paint with Texture, Patina and Dimension</b></p>
+                </div>
+            </section>
 
-            <div class="to-content background-lightened small-padding-1">
-                <span>&#8595;</span>
-            </div>
+            <? require_once 'common/slider.php' ?>
         </div>
-
-        
 
         <!-- Our Story -->
         <section class="row">
@@ -46,35 +43,5 @@
         <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script src="/js/app.js"></script>
-        <script>
-            // Optional params for foundation
-            $(document).foundation();
-
-            // Enhance responsiveness on mobile
-            $(function() {
-                FastClick.attach(document.body);
-            });
-
-            // Slider parameters
-            $(".rslides").responsiveSlides({
-                auto: true,             // Boolean: Animate automatically, true or false
-                speed: 1500,            // Integer: Speed of the transition, in milliseconds
-                timeout: 6000,          // Integer: Time between slide transitions, in milliseconds
-                pager: false,           // Boolean: Show pager, true or false
-                nav: false,             // Boolean: Show navigation, true or false
-                random: false,          // Boolean: Randomize the order of the slides, true or false
-                pause: false,           // Boolean: Pause on hover, true or false
-                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-                prevText: "Previous",   // String: Text for the "previous" button
-                nextText: "Next",       // String: Text for the "next" button
-                maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-                navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-                manualControls: "",     // Selector: Declare custom pager navigation
-                namespace: "rslides",   // String: Change the default namespace used
-                before: function(){},   // Function: Before callback
-                after: function(){}     // Function: After callback
-            });
-
-        </script>
     </body>
 </html>

@@ -12,15 +12,15 @@
 
         <? require_once '../common/header.php' ?>
 
-        <ul class="rslides">
-            <li class="lluminations">
-                <section class="content">
-                    <div class="text-center">
-                        <h2 class="color-white"><b>Where to Buy</b></h2>
-                    </div>
-                </section>
-            </li>
-        </ul>
+        <div class="slider-container">
+            <section class="content">
+                <div class="text-center">
+                    <h2 class="color-white"><b>Where To Buy</b></h2>
+                </div>
+            </section>
+
+            <? require_once '../common/slider.php' ?>
+        </div>
 
         <!-- Where to Buy -->
         <section class="row">

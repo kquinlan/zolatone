@@ -11,15 +11,15 @@
 
         <? require_once '../common/header.php' ?>
 
-        <ul class="rslides">
-            <li class="lluminations">
-                <section class="content">
-                    <div class="text-center">
-                        <h2 class="color-white"><b>Your Future<br />With Zolatone</b></h2>
-                    </div>
-                </section>
-            </li>
-        </ul>
+        <div class="slider-container">
+            <section class="content">
+                <div class="text-center">
+                    <h2 class="color-white"><b>Your Future<br />With Zolatone</b></h2>
+                </div>
+            </section>
+
+            <? require_once '../common/slider.php' ?>
+        </div>
 
         <!-- Careers -->
         <section class="row small-margin-bottom-4">
