@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
     </head>
-    <body>
+    <body id="top">
 
         <? require_once 'common/header.php' ?>
 
