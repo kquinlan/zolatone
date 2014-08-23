@@ -31,7 +31,6 @@ var bezier = 'cubic-bezier(0,0.9,0.3,1)'; // Easing bezier
 var timing = 500; // Timing in ms
 
 // Navigation panel display events
-
 $('.off-canvas-toggle').click(function() { 
     $('nav.mobile aside, nav.mobile').addClass('show').transition({ x:'0' }, timing, bezier ); 
 });
