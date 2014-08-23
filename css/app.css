@@ -56,8 +56,11 @@
 	white-space: nowrap;
 }
 
+object {
+	width: 100%;
+}
 /* Icons */
-footer .icon {
+footer .icon, footer .icon object {
 	display: inline-block;
 	vertical-align: middle;
 	width: 42px;
@@ -101,7 +104,7 @@ nav.mobile.show {
 		top: 0;
 		bottom: 0;
 		right: 0;
-		z-index: 1003;
+		z-index: 1005;
 		overflow-y: auto;
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;

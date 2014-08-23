@@ -26,14 +26,14 @@
 
             <div class="small-12 medium-6 columns">
                 <object data="/img/multi-color1.svg">
-                    <img src="/img/multi-color1.jpg" />
+                    <img src="/img/multi-color1.png" />
                 </object>
                 <p class="text-center text-smaller color-primary"><b>SUSPENDED PAINT PARTICLES</b></p>
             </div>
 
             <div class="small-12 medium-6 columns">
                 <object data="/img/multi-color2.svg">
-                    <img src="/img/multi-color2.png" />
+                    <img src="/img/multi-color2.jpg" />
                 </object>
                 <p class="text-center text-smaller color-primary"><b>FINAL SPRAYED PRODUCT</b></p>
             </div>

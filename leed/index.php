@@ -52,7 +52,6 @@
                     <a href="" class="button small-margin-top-1">Download the PDF</a>
                 </div>
             </div>
-            </div>
 
         </section>
 

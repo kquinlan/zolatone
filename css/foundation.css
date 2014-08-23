@@ -61,9 +61,6 @@ img {
 img {
   -ms-interpolation-mode: bicubic; }
 
-object, object img {
-  width: 100%; }
-
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
