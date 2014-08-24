@@ -366,6 +366,9 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	}
 
 	@media only screen and (max-width: 40em) { 
+		.slider-container .content {
+			padding: 2em 2em;
+		}
 		.content h2 {
 			font-size: 1.5em;
 		}
@@ -415,3 +418,38 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 			font-size: 1em;
 		}
 	}
+
+/* Gallery Images Styles */
+.job-container {
+	position: relative;
+	margin: 0.5em;
+	display: inline-block;
+	width: 236px; 
+	height: 236px;
+}
+.gallery-thumb {
+	position: relative;
+	width: 236px; 
+	height: 236px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	background-size: cover; 
+	background-position: center center;
+}
+	.gallery-thumb div {
+		width: 100%; 
+		height: 100%;
+	}
+
+.job-container .job-description {
+	position: relative;
+	height: auto;
+	display: none;
+
+}
+	.job-container .job-description.show {
+		display: block;
+		width: 100%;
+	}
+

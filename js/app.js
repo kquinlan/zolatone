@@ -54,7 +54,7 @@ $('.close').click(function() {
 
 // Video overlay display events
 $('.video-trigger').click(function() { 
-    $('.video-overlay').addClass('show').transition({ opacity:'1' }, timing, bezier,function() {
+    $('.video-overlay').addClass('show').transition({ opacity:'1' }, timing, bezier, function() {
         $('.video-overlay .flex-video').addClass('show');
     }); 
 });
@@ -65,4 +65,20 @@ $('.video-overlay').click(function() {
         $('.video-overlay .flex-video iframe').attr("src", "");
         this.removeClass('show'); 
     }) 
+});
+
+// Gallery click events
+$('.gallery-thumb').click(function() {
+    if( $(this).hasClass('show') ) {
+        $(this).transition({ 'padding-bottom':'0', 'width':'236px' }, timing, bezier );
+        $(this).removeClass('show');
+    } else if($(this).hasClass('landscape')) {
+        $(this).transition({ 'width':'100%', 'padding-bottom':'67%' }, timing, bezier, function() {
+            $(this).addClass('show');
+        });
+    } else if($(this).hasClass('portrait')) {
+        $(this).transition({ 'width':'100%', 'padding-bottom':'150%' }, timing, bezier, function() {
+            $(this).addClass('show');
+        });
+    }
 });
