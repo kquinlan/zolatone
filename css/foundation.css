@@ -94,7 +94,9 @@ img {
 
 textarea {
   height: auto;
-  min-height: 50px; }
+  min-height: 50px; 
+  resize: vertical; 
+  max-height: 256px; }
 
 select {
   width: 100%; }

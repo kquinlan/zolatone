@@ -72,6 +72,10 @@
                             <input type="text" placeholder="Zip" maxlength="5" required />
                         </div>
 
+                        <div class="small-12 columns small-padding-0">
+                            <textarea placeholder="Special Instructions"></textarea>
+                        </div>
+
                         <input type="submit" class="button" value="Submit" />
                     </div>
                 </form>

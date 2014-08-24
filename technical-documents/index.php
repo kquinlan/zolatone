@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>Technical Documents</b></h2>
+                    <h2 class="color-white"><b>Need Technical Information? It’s All Here</b></h2>
                 </div>
             </section>
 

@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>LEED</b></h2>
+                    <h2 class="color-white"><b>From the Sun to Your Walls</b></h2>
                 </div>
             </section>
 

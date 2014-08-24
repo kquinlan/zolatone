@@ -309,10 +309,10 @@ nav.main {
 
 	.slider-container .content {
 		position: absolute;
-		top: 35%;
+		top: 25%;
 		width: 100%;
 		text-align: center;
-		padding: 2em;
+		padding: 2em 20%;
 		z-index: 999;
 		-webkit-text-shadow: 1px 1px 4px #000;
 		-moz-text-shadow: 1px 1px 4px #000;
@@ -336,16 +336,12 @@ nav.main {
 		height: 100%;
 	}
 
-.to-content {
-	z-index: 9999;
-}
-
 /* Form Validations */
 form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	outline: 1px solid #FF9494;
 }
 
-/* Video Styles */
+/* Video Styles */cont
 .video-overlay {
 	display: none;
 	top: 0;

@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>The Sample Room</b></h2>
+                    <h2 class="color-white"><b>Request Samples and Color Cards For Your Next Project</b></h2>
                 </div>
             </section>
 
