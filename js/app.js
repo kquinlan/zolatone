@@ -72,13 +72,16 @@ $('.gallery-thumb').click(function() {
     if( $(this).hasClass('show') ) {
         $(this).transition({ 'padding-bottom':'0', 'width':'236px' }, timing, bezier );
         $(this).removeClass('show');
+        $(this).next().removeClass('show');
     } else if($(this).hasClass('landscape')) {
         $(this).transition({ 'width':'100%', 'padding-bottom':'67%' }, timing, bezier, function() {
             $(this).addClass('show');
+            $(this).next().addClass('show');
         });
     } else if($(this).hasClass('portrait')) {
         $(this).transition({ 'width':'100%', 'padding-bottom':'150%' }, timing, bezier, function() {
             $(this).addClass('show');
+            $(this).next().addClass('show');
         });
     }
 });

@@ -273,6 +273,10 @@ nav.main {
 	background-image: url('/img/slider/columns-counterpointe.jpg');
 	background-position: top right;
 }
+.hospital-waiting-room {
+	background-image: url('/img/slider/hospital-waiting-room.jpg');
+	background-position: top right;
+}
 
 /* Image Slider Styles */
 .slider-container {
@@ -327,8 +331,8 @@ nav.main {
 
 /* Shared UI Styles */
 .close {
-	width: 25px;
-	height: 25px;
+	width: 18px;
+	height: 18px;
 	cursor: pointer;
 }
 	.close img {
@@ -423,36 +427,36 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	}
 
 /* Gallery Images Styles */
-.job-container {
-	position: relative;
-	margin: 0.5em;
-	display: inline-block;
-	width: 236px; 
-	height: 236px;
-}
 .gallery-thumb {
 	position: relative;
 	width: 236px; 
 	height: 236px;
-	margin: 0;
+	margin: 0.25em;
 	padding: 0;
 	display: inline-block;
 	background-size: cover; 
 	background-position: center center;
+}
+.gallery-thumb.show {
+	margin: 0;
 }
 	.gallery-thumb div {
 		width: 100%; 
 		height: 100%;
 	}
 
-.job-container .job-description {
-	position: relative;
-	height: auto;
+.gallery-description {
+	width: 100%;
+	padding: .75em;
+	margin-bottom: 2em;
+	background-color: #f79320;
 	display: none;
-
+	margin-top: -.25em;
 }
-	.job-container .job-description.show {
-		display: block;
-		width: 100%;
+	.gallery-description h5 {
+		border-bottom: 2px solid #fff;
+		color: #fff;
 	}
-
+	.gallery-description.show {
+		display: block;
+	}
