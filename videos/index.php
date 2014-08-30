@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>Video Resources to Make Your Job Easier</b></h2>
+                    <h2 class="color-white"><b>Video Resources to<br />Make Your Job Easier</b></h2>
                 </div>
             </section>
 

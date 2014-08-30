@@ -15,7 +15,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>Start Your Journey to Better Walls</b></h2>
+                    <h2 class="color-white"><b>Start Your Journey<br />to Better Walls</b></h2>
                 </div>
             </section>
 

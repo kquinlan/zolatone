@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>We’re Just a Call or Email Away</b></h2>
+                    <h2 class="color-white"><b>We’re Just a Call<br />or Email Away</b></h2>
                 </div>
             </section>
 

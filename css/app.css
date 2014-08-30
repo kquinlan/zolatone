@@ -309,11 +309,11 @@ nav.main {
 
 	.slider-container .content {
 		position: absolute;
-		top: 25%;
+		top: 50%;
 		width: 100%;
 		text-align: center;
-		padding: 2em 20%;
 		z-index: 999;
+		margin-top: -3em;
 		-webkit-text-shadow: 1px 1px 4px #000;
 		-moz-text-shadow: 1px 1px 4px #000;
 		-ms-text-shadow: 1px 1px 4px #000;
@@ -341,7 +341,7 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	outline: 1px solid #FF9494;
 }
 
-/* Video Styles */cont
+/* Video Styles */
 .video-overlay {
 	display: none;
 	top: 0;
@@ -367,10 +367,10 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 
 	@media only screen and (max-width: 40em) { 
 		.slider-container .content {
-			padding: 2em 2em;
+			padding: 2em 0;
 		}
 		.content h2 {
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 		.content h3 {
 			font-size: 1em;
@@ -387,6 +387,9 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 		.video-container {
 			width: 480px;
 		}
+		.content h2 {
+			font-size: 1.6em;
+		}
 	}
 
 	@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
@@ -394,10 +397,10 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 			width: 640px;
 		}
 		.content h2 {
-			font-size: 3.1em;
+			font-size: 2.1em;
 		}
 		.content h3 {
-			font-size: 2.6em;
+			font-size: 1.6em;
 		}
 		.content p {
 			font-size: 1em;

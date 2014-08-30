@@ -14,7 +14,7 @@
         <div class="slider-container">
             <section class="content">
                 <div class="text-center">
-                    <h2 class="color-white"><b>Request a Free Brochure</b></h2>
+                    <h2 class="color-white"><b>Request a<br />Free Brochure</b></h2>
                 </div>
             </section>
 
