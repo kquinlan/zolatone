@@ -199,7 +199,7 @@ nav.main {
 			    right: 0;
 			    text-align: left;
 			    opacity: 0;
-			    right: -9999px;
+			    display: none;
 			    z-index: 999;
 			    color: #5C4731;
 			    width: 12em;
@@ -219,7 +219,7 @@ nav.main {
 			}
 		 	nav.main ul li:hover ul { 
 			    opacity: 1;
-			    right: 0;
+			    display: block;
 			}
 			nav.main ul li:hover a { 
 			    background: #fff;
