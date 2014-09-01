@@ -245,15 +245,15 @@ nav.main {
 .subscribe-panel.show {
 	display: block;
 }
+.subscribe-panel.mobile {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
 	.subscribe-panel .button {
 		padding: 0.55em;
-	}
-	.subscribe-panel.mobile {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 .login-panel {
@@ -266,6 +266,13 @@ nav.main {
 }
 .login-panel.show {
 	display: block;
+}
+.subscribe-panel.mobile {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 /* Slider Images to Cycle */
