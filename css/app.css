@@ -256,6 +256,18 @@ nav.main {
 		-webkit-overflow-scrolling: touch;
 	}
 
+.login-panel {
+	padding: 1em;
+	display: none;
+	position: absolute;
+	z-index: 1002;
+	left: 0;
+	right: 0;
+}
+.login-panel.show {
+	display: block;
+}
+
 /* Slider Images to Cycle */
 .lluminations {
 	background-image: url('/img/slider/lluminations.jpg');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sampleRoom">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -32,7 +32,13 @@
                 <p>When you’re ready to order samples, you now have two great options. We can send out loose 4x5 samples or you can create an On Demand card. On Demand cards allow you to create collections of your favorite Zolatone colors and turn them into your very own custom tip cards.</p>
                 <p>You must be logged in to create Sample Boards and On Demand cards. To create a new sample board, or add to an existing board, simply click the icon next to the sample you would like to add. </p>
 
-                <h3 class="color-primary text-center small-margin-bottom-1">Your Saved Samples</h3>
+                <?
+                    if(isUserLoggedIn()) {
+                        echo '<h3 class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
+                    } else {
+                        echo '<h3 class="color-primary text-center small-margin-bottom-1">Log In to See Your Saved Samples</h3>';
+                    }
+                ?>
 
                 <!-- 
                     TODO: Collect saved sample data for current user and display here 
@@ -42,7 +48,11 @@
 
                 <div class="small-padding-top-2">
                     <a href="/finishes" class="button">Take me to the Finishes</a>
-                    <a href="/finishes" class="button">Log in / Sign Up</a>
+                    <?
+                        if(!isUserloggedIn()) {
+                            echo '<a class="button">Log in / Sign Up</a>';
+                        }
+                    ?>
                 </div>
             </div>
 
@@ -50,11 +60,14 @@
 
         <? require_once '../common/footer.php' ?>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/transit.min.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script src="/js/app.js"></script>
+        <script src="/js/sample-room/sample-room.js"></script>
     </body>
 </html>

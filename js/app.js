@@ -52,6 +52,17 @@ $('.close').click(function() {
     }) 
 });
 
+// Login panel display events
+$('.login-button').click(function() { 
+    $('.login-panel').addClass('show').transition({ y:'0' }, timing, bezier ); 
+});
+
+$('.close').click(function() { 
+    $('.login-panel').transition({ y:'-100%' }, function() { 
+        this.removeClass('show'); 
+    }) 
+});
+
 // Video overlay display events
 $('.video-trigger').click(function() { 
     $('.video-overlay').addClass('show').transition({ opacity:'1' }, timing, bezier, function() {
