@@ -14,13 +14,6 @@
 		</div>
 
 		<div class="row">
-			<!-- Don't want to miss out? -->	
-			<div class="medium-5 columns color-white">
-				<h3 class="color-white">Don't want to miss out?</h3>
-				<hr />
-				<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
-			</div>
-
 			<!-- Sign Up -->
 			<div class="medium-6 columns color-white">
 				<h3 class="color-white">Sign Up</h3>
@@ -75,79 +68,6 @@
 		</div>
 	</section>
 
-	<!-- Mobile Login & Sign Up Section -->
-	<section class="mobile login-panel background-primary small-padding-top-1 medium-hide">
-
-		<!-- Close Button -->
-		<div class="close right small-margin-right-1">
-			<img src="/img/close-white.png" />
-		</div>
-
-		<div class="row">
-			<!-- Don't want to miss out? -->	
-			<div class="small-12 columns color-white">
-				<h3 class="color-white small-margin-0">Don't want to miss out?</h3>
-				<hr class="small-only-hide" />
-				<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
-			</div>
-
-			<!-- Sign Up -->
-			<div class="small-12 columns color-white">
-				<h3 class="color-white">Sign Up</h3>
-				<form method='post' action="../sample-room/user/login.php">
-                <p>
-                <label>Username:</label>
-                <input type='text' name='username' />
-                </p>
-                <p>
-                <label>Password:</label>
-                <input type='password' name='password' />
-                </p>
-                <p>
-                <input class="button" type='submit' value='Login' />
-                </p>
-                </form>
-                <? echo resultBlock($errors,$successes); ?>
-
-                <form name='newUser' action="../sample-room/user/register.php" method='post'>
-				<p>
-				<label>User Name:</label>
-				<input type='text' name='username' />
-				</p>
-				<p>
-				<label>Display Name:</label>
-				<input type='text' name='displayname' />
-				</p>
-				<p>
-				<label>Password:</label>
-				<input type='password' name='password' />
-				</p>
-				<p>
-				<label>Confirm:</label>
-				<input type='password' name='passwordc' />
-				</p>
-				<p>
-				<label>Email:</label>
-				<input type='text' name='email' />
-				</p>
-				<p>
-				<label>Security Code:</label>
-				<img src='models/captcha.php'>
-				</p>
-				<label>Enter Security Code:</label>
-				<input name='captcha' type='text'>
-				</p>
-				<label>&nbsp;<br>
-				<input class="button" type='submit' value='Register' />
-				</p>
-				</form>
-			</div>
-		</div>
-	</section>
-
-
-
-
 	<!-- Subscription Section -->
 	<section class="subscribe-panel background-primary small-padding-top-1">
 
@@ -179,47 +99,6 @@
 							<input type="email" placeholder="Email Address" required />
 						</div>
 						<div class="medium-4 columns left small-padding-0">
-							<input type="submit" value="Subscribe" class="button secondary" required />
-						</div>
-					</div>
-
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<!-- Mobile Subscription Section -->
-	<section class="mobile subscribe-panel background-primary small-padding-top-1 medium-hide">
-
-		<!-- Close Button -->
-		<div class="close right small-margin-right-1">
-			<img src="/img/close-white.png" />
-		</div>
-
-		<div class="row">
-			<!-- Don't want to miss out? -->	
-			<div class="small-12 columns color-white">
-				<h3 class="color-white small-margin-0">Don't want to miss out?</h3>
-				<hr class="small-only-hide" />
-				<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
-			</div>
-
-			<!-- Sign Up -->
-			<div class="small-12 columns color-white">
-				<h3 class="color-white">Sign Up</h3>
-				<form>
-
-					<div class="row">
-						<div class="small-12 columns left">
-							<input type="text" placeholder="Name" required />
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="small-12 columns">
-							<input type="email" placeholder="Email Address" required />
-						</div>
-						<div class="small-11 columns left">
 							<input type="submit" value="Subscribe" class="button secondary" required />
 						</div>
 					</div>
@@ -335,7 +214,7 @@
 			</li>	
 			<li><a href="/sample-room">Sample Room</a>
 				<ul>
-					<li><a href="">Login / Sign Up</a></li>
+					<li><a class="login-button">Login / Sign Up</a></li>
 					<li><a href="/sample-room">My Saved Samples</a></li>
 				</ul>
 			</li>
@@ -350,5 +229,107 @@
 </nav>
 
 <div class="exit"></div>
+
+<!-- Mobile Login & Sign Up Section -->
+<section class="mobile login-panel background-primary small-padding-top-1 medium-hide">
+
+	<!-- Close Button -->
+	<div class="close right small-margin-right-1">
+		<img src="/img/close-white.png" />
+	</div>
+		<!-- Sign Up -->
+		<div class="small-12 columns color-white">
+			<h3 class="color-white">Sign Up</h3>
+			<form method='post' action="../sample-room/user/login.php">
+            <p>
+            <label>Username:</label>
+            <input type='text' name='username' />
+            </p>
+            <p>
+            <label>Password:</label>
+            <input type='password' name='password' />
+            </p>
+            <p>
+            <input class="button" type='submit' value='Login' />
+            </p>
+            </form>
+            <? echo resultBlock($errors,$successes); ?>
+
+            <form name='newUser' action="../sample-room/user/register.php" method='post'>
+			<p>
+			<label>User Name:</label>
+			<input type='text' name='username' />
+			</p>
+			<p>
+			<label>Display Name:</label>
+			<input type='text' name='displayname' />
+			</p>
+			<p>
+			<label>Password:</label>
+			<input type='password' name='password' />
+			</p>
+			<p>
+			<label>Confirm:</label>
+			<input type='password' name='passwordc' />
+			</p>
+			<p>
+			<label>Email:</label>
+			<input type='text' name='email' />
+			</p>
+			<p>
+			<label>Security Code:</label>
+			<img src='models/captcha.php'>
+			</p>
+			<label>Enter Security Code:</label>
+			<input name='captcha' type='text'>
+			</p>
+			<label>&nbsp;<br>
+			<input class="button" type='submit' value='Register' />
+			</p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- Mobile Subscription Section -->
+<section class="mobile subscribe-panel background-primary small-padding-top-1 medium-hide">
+
+	<!-- Close Button -->
+	<div class="close right small-margin-right-1">
+		<img src="/img/close-white.png" />
+	</div>
+
+	<div class="row">
+		<!-- Don't want to miss out? -->	
+		<div class="small-12 columns color-white">
+			<h3 class="color-white small-margin-0">Don't want to miss out?</h3>
+			<hr class="small-only-hide" />
+			<p>We’ll never crowd your inbox, only sending you the coolest news <i>once</i> a month!</p>
+		</div>
+
+		<!-- Sign Up -->
+		<div class="small-12 columns color-white">
+			<h3 class="color-white">Sign Up</h3>
+			<form>
+
+				<div class="row">
+					<div class="small-12 columns left">
+						<input type="text" placeholder="Name" required />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<input type="email" placeholder="Email Address" required />
+					</div>
+					<div class="small-11 columns left">
+						<input type="submit" value="Subscribe" class="button secondary" required />
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</section>
 
 </header>

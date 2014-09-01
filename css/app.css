@@ -259,7 +259,7 @@ nav.main {
 .login-panel {
 	padding: 1em;
 	display: none;
-	position: absolute;
+	position: fixed;
 	z-index: 1002;
 	left: 0;
 	right: 0;
@@ -267,7 +267,7 @@ nav.main {
 .login-panel.show {
 	display: block;
 }
-.subscribe-panel.mobile {
+.login-panel.mobile {
 	position: fixed;
 	top: 0;
 	bottom: 0;
