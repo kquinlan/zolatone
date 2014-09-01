@@ -6,10 +6,10 @@ http://usercake.com
 
 //Database Information
 $db_host = "localhost"; //Host address (most likely localhost)
-$db_name = "202"; //Name of Database
-$db_user = "202"; //Name of database user
-$db_pass = "password"; //Password for database user
-$db_table_prefix = "uc_";
+$db_name = "zolatone"; //Name of Database
+$db_user = "root"; //Name of database user
+$db_pass = ""; //Password for database user
+$db_table_prefix = "zol_";
 
 GLOBAL $errors;
 GLOBAL $successes;
