@@ -9,63 +9,40 @@
 	<!-- Login & Sign Up Section -->
 	<section class="login-panel background-primary small-padding-top-1">
 
-		<div class="close right small-margin-right-1">
+		<div class="close right">
 			<img src="/img/close-white.png" />
 		</div>
 
 		<div class="row">
-			<!-- Sign Up -->
-			<div class="medium-6 columns color-white">
-				<h3 class="color-white">Sign Up</h3>
-				<form method='post' action="/sample-room/user/login.php">
-                <p>
-                <label>Username:</label>
-                <input type='text' name='username' />
-                </p>
-                <p>
-                <label>Password:</label>
-                <input type='password' name='password' />
-                </p>
-                <p>
-                <input class="button" type='submit' value='Login' />
-                </p>
-                </form>
-                <? echo resultBlock($errors,$successes); ?>
 
-                <form name='newUser' action="/sample-room/user/register.php" method='post'>
-				<p>
-				<label>User Name:</label>
-				<input type='text' name='username' />
-				</p>
-				<p>
-				<label>Display Name:</label>
-				<input type='text' name='displayname' />
-				</p>
-				<p>
-				<label>Password:</label>
-				<input type='password' name='password' />
-				</p>
-				<p>
-				<label>Confirm:</label>
-				<input type='password' name='passwordc' />
-				</p>
-				<p>
-				<label>Email:</label>
-				<input type='email' name='email' />
-				</p>
-				<p>
-				<label>Security Code:</label>
-				<img src='/sample-room/user/models/captcha.php'>
-				</p>
-				<label>Enter Security Code:</label>
-				<input name='captcha' type='text'>
-				</p>
-				<label>&nbsp;<br>
-				<input class="button" type='submit' value='Register' />
-				</p>
+			<h4 class="color-white text-center small-margin-bottom-2 login-switch"><a class="login">Login</a> or <a class="register">Register</a></h4>
+
+			<!-- Login -->
+			<div class="login-form medium-6 columns small-centered">
+				<form method='post' action="../sample-room/user/login.php">
+		        	<input type='text' placeholder="Username" name='username' />
+		        	<input class="small-6 columns" type='password' placeholder="Password" name='password' />
+		        	<input class="button secondary" type='submit' value='Login' />
+		        </form>
+	        </div>
+
+		    <!-- Register -->
+		    <div class="register-form medium-6 columns small-centered">
+		        <form name='newUser' action="../sample-room/user/register.php" method='post'>
+					<input type='text' placeholder="Username" name='username' />
+					<input type='text' placeholder="Display Name" name='displayname' />
+					<input type='password' placeholder="Password" name='password' />
+					<input type='password' placeholder="Confirm Password" name='passwordc' />
+					<input type='email' placeholder="Email" name='email' />
+					<input name='captcha' placeholder="Enter Text Shown Below" type='text'>
+					<img src='/sample-room/user/models/captcha.php'>
+					<div class="small-12 small-margin-top-1">
+						<input class="button secondary" type='submit' value='Register' />
+					</div>
 				</form>
 			</div>
 		</div>
+
 	</section>
 
 	<!-- Subscription Section -->
@@ -114,7 +91,7 @@
 		<div class="small-4 columns">
 			<a href="/">
 				<h1>Zolatone</h1>
-				<img src="/img/zolatone-white.png">
+				<img class="logo" src="/img/zolatone-white.png">
 			</a>
 		</div>
 		
@@ -181,7 +158,7 @@
 		<div class="small-8 columns small-padding-0">
 			<a href="/">
 				<h1>Zolatone</h1>
-				<img src="/img/zolatone-white.png">
+				<img class="logo" src="/img/zolatone-white.png">
 			</a>
 			</div>
 
@@ -214,7 +191,13 @@
 			</li>	
 			<li><a href="/sample-room">Sample Room</a>
 				<ul>
-					<li><a class="login-button">Login / Sign Up</a></li>
+					<?
+						if(!isUserLoggedIn()) {
+							echo '<li><a class="login-button">Log In or Sign Up</a></li>';
+						} else {
+							echo '<li><a href="/sample-room/user/logout.php">Log Out</a></li>';
+						}
+					?>
 					<li><a href="/sample-room">My Saved Samples</a></li>
 				</ul>
 			</li>
@@ -234,60 +217,36 @@
 <section class="mobile login-panel background-primary small-padding-top-1 medium-hide">
 
 	<!-- Close Button -->
-	<div class="close right small-margin-right-1">
+	<div class="close right">
 		<img src="/img/close-white.png" />
 	</div>
-		<!-- Sign Up -->
-		<div class="small-12 columns color-white">
-			<h3 class="color-white">Sign Up</h3>
-			<form method='post' action="../sample-room/user/login.php">
-            <p>
-            <label>Username:</label>
-            <input type='text' name='username' />
-            </p>
-            <p>
-            <label>Password:</label>
-            <input type='password' name='password' />
-            </p>
-            <p>
-            <input class="button" type='submit' value='Login' />
-            </p>
-            </form>
-            <? echo resultBlock($errors,$successes); ?>
 
-            <form name='newUser' action="../sample-room/user/register.php" method='post'>
-			<p>
-			<label>User Name:</label>
-			<input type='text' name='username' />
-			</p>
-			<p>
-			<label>Display Name:</label>
-			<input type='text' name='displayname' />
-			</p>
-			<p>
-			<label>Password:</label>
-			<input type='password' name='password' />
-			</p>
-			<p>
-			<label>Confirm:</label>
-			<input type='password' name='passwordc' />
-			</p>
-			<p>
-			<label>Email:</label>
-			<input type='text' name='email' />
-			</p>
-			<p>
-			<label>Security Code:</label>
-			<img src='models/captcha.php'>
-			</p>
-			<label>Enter Security Code:</label>
-			<input name='captcha' type='text'>
-			</p>
-			<label>&nbsp;<br>
-			<input class="button" type='submit' value='Register' />
-			</p>
-			</form>
-		</div>
+	<!-- Login -->
+	<h4 class="small-margin-left-1 color-white">Login</h4>
+	<div class="small-12 small-centered columns small-margin-top-0 color-white">
+		<form method='post' action="../sample-room/user/login.php">
+	        <input type='text' placeholder="Username" name='username' />
+	        <input type='password' placeholder="Password" name='password' />
+	        <input class="button secondary" type='submit' value='Login' />
+        </form>
+        <? echo resultBlock($errors,$successes); ?>
+    </div>
+
+    <!-- Register -->
+    <h4 class="small-margin-left-1 color-white">Register</h4>
+    <div class="small-12 small-centered columns color-white">
+        <form name='newUser' action="../sample-room/user/register.php" method='post'>
+			<input type='text' placeholder="Username" name='username' />
+			<input type='text' placeholder="Display Name" name='displayname' />
+			<input type='password' placeholder="Password" name='password' />
+			<input type='password' placeholder="Confirm Password" name='passwordc' />
+			<input type='email' placeholder="Email" name='email' />
+			<input name='captcha' placeholder="Enter Text Shown Below" type='text'>
+			<img class="" src='/sample-room/user/models/captcha.php'>
+			<div class="small-12 small-margin-top-1">
+				<input class="button secondary" type='submit' value='Register' />
+			</div>
+		</form>
 	</div>
 </section>
 

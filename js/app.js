@@ -54,13 +54,25 @@ $('.close').click(function() {
 
 // Login panel display events
 $('.login-button').click(function() { 
-    $('.login-panel').addClass('show').transition({ y:'0' }, timing, bezier ); 
+    $('.login-panel').addClass('show').transition({ y:'0' }, timing, bezier );
 });
 
 $('.close').click(function() { 
     $('.login-panel').transition({ y:'-100%' }, function() { 
         this.removeClass('show'); 
     }) 
+});
+
+//Login panel link events
+$('.login-form').addClass('show');
+$('.login-switch .login').click(function() {
+    $('.login-form, .register-form').removeClass('show');
+    $('.login-form').addClass('show');
+});
+
+$('.login-switch .register').click(function() {
+    $('.login-form, .register-form').removeClass('show');
+    $('.register-form').addClass('show');
 });
 
 // Video overlay display events
