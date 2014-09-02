@@ -507,9 +507,12 @@ nav.finishes ul {
 	list-style: none;
 }
 	nav.finishes ul li {
-		display: inline;
+		display: inline-block;
 		margin: 0 1em;
+		padding: 0.25em 0;
 		font-weight: bold;
 		white-space: nowrap;
 	}
-	
+.finish-data p {
+	padding: 0.25em 0;
+}

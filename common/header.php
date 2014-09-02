@@ -112,15 +112,15 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
 					<li>
-						<a href="">Finishes &#9662;</a>
+						<a href="/finishes">Finishes &#9662;</a>
 						<ul>
-							<li><a href="">Counterpointe</a></li>
-							<li><a href="">Lluminations</a></li>
-							<li><a href="">Metal</a></li>
-							<li><a href="">Polomyx</a></li>
-							<li><a href="">Polomyx Airless</a></li>
-							<li><a href="">Flex</a></li>
-							<li><a href="">Light Vision</a></li>
+							<li><a href="/finishes/#/counterpointe">Counterpointe</a></li>
+							<li><a href="/finishes/#/lluminations">Lluminations</a></li>
+							<li><a href="/finishes/#/metal">Metal</a></li>
+							<li><a href="/finishes/#/polomyx">Polomyx</a></li>
+							<li><a href="/finishes/#/polomyx-airless">Polomyx Airless</a></li>
+							<li><a href="/finishes/#/flex">Flex</a></li>
+							<li><a href="/finishes/#/light-vision">Light Vision</a></li>
 							<li><a href="">Order a Brochure</a></li>
 						</ul>
 					</li>
@@ -180,7 +180,7 @@
 		<ul class="off-canvas-list">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
-			<li><a href="#">Finishes</a></li>
+			<li><a href="/finishes">Finishes</a></li>
 			<li><a href="/ideas">Ideas</a></li>
 			<li><a href="/technical-documents">Tech Info</a>
 				<ul>

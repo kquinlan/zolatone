@@ -37,21 +37,25 @@
 
         <section class="row">
 
-            <nav class="finishes small-margin-top-3 text-center">
-                <ul>
-                    <li><a href="#/counterpointe">Counterpointe</a></li>
-                    <li><a href="#/lluminations">Lluminations</a></li>
-                    <li><a href="#/metal">Metal</a></li>
-                    <li><a href="#/polomyx">Polomyx</a></li>
-                    <li><a href="#/polomyx-airless">Polomyx Airless</a></li>
-                    <li><a href="#/flex">Flex</a></li>
-                    <li><a href="#/light-vision">Light Vision</a></li>
-                </ul>
-            </nav>
-
             <!-- Templates are loaded into here from /finishes/partials/ folder -->
             <div ng-view></div>
 
+        </section>
+
+        <section class="row small-padding-top-1">
+            <div class="small-11 columns small-centered">
+
+                <div class="medium-5 columns">
+                    <a class="button small" href="/sample-room">Take me to the Sample Soom</a>
+                    <a class="button small" href="/order-brochure">Order a Brochure</a>
+                </div>
+
+                <div class="medium-7 columns">
+                    <p class="text-smaller">We have more colors to choose from | For additional samples call 1.800.765.6699.</p>
+                    <p class="text-smaller">Due to variances in monitors, the colors and patterns displayed may vary slightly from the actual product. Physical samples should be ordered prior to specifying.</p>
+                </div>
+
+            </div>
         </section>
 
         <? require_once '../common/footer.php' ?>
