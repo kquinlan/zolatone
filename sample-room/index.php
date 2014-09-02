@@ -47,7 +47,6 @@
                 -->
 
                 <div class="small-padding-top-1 text-center">
-                    
                     <?
                         if(!isUserloggedIn()) {
                             echo '<a class="login-button button">Log in / Sign Up</a>';

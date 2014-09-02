@@ -499,3 +499,17 @@ form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	.gallery-description.show {
 		display: block;
 	}
+
+/* Finishes Page */
+nav.finishes ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	nav.finishes ul li {
+		display: inline;
+		margin: 0 1em;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	
