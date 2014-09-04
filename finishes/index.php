@@ -40,6 +40,8 @@
                                 <option>White</option>
                                 <option>Gray</option>
                                 <option>Green</option>
+                                <option>Orange</option>
+                                <option>Red</option>
                             </select>
                             </div>
 
