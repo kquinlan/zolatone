@@ -70,7 +70,7 @@
 
         </section>
         <div ng-repeat="color in colors | filter:search:strict" style="display: inline-block; width: 72px; height: 72px; margin: 0.5em; background-color: #f2f2f2;">
-            <span class="text-smaller">{{ color.name }}<br /></span>
+            <span class="text-smaller">{{ color.finish }}<br />{{ color.name }}</span>
         </div>
 
         <section class="row">
