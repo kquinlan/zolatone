@@ -2,50 +2,12 @@ angular.module('finishes', ['ngRoute'])
 
 .controller('finishesCtrl', function($scope, $http) {
 
-	$scope.colors = [
-		{
-			'name': 'PFX-01053',
-			'color': 'white',
-			'tone': '',
-			'effect': 'neutral',
-			'new': false
-		},
-		{
-			'name': 'PFX-01064',
-			'color': 'gray',
-			'tone': 'cool',
-			'effect': 'neutral',
-			'new': false
-		},
-		{
-			'name': 'PFX-C3001',
-			'color': 'brown',
-			'tone': 'warm',
-			'effect': 'neutral accent',
-			'new': false
-		},
-		{
-			'name': 'PFX-01036',
-			'color': 'green',
-			'tone': 'cool',
-			'effect': 'accent',
-			'new': false
-		},
-		{
-			'name': 'PFX-C3064',
-			'color': 'orange red',
-			'tone': 'warm',
-			'effect': 'accent',
-			'new': false
-		},
-		{
-			'name': 'PFX-01027',
-			'color': 'red',
-			'tone': 'warm',
-			'effect': 'accent',
-			'new': false
-		}
-	]
+	$http({method: 'GET', url: '/js/finishes/counterpointe.json'}).
+    success(function(data, status, headers, config) {
+
+		$scope.colors = data;
+
+    })
 
 })
 
