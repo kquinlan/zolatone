@@ -28,10 +28,43 @@
             <div class="medium-8 small-11 columns small-centered small-padding-top-4">
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
                 <div class="small-margin-top-2 medium-8 small-centered columns">
-                    <input ng-model="search.tags" class="small-margin-0" type="text" placeholder="Search..." />
-                    <span class="text-smaller">Search for colors i.e. ‘PFX-10287’, ‘red’, ‘cool’, ‘neutral’</span>
+                    <form>
+                        <input ng-model="search.name" class="small-margin-0" type="text" placeholder="Search..." />
+                        <span class="text-smaller">Search for colors i.e. ‘PFX-10287’, ‘red’, ‘cool’, ‘neutral’</span>
+                        
+                        <div class="medium-4 columns">
+                        <label>Color:</label>
+                        <select ng-model="search.tags">
+                            <option value="">All</option>
+                            <option>White</option>
+                            <option>Gray</option>
+                            <option>Green</option>
+                        </select>
+                        </div>
+
+                        <div class="medium-4 columns">
+                        <label>Tone:</label>
+                        <select>
+                            <option value="">All</option>
+                            <option>Warm</option>
+                            <option>Cool</option>
+                        </select>
+                        </div>
+
+                        <div class="medium-4 columns">
+                        <label>Effect:</label>
+                        <select>
+                            <option>All</option>
+                            <option>Accent</option>
+                            <option>Neutral</option>
+                        </select>
+                        </div>
+
+                    </form>
                 </div>
             </div>
+
+            <span ng-repeat="color in colors | filter:search:strict">{{ color.name }}<br /></span>
 
         </section>
 
@@ -42,7 +75,7 @@
 
         </section>
 
-        <section class="row small-padding-top-1">
+        <section class="row small-padding-top-1 small-padding-bottom-4">
             <div class="small-11 columns small-centered">
 
                 <div class="medium-5 columns">

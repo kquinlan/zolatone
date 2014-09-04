@@ -15,32 +15,17 @@
 
 		<div class="row">
 
-			<h4 class="color-white text-center small-margin-bottom-2 login-switch"><a class="login">Login</a> or <a class="register">Register</a></h4>
+			<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Register</a></h4>
 
 			<!-- Login -->
 			<div class="login-form medium-6 columns small-centered">
-				<form method='post' action="../sample-room/user/login.php">
+				<form method='post' action="/sample-room/user/login.php">
 		        	<input type='text' placeholder="Username" name='username' />
 		        	<input class="small-6 columns" type='password' placeholder="Password" name='password' />
 		        	<input class="button secondary" type='submit' value='Login' />
 		        </form>
 	        </div>
 
-		    <!-- Register -->
-		    <div class="register-form medium-6 columns small-centered">
-		        <form name='newUser' action="../sample-room/user/register.php" method='post'>
-					<input type='text' placeholder="Username" name='username' />
-					<input type='text' placeholder="Display Name" name='displayname' />
-					<input type='password' placeholder="Password" name='password' />
-					<input type='password' placeholder="Confirm Password" name='passwordc' />
-					<input type='email' placeholder="Email" name='email' />
-					<input name='captcha' placeholder="Enter Text Shown Below" type='text'>
-					<img src='/sample-room/user/models/captcha.php'>
-					<div class="small-12 small-margin-top-1">
-						<input class="button secondary" type='submit' value='Register' />
-					</div>
-				</form>
-			</div>
 		</div>
 
 	</section>

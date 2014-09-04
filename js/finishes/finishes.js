@@ -2,7 +2,7 @@ angular.module('finishes', ['ngRoute'])
 
 .controller('finishesCtrl', function($scope, $http) {
 
-	$scope.finishes = [
+	$scope.colors = [
 		{
 			'name': 'PFX 01053',
 			'tags': [

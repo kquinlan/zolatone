@@ -63,18 +63,6 @@ $('.close').click(function() {
     }) 
 });
 
-//Login panel link events
-$('.login-form').addClass('show');
-$('.login-switch .login').click(function() {
-    $('.login-form, .register-form').removeClass('show');
-    $('.login-form').addClass('show');
-});
-
-$('.login-switch .register').click(function() {
-    $('.login-form, .register-form').removeClass('show');
-    $('.register-form').addClass('show');
-});
-
 // Video overlay display events
 $('.video-trigger').click(function() { 
     $('.video-overlay').addClass('show').transition({ opacity:'1' }, timing, bezier, function() {

@@ -277,19 +277,7 @@ nav.main {
 	.login-panel .button {
 		padding: 0.55em;
 	}
-		.login-panel .login-form {
-			display: none;
-		}
-		.login-panel .login-form.show {
-			display: block;
-		}
-		.login-panel .register-form {
-			display: none;
-		}
-		.login-panel .register-form.show {
-			display: block;
-		}
-		.login-panel .login-switch a:hover {
+		.login-panel .login-switch a {
 			border-bottom: 2px solid #fff;
 			color: #fff;
 		}
