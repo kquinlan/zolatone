@@ -87,7 +87,7 @@
 	        </div>
 
 		<!-- Register -->
-		<div id="register-form" class="medium-8 large-6 columns small-centered small-padding-top-4 small-padding-bottom-4">
+		<div id="register-form" class="small-11 medium-8 large-6 columns small-centered small-padding-top-4 small-padding-bottom-4">
 			<h1 class="color-primary text-center small-margin-bottom-1">Sign Up</h1>
 
 			<? if(count($errors) == 0) { echo "<div style='display:none'>"; } ?>
@@ -100,12 +100,12 @@
 
 			<? if(count($successes) !== 0) { echo "<div style='display:none'>"; } ?>
 			    <form name='newUser' action="#register-form" method='post'>
-					<input type='text' maxlength="25" pattern=".{5,10}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
-					<input type='text' maxlength="25" required placeholder="Display Name" name='displayname' />
-					<input type='password' maxlength="50" required placeholder="Password" name='password' />
-					<input type='password' maxlength="50" required placeholder="Confirm Password" name='passwordc' />
-					<input type='email' placeholder="Email" required name='email' />
-					<input name='captcha' placeholder="Enter Text Shown Below" required type='text'>
+					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
+					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your display name must be between 5 and 25 characters in length" placeholder="Full Name" name='displayname' />
+					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password name must be between 8 and 50 characters in length" placeholder="Password" name='password' />
+					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your display name must be between 8 and 50 characters in length" placeholder="Confirm Password" name='passwordc' />
+					<input type='email' maxlength="50" placeholder="Email" required name='email' />
+					<input name='captcha' maxlength="5" placeholder="Enter Text Shown Below" required type='text'>
 					<img src='/sample-room/user/models/captcha.php'>
 					<div class="small-12 small-margin-top-1">
 						<input class="button" type='submit' value='Sign Up' />

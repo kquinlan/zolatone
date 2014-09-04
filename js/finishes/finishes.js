@@ -5,34 +5,31 @@ angular.module('finishes', ['ngRoute'])
 	$scope.colors = [
 		{
 			'name': 'PFX 01053',
-			'tags': [
-						'white', 
-						'neutral'
-					]
+			'color': 'white',
+			'tone': '',
+			'effect': 'neutral',
+			'new': false
 		},
 		{
 			'name': 'PFX 01064',
-			'tags': [
-						'gray', 
-						'neutral',
-						'cool'
-					]
+			'color': 'gray',
+			'tone': 'cool',
+			'effect': 'neutral',
+			'new': false
 		},
 		{
 			'name': 'PFX C3001',
-			'tags': [
-						'warm', 
-						'neutral',
-						'accent'
-					]
+			'color': 'brown',
+			'tone': 'warm',
+			'effect': 'neutral accent',
+			'new': false
 		},
 		{
 			'name': 'PFX 01036',
-			'tags': [
-						'green', 
-						'cool',
-						'accent'
-					]
+			'color': 'green',
+			'tone': 'cool',
+			'effect': 'accent',
+			'new': false
 		}
 	]
 

@@ -25,48 +25,50 @@
         <!-- Finishes -->
         <section class="row">
 
-            <div class="medium-8 small-11 columns small-centered small-padding-top-4">
+            <div class="small-11 columns small-centered small-padding-top-4">
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
                 <div class="small-margin-top-2 medium-8 small-centered columns">
                     <form>
                         <input ng-model="search.name" class="small-margin-0" type="text" placeholder="Search..." />
-                        <span class="text-smaller">Search for colors i.e. ‘PFX-10287’, ‘red’, ‘cool’, ‘neutral’</span>
+                        <span class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</span>
                         
-                        <div class="medium-4 columns">
-                        <label>Color:</label>
-                        <select ng-model="search.tags">
-                            <option value="">All</option>
-                            <option>White</option>
-                            <option>Gray</option>
-                            <option>Green</option>
-                        </select>
-                        </div>
+                        <div class="small-12 columns small-margin-top-1">
+                            <div class="medium-4 columns">
+                            <label>Color:</label>
+                            <select ng-model="search.color">
+                                <option value="">All</option>
+                                <option>White</option>
+                                <option>Gray</option>
+                                <option>Green</option>
+                            </select>
+                            </div>
 
-                        <div class="medium-4 columns">
-                        <label>Tone:</label>
-                        <select>
-                            <option value="">All</option>
-                            <option>Warm</option>
-                            <option>Cool</option>
-                        </select>
-                        </div>
+                            <div class="medium-4 columns">
+                            <label>Tone:</label>
+                            <select ng-model="search.tone">
+                                <option value="">All</option>
+                                <option>Warm</option>
+                                <option>Cool</option>
+                            </select>
+                            </div>
 
-                        <div class="medium-4 columns">
-                        <label>Effect:</label>
-                        <select>
-                            <option>All</option>
-                            <option>Accent</option>
-                            <option>Neutral</option>
-                        </select>
+                            <div class="medium-4 columns">
+                            <label>Effect:</label>
+                            <select ng-model="search.effect">
+                                <option value="">All</option>
+                                <option>Accent</option>
+                                <option>Neutral</option>
+                            </select>
+                            </div>
                         </div>
 
                     </form>
                 </div>
             </div>
 
-            <span ng-repeat="color in colors | filter:search:strict">{{ color.name }}<br /></span>
-
         </section>
+
+        <span ng-repeat="color in colors | filter:search:strict">{{ color.name }}<br /></span>
 
         <section class="row">
 

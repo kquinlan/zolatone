@@ -15,7 +15,7 @@
 
 		<div class="row">
 
-			<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Register</a></h4>
+			<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Sign Up</a></h4>
 
 			<!-- Login -->
 			<div class="login-form medium-6 columns small-centered">

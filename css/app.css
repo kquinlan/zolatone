@@ -278,7 +278,7 @@ nav.main {
 		padding: 0.55em;
 	}
 		.login-panel .login-switch a {
-			border-bottom: 2px solid #fff;
+			text-decoration: underline;
 			color: #fff;
 		}
 
