@@ -27,7 +27,7 @@
 
             <div class="small-11 columns small-centered small-padding-top-4">
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
-                <div class="small-margin-top-2 medium-8 small-centered columns">
+                <div class="small-margin-top-2 medium-9 small-centered columns">
                     <form>
                         <input ng-model="search.name" class="small-margin-0" type="text" placeholder="Search..." />
                         <span class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</span>
@@ -71,19 +71,21 @@
         </section>
 
         <!-- Finishes Selection -->
-        <section class="row small-padding-top-2">
-            <div class="small-11 columns small-centered small-padding-top-4">
-                <div class="medium-6 columns"></div>
+        <section class="row">
+            <div class="small-11 columns small-centered small-padding-top-1">
+                <div class="medium-5 columns small-margin-bottom-2">
+                    <div class="background-primary" style="padding-bottom: 94%"></div>
+                </div>
 
-                <div class="medium-6 columns">
+                <div class="medium-7 columns small-margin-bottom-2">
 
-                    <div class="finish-thumb small-4 medium-3 column background-primary" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage*pageSize | limitTo:pageSize">
-                        <span class="text-smaller"></span>
+                    <div class="finish-thumb small-4 medium-3 large-3 column" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage*pageSize | limitTo:pageSize">
+                        <div style="width: 100%; height: 100%; background-size: cover" ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
                     </div>
 
-                    <div class="clear">
-                        <button ng-disabled="currentPage == 0" ng-click="prevPage()">Previous</button>
-                        <button ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">Next</button>
+                    <div ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
+                        <button class="arrow prev small" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
+                        <button class="arrow next small" ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">&#9658;</button>
                     </div>
 
                 </div>

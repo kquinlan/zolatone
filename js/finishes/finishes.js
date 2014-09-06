@@ -10,7 +10,7 @@ angular.module('finishes', ['ngRoute'])
     })
 
     $scope.currentPage = 0;
-    $scope.pageSize = 24;
+    $scope.pageSize = 12;
     $scope.numberOfPages=function(){
         return Math.ceil($scope.colors.length/$scope.pageSize);                
     }
@@ -24,11 +24,11 @@ angular.module('finishes', ['ngRoute'])
 })
 
 .filter('startFrom', function() {
-	    return function(input, start) {
-	        start = +start; //parse to int
-	        return input.slice(start);
-	    }
-	})
+    return function(input, start) {
+        start = +start; //parse to int
+        return input.slice(start);
+    }
+})
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
