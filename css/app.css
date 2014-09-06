@@ -504,3 +504,8 @@ nav.finishes ul {
 .finish-data p {
 	padding: 0.25em 0;
 }
+.finish-thumb {
+	border: 0.25em solid #fff;
+	padding: 0 !important;
+	height: 64px;
+}

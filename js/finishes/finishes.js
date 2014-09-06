@@ -9,7 +9,26 @@ angular.module('finishes', ['ngRoute'])
 
     })
 
+    $scope.currentPage = 0;
+    $scope.pageSize = 24;
+    $scope.numberOfPages=function(){
+        return Math.ceil($scope.colors.length/$scope.pageSize);                
+    }
+	
+	$scope.nextPage = function() {
+		$scope.currentPage = $scope.currentPage + 1;
+	}
+	$scope.prevPage = function() {
+		$scope.currentPage = $scope.currentPage - 1;
+	}
 })
+
+.filter('startFrom', function() {
+	    return function(input, start) {
+	        start = +start; //parse to int
+	        return input.slice(start);
+	    }
+	})
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.

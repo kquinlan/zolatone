@@ -35,7 +35,7 @@
                         <div class="small-12 columns small-margin-top-1">
                             <div class="medium-4 columns">
                             <label>Color:</label>
-                            <select ng-model="search.color">
+                            <select ng-model="search.color" ng-change="currentPage = 0">
                                 <option value="">All</option>
                                 <option>White</option>
                                 <option>Gray</option>
@@ -45,7 +45,7 @@
                             </select>
                             </div>
 
-                            <div class="medium-4 columns">
+                            <div class="medium-4 columns" ng-change="currentPage = 0">
                             <label>Tone:</label>
                             <select ng-model="search.tone">
                                 <option value="">All</option>
@@ -56,7 +56,7 @@
 
                             <div class="medium-4 columns">
                             <label>Effect:</label>
-                            <select ng-model="search.effect">
+                            <select ng-model="search.effect" ng-change="currentPage = 0">
                                 <option value="">All</option>
                                 <option>Accent</option>
                                 <option>Neutral</option>
@@ -69,9 +69,27 @@
             </div>
 
         </section>
-        <div ng-repeat="color in colors | filter:search:strict" style="display: inline-block; width: 72px; height: 72px; margin: 0.5em; background-color: #f2f2f2;">
-            <span class="text-smaller">{{ color.finish }}<br />{{ color.name }}</span>
-        </div>
+
+        <!-- Finishes Selection -->
+        <section class="row small-padding-top-2">
+            <div class="small-11 columns small-centered small-padding-top-4">
+                <div class="medium-6 columns"></div>
+
+                <div class="medium-6 columns">
+
+                    <div class="finish-thumb small-4 medium-3 column background-primary" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage*pageSize | limitTo:pageSize">
+                        <span class="text-smaller"></span>
+                    </div>
+
+                    <div class="clear">
+                        <button ng-disabled="currentPage == 0" ng-click="prevPage()">Previous</button>
+                        <button ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">Next</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
         <section class="row">
 
