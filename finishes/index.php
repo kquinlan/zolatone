@@ -29,38 +29,44 @@
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
                 <div class="small-margin-top-2 medium-9 small-centered columns">
                     <form>
-                        <input ng-model="search.name" class="small-margin-0" type="text" placeholder="Search..." />
+                        <input ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
                         <span class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</span>
                         
                         <div class="small-12 columns small-margin-top-1">
                             <div class="medium-4 columns">
-                            <label>Color:</label>
-                            <select ng-model="search.color" ng-change="toStart()">
-                                <option value="">All</option>
-                                <option>White</option>
-                                <option>Gray</option>
-                                <option>Green</option>
-                                <option>Orange</option>
-                                <option>Red</option>
-                            </select>
+                                <label>Color:</label>
+                                <select ng-model="search.color" ng-change="toStart()">
+                                    <option value="">All</option>
+                                    <option>Black</option>
+                                    <option>White</option>
+                                    <option>Gray</option>
+                                    <option>Red</option>
+                                    <option>Pink</option>
+                                    <option>Orange</option>
+                                    <option>Yellow</option>
+                                    <option>Green</option>
+                                    <option>Blue</option>
+                                    <option>Purple</option>
+                                    <option>Gold</option>
+                                </select>
                             </div>
 
                             <div class="medium-4 columns">
-                            <label>Tone:</label>
-                            <select ng-model="search.tone" ng-change="toStart()">
-                                <option value="">All</option>
-                                <option>Warm</option>
-                                <option>Cool</option>
-                            </select>
+                                <label>Tone:</label>
+                                <select ng-model="search.tone" ng-change="toStart()">
+                                    <option value="">All</option>
+                                    <option>Warm</option>
+                                    <option>Cool</option>
+                                </select>
                             </div>
 
                             <div class="medium-4 columns">
-                            <label>Effect:</label>
-                            <select ng-model="search.effect" ng-change="toStart()">
-                                <option value="">All</option>
-                                <option>Accent</option>
-                                <option>Neutral</option>
-                            </select>
+                                <label>Effect:</label>
+                                <select ng-model="search.effect" ng-change="toStart()">
+                                    <option value="">All</option>
+                                    <option>Accent</option>
+                                    <option>Neutral</option>
+                                </select>
                             </div>
                         </div>
 
@@ -79,7 +85,7 @@
 
                 <div class="medium-7 columns small-margin-bottom-2">
 
-                    <div class="finish-thumb small-4 medium-3 large-3 column" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage*pageSize | limitTo:pageSize">
+                    <div class="finish-thumb small-4 medium-3 large-3 column" data="{{ color.name }}" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
                         <div style="width: 100%; height: 100%; background-size: cover" ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
                     </div>
 
@@ -117,10 +123,10 @@
 
         <? require_once '../common/footer.php' ?>
 
+        <script src="/js/vendor/jquery.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.min.js"></script>
 
-        <script src="/js/vendor/jquery.js"></script>
         <script src="/js/transit.min.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
