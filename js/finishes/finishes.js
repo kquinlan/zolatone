@@ -29,43 +29,43 @@ angular.module('finishes', ['ngRoute'])
 		when('/counterpointe', {
 		templateUrl: 'partials/counterpointe.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'counterpointe';
+			$scope.search.finish = 'counterpointe';
 		}
 	}).
 		when('/lluminations', {
 		templateUrl: 'partials/lluminations.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'lluminations';
+			$scope.search.finish = 'lluminations';
 		}
 	}).
 		when('/metal', {
 		templateUrl: 'partials/metal.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'metal';
+			$scope.search.finish = 'metal';
 		}
 	}).
 		when('/polomyx', {
 		templateUrl: 'partials/polomyx.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'polomyx';
+			$scope.search.finish = 'polomyx';
 		}
 	}).
 		when('/polomyx-airless', {
 		templateUrl: 'partials/polomyx-airless.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'polomyx-airless';
+			$scope.search.finish = 'polomyx-airless';
 		}
 	}).
 		when('/flex', {
 		templateUrl: 'partials/flex.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'flex';
+			$scope.search.finish = 'flex';
 		}
 	}).
 		when('/light-vision', {
 		templateUrl: 'partials/light-vision.tpl.html',
 		controller: function($scope) {
-			$scope.finish = 'light-vision';
+			$scope.search.finish = 'light-vision';
 		}
 	}).
 		otherwise({

@@ -27,6 +27,7 @@
 
             <div class="small-11 columns small-centered small-padding-top-4">
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
+
                 <div class="small-margin-top-2 medium-9 small-centered columns">
                     <form>
                         <input ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
@@ -80,6 +81,19 @@
         <!-- Finishes Selection -->
         <section class="row">
             <div class="small-11 columns small-centered small-padding-top-1">
+
+                <nav class="finishes small-margin-top-1 small-margin-bottom-1 text-center">
+                    <ul>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/counterpointe">Counterpointe</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/flex">Flex</a></li>
+                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
+                    </ul>
+                </nav>
+
                 <div class="medium-5 columns small-margin-bottom-2">
                     <div class="selected-color background-primary" style="padding-bottom: 94%"></div>
                 </div>
