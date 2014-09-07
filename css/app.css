@@ -504,16 +504,23 @@ nav.finishes ul {
 .finish-data p {
 	padding: 0.25em 0;
 }
-.finish-thumb {
+.color-thumb {
 	border: 0.25em solid #fff;
 	padding: 0 !important;
-	height: 80px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+	.color-thumb div {
+		padding-bottom: 89.02%;
+		width: 100%; 
+		background-size: 200%
+	}
+.selected-color {
+	border: 0.25em solid #fff;
 }
 
 .arrow {

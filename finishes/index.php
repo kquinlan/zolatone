@@ -43,11 +43,12 @@
                                     <option>Red</option>
                                     <option>Pink</option>
                                     <option>Orange</option>
+                                    <option>Gold</option>
                                     <option>Yellow</option>
+                                    <option>Brown</option>
                                     <option>Green</option>
                                     <option>Blue</option>
                                     <option>Purple</option>
-                                    <option>Gold</option>
                                 </select>
                             </div>
 
@@ -80,13 +81,13 @@
         <section class="row">
             <div class="small-11 columns small-centered small-padding-top-1">
                 <div class="medium-5 columns small-margin-bottom-2">
-                    <div class="background-primary" style="padding-bottom: 94%"></div>
+                    <div class="selected-color background-primary" style="padding-bottom: 94%"></div>
                 </div>
 
                 <div class="medium-7 columns small-margin-bottom-2">
 
-                    <div class="finish-thumb small-4 medium-3 large-3 column" data="{{ color.name }}" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
-                        <div style="width: 100%; height: 100%; background-size: cover" ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
+                    <div class="color-thumb small-4 medium-3 large-3 column" data="{{ color.name }}" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
                     </div>
 
                     <div ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
