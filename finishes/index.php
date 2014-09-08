@@ -42,7 +42,7 @@
 
                 <div class="small-margin-top-2 medium-9 small-centered columns">
                     <form>
-                        <input ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
+                        <input name="colorFilter" ng-required="true" ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
                         <span class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</span>
                         
                         <div class="small-12 columns small-margin-top-1">
