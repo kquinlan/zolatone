@@ -100,6 +100,8 @@
 
                 <div class="medium-7 columns">
 
+                    <p ng-show="(colors | filter:search:strict).length === 0">Sorry. We couldn't find that one.</p>
+
                     <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color)" class="color-thumb small-4 medium-3 large-3 column" data="{{ color.name }}" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
                         <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
                     </div>
