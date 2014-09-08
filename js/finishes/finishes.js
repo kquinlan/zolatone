@@ -22,6 +22,10 @@ angular.module('finishes', ['ngRoute'])
 	$scope.toStart = function() {
 		$scope.currentPage = 0;
 	}
+
+	$scope.select = function(color) {
+		$scope.selectedColor = color;
+	}
 })
 
 .config(['$routeProvider', function($routeProvider) {

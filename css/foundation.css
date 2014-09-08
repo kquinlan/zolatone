@@ -2464,10 +2464,9 @@ button, .button {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background-color: #f79320;
-    border-color: #d77708;
     color: white;
     cursor: default;
-    opacity: 0.7;
+    opacity: 0.3;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #d77708; }
@@ -2477,7 +2476,6 @@ button, .button {
       background-color: #f79320; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #907f6f;
-      border-color: #736659;
       color: white;
       cursor: default;
       opacity: 0.7;
