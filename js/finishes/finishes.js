@@ -7,26 +7,31 @@ angular.module('finishes', ['ngRoute'])
 		$scope.colors = data;
     })
 
-    $scope.currentPage = 0;
-    $scope.pageSize = 12;
+    $scope.currentPage = 0; // Init page to load
+    $scope.pageSize = 12; // Number of colors for each page
 
-    $scope.numberOfPages = function(){
-        return Math.ceil($scope.colors.length/$scope.pageSize);                
-    }
+    // Navigate forward one page
 	$scope.nextPage = function() {
 		$scope.currentPage = $scope.currentPage + 1;
 	}
+	// Navigate back one page
 	$scope.prevPage = function() {
 		$scope.currentPage = $scope.currentPage - 1;
 	}
+	// Set pagination to start
 	$scope.toStart = function() {
 		$scope.currentPage = 0;
 	}
+	// Load color to enlarged square
 	$scope.select = function(color) {
 		$scope.selectedColor = color;
 	}
-
-
+	// Remove finish filter based on form input
+	$scope.toggleAll = function(finish) {
+		$scope.$watch('colorFilter.$valid', function(validity) { 
+			$scope.search.finish = validity ? '' : finish;
+		});
+	}
 })
 
 .config(['$routeProvider', function($routeProvider) {
@@ -34,43 +39,43 @@ angular.module('finishes', ['ngRoute'])
 		when('/counterpointe', {
 		templateUrl: 'partials/counterpointe.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'counterpointe';
+			$scope.toggleAll('counterpointe');
 		}
 	}).
 		when('/lluminations', {
 		templateUrl: 'partials/lluminations.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'lluminations';
+			$scope.toggleAll('lluminations');
 		}
 	}).
 		when('/metal', {
 		templateUrl: 'partials/metal.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'metal';
+			$scope.toggleAll('metal');
 		}
 	}).
 		when('/polomyx', {
 		templateUrl: 'partials/polomyx.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'polomyx';
+			$scope.toggleAll('polomyx');
 		}
 	}).
 		when('/polomyx-airless', {
 		templateUrl: 'partials/polomyx-airless.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'polomyx-airless';
+			$scope.toggleAll('polomyx-airless');
 		}
 	}).
 		when('/flex', {
 		templateUrl: 'partials/flex.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'flex';
+			$scope.toggleAll('flex');
 		}
 	}).
 		when('/light-vision', {
 		templateUrl: 'partials/light-vision.tpl.html',
 		controller: function($scope) {
-			$scope.search.finish = 'light-vision';
+			$scope.toggleAll('light-vision');
 		}
 	}).
 		otherwise({
