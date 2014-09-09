@@ -48,6 +48,7 @@
                             
                             <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
                                 <p class="small-margin-0 text-smaller" ng-repeat="color in colors | filter:search:strict | limitTo : 5"><a ng-click="select(color)" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
+                                <p class="small-margin-0 text-smaller" ng-show="(colors | filter:search:strict).length === 0"><i>No results found.</i></p>
                             </div>
                             
                         </div>
@@ -107,7 +108,7 @@
 
                 <div class="medium-7 columns">
 
-                    <p ng-show="(colors | filter:search:strict).length === 0">Sorry. We couldn't find that one.</p>
+                    <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
 
                     <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color)" class="color-thumb small-4 medium-3 large-3 column" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
                         <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
