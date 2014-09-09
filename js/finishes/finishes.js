@@ -26,10 +26,13 @@ angular.module('finishes', ['ngRoute'])
 	$scope.select = function(color) {
 		$scope.selectedColor = color;
 	}
-	// Remove finish filter based on form input
+	// Remove search filters based on form input
 	$scope.toggleAll = function(finish) {
 		$scope.$watch('colorFilter.$valid', function(validity) { 
 			$scope.search.finish = validity ? '' : finish;
+			$scope.search.color = '';
+			$scope.search.tone = '';
+			$scope.search.effect = '';
 		});
 	}
 })
