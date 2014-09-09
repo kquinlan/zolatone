@@ -40,70 +40,77 @@
                     </ul>
                 </nav>
 
-                <div class="small-margin-top-2 medium-9 small-centered columns">
-                    <form name="colorFilter">
-                        <input ng-required="true" ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
-                        <span class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</span>
-                        
-                        <div class="small-12 columns small-margin-top-1">
-                            <div class="medium-4 columns">
-                                <label>Color:</label>
-                                <select ng-model="search.color" ng-change="toStart()">
-                                    <option value="">All</option>
-                                    <option>Black</option>
-                                    <option>White</option>
-                                    <option>Gray</option>
-                                    <option>Red</option>
-                                    <option>Pink</option>
-                                    <option>Orange</option>
-                                    <option>Gold</option>
-                                    <option>Yellow</option>
-                                    <option>Brown</option>
-                                    <option>Green</option>
-                                    <option>Blue</option>
-                                    <option>Purple</option>
-                                </select>
+                <form name="colorFilter">
+                    <div class="small-12 columns small-margin-top-2">
+                        <div class="medium-6 columns small-padding-bottom-1">
+                            <label class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</label>
+                            <input ng-required="true" maxlength="15" ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
+                            
+                            <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
+                                <p class="small-margin-0 text-smaller" ng-repeat="color in colors | filter:search:strict | limitTo : 5"><a ng-click="select(color)" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
                             </div>
-
-                            <div class="medium-4 columns">
-                                <label>Tone:</label>
-                                <select ng-model="search.tone" ng-change="toStart()">
-                                    <option value="">All</option>
-                                    <option>Warm</option>
-                                    <option>Cool</option>
-                                </select>
-                            </div>
-
-                            <div class="medium-4 columns">
-                                <label>Effect:</label>
-                                <select ng-model="search.effect" ng-change="toStart()">
-                                    <option value="">All</option>
-                                    <option>Accent</option>
-                                    <option>Neutral</option>
-                                </select>
-                            </div>
+                            
                         </div>
 
-                    </form>
-                </div>
+                        <div class="medium-2 columns">
+                            <label class="text-smaller">Color:</label>
+                            <select ng-model="search.color" ng-change="toStart()">
+                                <option value="">All</option>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Gray</option>
+                                <option>Red</option>
+                                <option>Pink</option>
+                                <option>Orange</option>
+                                <option>Gold</option>
+                                <option>Yellow</option>
+                                <option>Brown</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                                <option>Purple</option>
+                            </select>
+                        </div>
+
+                        <div class="medium-2 columns">
+                            <label class="text-smaller">Tone:</label>
+                            <select ng-model="search.tone" ng-change="toStart()">
+                                <option value="">All</option>
+                                <option>Warm</option>
+                                <option>Cool</option>
+                            </select>
+                        </div>
+
+                        <div class="medium-2 columns">
+                            <label class="text-smaller">Effect:</label>
+                            <select ng-model="search.effect" ng-change="toStart()">
+                                <option value="">All</option>
+                                <option>Accent</option>
+                                <option>Neutral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
 
         </section>
 
         <!-- Finishes Selection -->
         <section class="row">
-            <div class="small-11 columns small-centered small-padding-top-1">
+            <div class="small-11 columns small-centered small-padding-top-2">
 
                 <div class="medium-5 columns small-margin-bottom-2">
                     <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 94%"></div>
+                    <span class="color-primary"><b>{{ selectedColor.name }}</b></span>
                 </div>
 
                 <div class="medium-7 columns">
 
                     <p ng-show="(colors | filter:search:strict).length === 0">Sorry. We couldn't find that one.</p>
 
-                    <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color)" class="color-thumb small-4 medium-3 large-3 column" data="{{ color.name }}" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
-                        <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
+                    <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color)" class="color-thumb small-4 medium-3 large-3 column" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                     </div>
 
                     <div ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
