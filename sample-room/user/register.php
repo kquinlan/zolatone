@@ -90,15 +90,13 @@
 		<div id="register-form" class="small-11 medium-8 large-6 columns small-centered small-padding-top-4 small-padding-bottom-4">
 			<h1 class="color-primary text-center small-margin-bottom-1">Sign Up</h1>
 
-			<? if(count($errors) == 0) { echo "<div style='display:none'>"; } ?>
-				<div class="register-errors content-border small-padding-top-1 small-margin-bottom-1">
-					<ul class="text-smaller">
-						<? echo resultBlock($errors,$successes); ?>
-					</ul>
-				</div>
-			<? if(count($errors) == 0) { echo "</div>"; } ?>
+			<div class="register-errors content-border small-padding-top-1 small-margin-bottom-1">
+				<ul class="text-smaller">
+					<? echo resultBlock($errors,$successes); ?>
+				</ul>
+			</div>
 
-			<? if(count($successes) !== 0) { echo "<div style='display:none'>"; } ?>
+			<? if(count($successes) > 0) { echo "<div style='display:none'>"; } ?>
 			    <form name='newUser' action="#register-form" method='post'>
 					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
 					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your display name must be between 5 and 25 characters in length" placeholder="Full Name" name='displayname' />
@@ -111,7 +109,7 @@
 						<input class="button" type='submit' value='Sign Up' />
 					</div>
 				</form>
-			<? if(count($successes) !== 0) { echo "</div>"; } ?>
+			<? if(count($successes) > 0) { echo "</div>"; } ?>
 
 		</div>
 
