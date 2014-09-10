@@ -102,7 +102,8 @@
 
                 <div class="medium-5 columns small-padding-bottom-1">
                     <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 97.77%;"></div>
-                    <p class="color-primary" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
+                    <p class="color-primary left text-smaller small-margin-0" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
+                    <p class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b><a>Save to Sample Room</a></b></p>
                 </div>
 
                 <div class="medium-7 columns small-padding-0">
