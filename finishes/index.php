@@ -30,27 +30,26 @@
 
                 <nav class="finishes text-center">
                     <ul>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/counterpointe">Counterpointe</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/flex">Flex</a></li>
-                        <li ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'counterpointe' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/counterpointe">Counterpointe</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lluminations' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'metal' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx-airless' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'flex' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/flex">Flex</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'light-vision' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
                     </ul>
                 </nav>
-
+            
                 <form name="colorFilter">
                     <div class="small-12 columns small-margin-top-2">
                         <div class="medium-6 columns small-padding-bottom-1">
-                            <label class="text-smaller">Search for colors by name i.e. ‘PFX-10287’</label>
+                            <label class="text-smaller">Search all colors by name i.e. ‘PFX-10287’</label>
                             <input ng-required="true" maxlength="15" ng-model="search.name" ng-change="toStart()" class="small-margin-0" type="text" placeholder="Search..." />
                             
                             <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
-                                <p class="small-margin-0 text-smaller" ng-repeat="color in colors | filter:search:strict | limitTo : 5"><a ng-click="select(color)" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
+                                <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | limitTo : 5"><a ng-click="select(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
                                 <p class="small-margin-0 text-smaller" ng-show="(colors | filter:search:strict).length === 0"><i>No results found.</i></p>
                             </div>
-                            
                         </div>
 
                         <div class="medium-2 columns">
@@ -101,21 +100,23 @@
         <section class="row">
             <div class="small-11 columns small-centered small-padding-top-2">
 
-                <div class="medium-5 columns small-margin-bottom-2">
-                    <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 94%"></div>
-                    <span class="color-primary"><b>{{ selectedColor.name }}</b></span>
+                <div class="medium-5 columns small-padding-bottom-1">
+                    <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 97.77%;"></div>
+                    <p class="color-primary" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
                 </div>
 
-                <div class="medium-7 columns">
+                <div class="medium-7 columns small-padding-0">
 
                     <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
 
-                    <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color)" class="color-thumb small-4 medium-3 large-3 column" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
-                        <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
+                    <div class="small-12 columns color-thumbs">
+                        <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
+                            <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
+                        </div>
                     </div>
 
-                    <div ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
-                        <button class="arrow prev small" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
+                    <div class="text-center small-12 columns" ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
+                        <button class="arrow prev small left" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
                         <button class="arrow next small right" ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">&#9658;</button>
                     </div>
 

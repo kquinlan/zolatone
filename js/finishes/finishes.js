@@ -35,6 +35,8 @@ angular.module('finishes', ['ngRoute'])
 			$scope.search.effect = '';
 		});
 	}
+	// inject math to scope
+	$scope.Math = window.Math;
 })
 
 .config(['$routeProvider', function($routeProvider) {
