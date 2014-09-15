@@ -49,7 +49,7 @@
                 <div class="small-padding-top-1 text-center">
                     <?
                         if(!isUserloggedIn()) {
-                            echo '<a class="login-button button">Log in / Sign Up</a>';
+                            echo '<a href="#top" class="login-button button">Log in / Sign Up</a>';
                         } else {
                             echo '<a href="/finishes" class="button">Take me to the Finishes</a>';
                         }

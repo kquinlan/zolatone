@@ -18,11 +18,12 @@
 			<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Sign Up</a></h4>
 
 			<!-- Login -->
-			<div class="login-form medium-6 columns small-centered">
+			<div class="login-form medium-6 columns small-centered color-white">
 				<form method='post' action="/sample-room/user/login.php">
 		        	<input type='text' placeholder="Username" name='username' />
 		        	<input class="small-6 columns" type='password' placeholder="Password" name='password' />
 		        	<input class="button secondary" type='submit' value='Login' />
+		        	<a class="right" href="/sample-room/user/forgot-password.php">Forgot Password</a>
 		        </form>
 	        </div>
 
@@ -126,6 +127,7 @@
 									echo '<li><a class="login-button">Log In or Sign Up</a></li>';
 								} else {
 									echo '<li><a href="/sample-room/user/logout.php">Log Out</a></li>';
+									echo '<li><a href="/sample-room/user/user_settings.php">My Account Settings</a></li>';
 								}
 							?>
 							<li><a href="/sample-room">My Saved Samples</a></li>
@@ -181,6 +183,7 @@
 							echo '<li><a class="login-button">Log In or Sign Up</a></li>';
 						} else {
 							echo '<li><a href="/sample-room/user/logout.php">Log Out</a></li>';
+							echo '<li><a href="/sample-room/user/user_settings.php">My Account Settings</a></li>';
 						}
 					?>
 					<li><a href="/sample-room">My Saved Samples</a></li>
@@ -207,32 +210,16 @@
 	</div>
 
 	<!-- Login -->
-	<h4 class="small-margin-left-1 color-white">Login</h4>
+	<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Sign Up</a></h4>
 	<div class="small-12 small-centered columns small-margin-top-0 color-white">
 		<form method='post' action="../sample-room/user/login.php">
 	        <input type='text' placeholder="Username" name='username' />
 	        <input type='password' placeholder="Password" name='password' />
 	        <input class="button secondary" type='submit' value='Login' />
+	        <a class="right" href="/sample-room/user/forgot-password.php">Forgot Password</a>
         </form>
         <? echo resultBlock($errors,$successes); ?>
     </div>
-
-    <!-- Register -->
-    <h4 class="small-margin-left-1 color-white">Register</h4>
-    <div class="small-12 small-centered columns color-white">
-        <form name='newUser' action="../sample-room/user/register.php" method='post'>
-			<input type='text' placeholder="Username" name='username' />
-			<input type='text' placeholder="Display Name" name='displayname' />
-			<input type='password' placeholder="Password" name='password' />
-			<input type='password' placeholder="Confirm Password" name='passwordc' />
-			<input type='email' placeholder="Email" name='email' />
-			<input name='captcha' placeholder="Enter Text Shown Below" type='text'>
-			<img class="" src='/sample-room/user/models/captcha.php'>
-			<div class="small-12 small-margin-top-1">
-				<input class="button secondary" type='submit' value='Register' />
-			</div>
-		</form>
-	</div>
 </section>
 
 <!-- Mobile Subscription Section -->

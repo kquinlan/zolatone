@@ -259,10 +259,9 @@ nav.main {
 .login-panel {
 	padding: 1em;
 	display: none;
-	position: fixed;
+	position: absolute;
 	z-index: 9999;
-	left: 0;
-	right: 0;
+	width: 100%;
 }
 .login-panel.show {
 	display: block;

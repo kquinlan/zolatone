@@ -90,8 +90,8 @@
 		<div id="register-form" class="small-11 medium-8 large-6 columns small-centered small-padding-top-4 small-padding-bottom-4">
 			<h1 class="color-primary text-center small-margin-bottom-1">Sign Up</h1>
 
-			<div class="register-errors content-border small-padding-top-1 small-margin-bottom-1">
-				<ul class="text-smaller">
+			<div class="small-padding-top-1 small-margin-bottom-1">
+				<ul class="text-smaller color-primary">
 					<? echo resultBlock($errors,$successes); ?>
 				</ul>
 			</div>
@@ -100,8 +100,8 @@
 			    <form name='newUser' action="#register-form" method='post'>
 					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
 					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your display name must be between 5 and 25 characters in length" placeholder="Full Name" name='displayname' />
-					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password name must be between 8 and 50 characters in length" placeholder="Password" name='password' />
-					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your display name must be between 8 and 50 characters in length" placeholder="Confirm Password" name='passwordc' />
+					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="Password" name='password' />
+					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="Confirm Password" name='passwordc' />
 					<input type='email' maxlength="50" placeholder="Email" required name='email' />
 					<input name='captcha' maxlength="5" placeholder="Enter Text Shown Below" required type='text'>
 					<img src='/sample-room/user/models/captcha.php'>
