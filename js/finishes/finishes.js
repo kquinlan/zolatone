@@ -2,6 +2,7 @@ angular.module('finishes', ['ngRoute'])
 
 .controller('finishesCtrl', function($scope, $rootScope, $http) {
 
+	// Get all colors file
 	$http({method: 'GET', url: '/js/finishes/colors.json'}).
     success(function(data, status, headers, config) {
 		$scope.colors = data;
@@ -37,6 +38,7 @@ angular.module('finishes', ['ngRoute'])
 	}
 })
 
+// Configure SPA routes
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/counterpointe', {
@@ -86,6 +88,7 @@ angular.module('finishes', ['ngRoute'])
 	});
 }])
 
+// Filter to find pagination start point
 .filter('startFrom', function() {
     return function(input, start) {
         start = +start; //parse to int
