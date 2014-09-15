@@ -115,12 +115,12 @@
 
                 <div class="medium-7 columns small-padding-0">
 
-                    <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
-
                     <div class="small-12 columns color-thumbs">
                         <div ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
                             <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                         </div>
+
+                        <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
                     </div>
 
                     <div class="text-center small-12 columns" ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
