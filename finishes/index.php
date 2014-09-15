@@ -47,12 +47,10 @@
                             <input ng-required="true" maxlength="15" ng-model="search.name" ng-change="toStart()" class="small-margin-top-1 small-margin-bottom-0" type="text" placeholder="Search..." />
                             <label class="text-smaller">Search all colors by name i.e. ‘PFX-10287’</label>
                             <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
-                                <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | limitTo : 5"><a ng-click="select(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
+                                <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | limitTo : 5"><a ng-click="select(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
                                 <p class="small-margin-0 text-smaller" ng-show="(colors | filter:search:strict).length === 0"><i>No results found.</i></p>
                             </div>
                         </div>
-
-                        
 
                         <div class="medium-2 columns">
                             <label class="text-smaller">Color:</label>
@@ -120,7 +118,7 @@
                     <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
 
                     <div class="small-12 columns color-thumbs">
-                        <div ng-init="select((colors | filter:search:strict)[0])" ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <div ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
                             <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                         </div>
                     </div>
