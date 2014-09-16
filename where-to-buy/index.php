@@ -49,6 +49,8 @@
                     </div>
                 </form>
 
+                <p class="text-smaller" ng-show="zipCode.$valid && (distributors | filter:search).length === 0">Sorry, we couldn't find your distributor. Please contact our customer service team for more info.</p>
+
                 <div ng-show="zipCode.$valid" class="small-12 medium-7 columns distributor">
                     <div ng-repeat="distributor in distributors | filter:search:strict" class="small-padding-bottom-2">
                         <h4>{{ distributor.name }}</h4>
