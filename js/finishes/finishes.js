@@ -3,10 +3,18 @@ angular.module('finishes', ['ngRoute'])
 .controller('finishesCtrl', function($scope, $rootScope, $http) {
 
 	// Get all colors file
-	$http({method: 'GET', url: '/js/finishes/colors.json'}).
-    success(function(data, status, headers, config) {
-		$scope.colors = data;
-    })
+
+		$http({
+			method: 'GET', 
+			url: '/finishes/getSamples.php'
+		}).
+	    success(function(data, status, headers, config) {
+	    	$scope.colors = data;
+	    	console.log(data);
+	    }).
+	    error(function(data, status, headers, config) {
+	    	console.log(data);
+	    });
 
     $scope.currentPage = 0; // Init page to load
     $scope.pageSize = 12; // Number of colors for each page
