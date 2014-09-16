@@ -1,6 +1,4 @@
 <?php 
-	session_start();
-
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/db-settings.php");
 
 	$query = "select * from zol_samples";

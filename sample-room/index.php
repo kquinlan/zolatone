@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
     </head>
-    <body>
+    <body ng-controller="sampleRoomCtrl">
 
         <? require_once '../common/header.php' ?>
 
@@ -42,11 +42,11 @@
                     }
                 ?>
 
-                <!-- 
-                    TODO: Collect saved sample data for current user and display here 
-                    Get sample data for current user from backend and import as JSON for 
-                    manipulation via Angular.
-                -->
+                <div class="small-12 columns small-margin-bottom-2">
+                    <div class="color-thumb small-4 medium-3 large-3 columns left" ng-repeat="color in userColors | orderBy:'name'">
+                        <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
+                    </div>
+                </div>
 
                 <div class="small-padding-top-1 text-center">
                     <?
