@@ -17,8 +17,8 @@
 			<!-- Login -->
 			<div class="login-form medium-6 columns small-centered color-white">
 				<form method='post' action="/sample-room/user/login.php#login-form">
-		        	<input type='text' placeholder="Username" name='username' />
-		        	<input class="small-6 columns" type='password' placeholder="Password" name='password' />
+		        	<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
+					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="Password" name='password' />
 		        	<input class="button secondary" type='submit' value='Login' />
 		        	<a class="right" href="/sample-room/user/forgot-password.php">Forgot Password</a>
 		        </form>
@@ -209,13 +209,12 @@
 	<!-- Login -->
 	<h4 class="color-white text-center small-margin-bottom-2 login-switch">Login or <a href="/sample-room/user/register.php" class="register">Sign Up</a></h4>
 	<div class="small-12 small-centered columns small-margin-top-0 color-white">
-		<form method='post' action="../sample-room/user/login.php">
-	        <input type='text' placeholder="Username" name='username' />
-	        <input type='password' placeholder="Password" name='password' />
+		<form method='post' action="/sample-room/user/login.php#login-form">
+	        <input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
+			<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="Password" name='password' />
 	        <input class="button secondary" type='submit' value='Login' />
 	        <a class="right" href="/sample-room/user/forgot-password.php">Forgot Password</a>
         </form>
-        <? echo resultBlock($errors,$successes); ?>
     </div>
 </section>
 
