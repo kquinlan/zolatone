@@ -1,4 +1,5 @@
-<!-- index.php -->
+<? require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/config.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en" ng-app="finishes">
     <head>
@@ -42,9 +43,9 @@
                 <form name="colorFilter">
                     <div class="small-12 columns small-margin-top-2">
                         <div class="medium-4 columns small-padding-bottom-1">
-                            
                             <input ng-required="true" maxlength="15" ng-model="search.name" ng-change="toStart()" class="small-margin-top-1 small-margin-bottom-0" type="text" placeholder="Search..." />
                             <label class="text-smaller">Search all colors by name i.e. ‘PFX-10287’</label>
+
                             <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
                                 <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | limitTo : 5"><a ng-click="select(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
                                 <p class="small-margin-0 text-smaller" ng-show="(colors | filter:search:strict).length === 0"><i>No results found.</i></p>

@@ -1,4 +1,5 @@
-<!-- index.php -->
+<? require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/config.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en" ng-app="zipCodes">
     <head>

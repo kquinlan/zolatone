@@ -1,6 +1,3 @@
-<? require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/config.php") ?>
-
-<!-- header.php -->
 <header>
 
 <!-- Main Navigation -->
@@ -19,7 +16,7 @@
 
 			<!-- Login -->
 			<div class="login-form medium-6 columns small-centered color-white">
-				<form method='post' action="/sample-room/user/login.php">
+				<form method='post' action="/sample-room/user/login.php#login-form">
 		        	<input type='text' placeholder="Username" name='username' />
 		        	<input class="small-6 columns" type='password' placeholder="Password" name='password' />
 		        	<input class="button secondary" type='submit' value='Login' />
