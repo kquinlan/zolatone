@@ -30,10 +30,12 @@
 
 		# JSON-encode the response
 		echo $json_response = json_encode($arr);
+
 	} 
 
 	else {
 		echo "You are not logged in";
 	}
 
+	
 ?>

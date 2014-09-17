@@ -43,6 +43,20 @@ angular.module('finishes', ['ngRoute'])
 			$scope.search.effect = '';
 		});
 	}
+	// Save the sample selected
+	$scope.saveSample = function(color) {
+		// Get all colors file
+		$http({
+			method: 'GET', 
+			url: '/finishes/saveSample.php?color=' + color 
+		}).
+	    success(function(data, status, headers, config) {
+	    	console.log(data);
+	    }).
+	    error(function(data, status, headers, config) {
+	    	console.log(data);
+	    });
+	} 
 })
 
 // Configure SPA routes
