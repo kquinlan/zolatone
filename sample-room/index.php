@@ -37,17 +37,13 @@
                 <?
                     if(isUserLoggedIn()) {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
+                        require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/userSamples.php");
                     } else {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">Log In to See Your Saved Samples</h3>';
                     }
                 ?>
 
-                <div class="small-12 columns small-margin-bottom-2">
-                    <div class="color-thumb small-4 medium-4 large-4 columns left" ng-repeat="color in userColors | orderBy:'name'">
-                        <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
-                        <span class="color-primary text-smaller">{{ color.name }}</span>
-                    </div>
-                </div>
+                
 
                 <div class="small-padding-top-1 text-center">
                     <?

@@ -9,10 +9,6 @@ angular.module('finishes', ['ngRoute'])
 	}).
     success(function(data, status, headers, config) {
     	$scope.colors = data;
-    	console.log(data);
-    }).
-    error(function(data, status, headers, config) {
-    	console.log(data);
     });
 
     $scope.currentPage = 0; // Init page to load
@@ -51,10 +47,7 @@ angular.module('finishes', ['ngRoute'])
 			url: '/finishes/saveSample.php?color=' + color 
 		}).
 	    success(function(data, status, headers, config) {
-	    	console.log(data);
-	    }).
-	    error(function(data, status, headers, config) {
-	    	console.log(data);
+	    	
 	    });
 	} 
 })
@@ -66,6 +59,7 @@ angular.module('finishes', ['ngRoute'])
 		templateUrl: 'partials/counterpointe.tpl.html',
 		controller: function($scope) {
 			$scope.toggleAll('counterpointe');
+			$scope.selectedColor = $scope.colors[0];
 		}
 	}).
 		when('/lluminations', {
@@ -112,6 +106,7 @@ angular.module('finishes', ['ngRoute'])
 // Filter to find pagination start point
 .filter('startFrom', function() {
     return function(input, start) {
+    	if (!input || !input.length) { return; }
         start = +start; //parse to int
         return input.slice(start);
     }
