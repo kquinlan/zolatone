@@ -3,4 +3,5 @@
         <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
         <span class="color-primary text-smaller">{{ color.name }}</span>
     </div>
+    <p class="text-center small-margin-0" ng-show="userColors.length === 0">You have no saved samples yet.</p>
 </div>

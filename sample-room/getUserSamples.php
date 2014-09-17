@@ -18,8 +18,8 @@
 		$samples = explode(',' , $arr[0]['saved_samples']);
 		$arr = array();
 		foreach ($samples as $sample) {
-			$squery = "select * from zol_samples where id like '$sample'";
-			$result = $mysqli->query($squery) or die($mysqli->error.__LINE__);
+			$query = "select * from zol_samples where id like '$sample'";
+			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 			if($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()) {

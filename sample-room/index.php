@@ -43,8 +43,6 @@
                     }
                 ?>
 
-                
-
                 <div class="small-padding-top-1 text-center">
                     <?
                         if(!isUserloggedIn()) {

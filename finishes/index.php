@@ -91,7 +91,7 @@
 
                         <div class="medium-2 columns medium-text-center medium-padding-0 small-margin-bottom-1">
                             <label class="text-smaller medium-margin-top-2 small-margin-top-1">
-                                <input ng-model="search.new" ng-change="toStart()" class="small-margin-0" type="checkbox" />
+                                <input ng-model="search.new" ng-true-value="1" ng-false-value="0" ng-change="toStart()" class="small-margin-0" type="checkbox" />
                                 New Colors      
                             </label>
                         </div>

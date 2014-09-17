@@ -9,6 +9,7 @@ angular.module('finishes', ['ngRoute'])
 	}).
     success(function(data, status, headers, config) {
     	$scope.colors = data;
+    	console.log(data);
     });
 
     $scope.currentPage = 0; // Init page to load

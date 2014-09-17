@@ -22,7 +22,6 @@
 		$obj = explode(',', $savedSamples);
 
 		$isAlreadyAdded = false;
-
 		foreach ($obj as $c) {
 			if($c === $color) {
 				$isAlreadyAdded = true;
@@ -31,11 +30,8 @@
 
 		if(!$isAlreadyAdded) {
 			$savedSamples = $savedSamples . ',' . $color;
-
 			$query = "UPDATE zol_users SET saved_samples = '$savedSamples' WHERE id = '$user_id'";
 			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
-			 
-			$result = $mysqli->affected_rows;
 		}
 
 	} 
