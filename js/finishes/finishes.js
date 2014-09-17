@@ -9,12 +9,50 @@ angular.module('finishes', ['ngRoute'])
 	}).
     success(function(data, status, headers, config) {
     	$scope.colors = data;
-    	console.log(data);
+
+    	// Get users colors to determine if any are already saved
+		$http({
+			method: 'GET', 
+			url: '/sample-room/getUserSamples.php'
+		}).
+	    success(function(data, status, headers, config) {
+	    	var userColors = data;
+	    	$scope.colors.forEach(function(color) {
+	    		userColors.forEach(function(userColor) {
+	    			if(color.id === userColor.id) {
+	    				color.isSaved = true;
+	    			}
+	    		})
+	    	})
+	    });
     });
 
     $scope.currentPage = 0; // Init page to load
     $scope.pageSize = 12; // Number of colors for each page
 
+    // Save the sample selected
+	$scope.saveSample = function(color) {
+		// Get selected color and pass to script
+		$http({
+			method: 'GET', 
+			url: '/finishes/saveSample.php?color=' + color 
+		}).
+	    success(function(data, status, headers, config) {
+	    	
+	    });
+	}
+
+	// Save the sample selected
+	$scope.deleteSample = function(color) {
+		// Get selected color and pass to script
+		$http({
+			method: 'GET', 
+			url: '/finishes/deleteSample.php?color=' + color 
+		}).
+	    success(function(data, status, headers, config) {
+	    	
+	    });
+	}
 
     // Navigate forward one page
 	$scope.nextPage = function() {
@@ -41,17 +79,6 @@ angular.module('finishes', ['ngRoute'])
 			$scope.search.effect = '';
 		});
 	}
-	// Save the sample selected
-	$scope.saveSample = function(color) {
-		// Get all colors file
-		$http({
-			method: 'GET', 
-			url: '/finishes/saveSample.php?color=' + color 
-		}).
-	    success(function(data, status, headers, config) {
-	    	
-	    });
-	} 
 })
 
 // Configure SPA routes

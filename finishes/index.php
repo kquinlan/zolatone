@@ -112,9 +112,10 @@
                     <p class="color-primary left text-smaller small-margin-0" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
                     <?
                         if(isUserloggedIn()) {
-                            echo '<p ng-show="selectedColor !== undefined" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b><a ng-click="saveSample(selectedColor.id)">Save to Sample Room</a></b></p>';
+                            echo '<p ng-show="selectedColor !== undefined && !selectedColor.isSaved" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b><a ng-click="saveSample(selectedColor.id)">Save to Sample Room</a></b></p>' .
+                                 '<p ng-show="selectedColor !== undefined && selectedColor.isSaved" class="right text-smaller small-margin-0" style="padding: 0.25em; color: red;"><b><a ng-click="deleteSample(selectedColor.id)">Remove from Sample Room</a></b></p>';
                         } else {
-                            echo '<p ng-show="selectedColor !== undefined" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b>Login to Save</b></p>';
+                            echo '<p class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b>Login to Save</b></p>';
                         }
                     ?>
                 </div>
