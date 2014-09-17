@@ -30,7 +30,7 @@
 
                 <nav class="finishes text-center">
                     <ul>
-                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'counterpointe' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/counterpointe">Counterpointe</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'counterpointe' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish;"><a href="#/counterpointe">Counterpointe</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lluminations' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'metal' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
@@ -110,7 +110,13 @@
                 <div class="medium-5 columns small-padding-bottom-1">
                     <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 97.77%;"></div>
                     <p class="color-primary left text-smaller small-margin-0" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
-                    <p ng-show="selectedColor !== undefined" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b><a ng-click="saveSample(selectedColor.id)">Save to Sample Room</a></b></p>
+                    <?
+                        if(isUserloggedIn()) {
+                            echo '<p ng-show="selectedColor !== undefined" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b><a ng-click="saveSample(selectedColor.id)">Save to Sample Room</a></b></p>';
+                        } else {
+                            echo '<p ng-show="selectedColor !== undefined" class="color-primary right text-smaller small-margin-0" style="padding: 0.25em"><b>Login to Save</b></p>';
+                        }
+                    ?>
                 </div>
 
                 <div class="medium-7 columns small-padding-0">

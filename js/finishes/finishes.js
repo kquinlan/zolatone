@@ -14,6 +14,7 @@ angular.module('finishes', ['ngRoute'])
     $scope.currentPage = 0; // Init page to load
     $scope.pageSize = 12; // Number of colors for each page
 
+
     // Navigate forward one page
 	$scope.nextPage = function() {
 		$scope.currentPage = $scope.currentPage + 1;
@@ -59,7 +60,6 @@ angular.module('finishes', ['ngRoute'])
 		templateUrl: 'partials/counterpointe.tpl.html',
 		controller: function($scope) {
 			$scope.toggleAll('counterpointe');
-			$scope.selectedColor = $scope.colors[0];
 		}
 	}).
 		when('/lluminations', {
