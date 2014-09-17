@@ -19,18 +19,23 @@
 		# Add the selected sample to the user's saved string
 		$savedSamples = $arr[0]['saved_samples'];
 
-		$obj = explode(',', '$savedSamples');
+		$obj = explode(',', $savedSamples);
+
+		$isAlreadyAdded = false;
 
 		foreach ($obj as $c) {
-			if($c != $color[0]) {
-				echo true;
-				$updatedSamples = $arr[0]['saved_samples'] . ',' . $color;
-
-				$query = "UPDATE zol_users SET saved_samples = '$updatedSamples' WHERE id = '$user_id'";
-				$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
-				 
-				$result = $mysqli->affected_rows;
+			if($c === $color) {
+				$isAlreadyAdded = true;
 			}
+		}
+
+		if(!$isAlreadyAdded) {
+			$savedSamples = $savedSamples . ',' . $color;
+
+			$query = "UPDATE zol_users SET saved_samples = '$savedSamples' WHERE id = '$user_id'";
+			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
+			 
+			$result = $mysqli->affected_rows;
 		}
 
 	} 
