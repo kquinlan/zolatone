@@ -59,6 +59,7 @@
         <? require_once '../common/footer.php' ?>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.min.js"></script>
 
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/transit.min.js"></script>
@@ -67,5 +68,6 @@
         <script src="/js/responsiveslides.min.js"></script>
         <script src="/js/app.js"></script>
         <script src="/js/sample-room/sample-room.js"></script>
+        <script src="/js/finishes/finishes.js"></script>
     </body>
 </html>

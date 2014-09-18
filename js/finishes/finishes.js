@@ -46,7 +46,6 @@ angular.module('finishes', ['ngRoute'])
 				}).
 			    success(function(data, status, headers, config) {
 			    	$scope.selectedColor.isSaved = false;
-			    	console.log(data);
 			    });
 			}
 	    });
