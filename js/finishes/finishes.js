@@ -24,35 +24,36 @@ angular.module('finishes', ['ngRoute'])
 	    			}
 	    		})
 	    	})
+
+	    	// Save the sample selected
+			$scope.saveSample = function(color) {
+				// Get selected color and pass to script
+				$http({
+					method: 'GET', 
+					url: '/finishes/saveSample.php?color=' + color 
+				}).
+			    success(function(data, status, headers, config) {
+			    	$scope.selectedColor.isSaved = true;
+			    });
+			}
+
+			// Save the sample selected
+			$scope.deleteSample = function(color) {
+				// Get selected color and pass to script
+				$http({
+					method: 'GET', 
+					url: '/finishes/deleteSample.php?color=' + color 
+				}).
+			    success(function(data, status, headers, config) {
+			    	$scope.selectedColor.isSaved = false;
+			    	console.log(data);
+			    });
+			}
 	    });
     });
 
     $scope.currentPage = 0; // Init page to load
     $scope.pageSize = 12; // Number of colors for each page
-
-    // Save the sample selected
-	$scope.saveSample = function(color) {
-		// Get selected color and pass to script
-		$http({
-			method: 'GET', 
-			url: '/finishes/saveSample.php?color=' + color 
-		}).
-	    success(function(data, status, headers, config) {
-	    	
-	    });
-	}
-
-	// Save the sample selected
-	$scope.deleteSample = function(color) {
-		// Get selected color and pass to script
-		$http({
-			method: 'GET', 
-			url: '/finishes/deleteSample.php?color=' + color 
-		}).
-	    success(function(data, status, headers, config) {
-	    	
-	    });
-	}
 
     // Navigate forward one page
 	$scope.nextPage = function() {
