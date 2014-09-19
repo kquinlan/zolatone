@@ -37,7 +37,7 @@
                 <?
                     if(isUserLoggedIn()) {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
-                        require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/userSamples.php");
+                        require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/class/userSamples.php");
                     } else {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">Log In to See Your Saved Samples</h3>';
                     }

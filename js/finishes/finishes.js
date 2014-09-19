@@ -5,7 +5,7 @@ angular.module('finishes', ['ngRoute'])
 	// Get all colors file
 	$http({
 		method: 'GET', 
-		url: '/finishes/getSamples.php'
+		url: '/sample-room/user/class/getSamples.php'
 	}).
     success(function(data, status, headers, config) {
     	$scope.colors = data;
@@ -13,7 +13,7 @@ angular.module('finishes', ['ngRoute'])
     	// Get users colors to determine if any are already saved
 		$http({
 			method: 'GET', 
-			url: '/sample-room/getUserSamples.php'
+			url: '/sample-room/user/class/getUserSamples.php'
 		}).
 	    success(function(data, status, headers, config) {
 	    	var userColors = data;
@@ -30,7 +30,7 @@ angular.module('finishes', ['ngRoute'])
 				// Get selected color and pass to script
 				$http({
 					method: 'GET', 
-					url: '/finishes/saveSample.php?color=' + color 
+					url: '/sample-room/user/class/saveSample.php?color=' + color 
 				}).
 			    success(function(data, status, headers, config) {
 			    	$scope.selectedColor.isSaved = true;
@@ -42,7 +42,7 @@ angular.module('finishes', ['ngRoute'])
 				// Get selected color and pass to script
 				$http({
 					method: 'GET', 
-					url: '/finishes/deleteSample.php?color=' + color 
+					url: '/sample-room/user/class/deleteSample.php?color=' + color 
 				}).
 			    success(function(data, status, headers, config) {
 			    	$scope.selectedColor.isSaved = false;

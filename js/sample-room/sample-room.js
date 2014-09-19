@@ -6,7 +6,7 @@ angular.module('sampleRoom', [])
 	var getUserSamples = function() {
 		$http({
 			method: 'GET', 
-			url: '/sample-room/getUserSamples.php'
+			url: '/sample-room/user/class/getUserSamples.php'
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.userColors = data;
@@ -15,7 +15,7 @@ angular.module('sampleRoom', [])
 				// Get selected color and pass to script
 				$http({
 					method: 'GET', 
-					url: '/finishes/deleteSample.php?color=' + color 
+					url: '/sample-room/user/class/deleteSample.php?color=' + color 
 				}).
 			    success(function(data, status, headers, config) {
 			    	getUserSamples();
