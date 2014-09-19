@@ -104,7 +104,7 @@
         </section>
 
         <!-- Finishes Selection -->
-        <section class="row">
+        <section class="row finishes">
             <div class="small-11 columns small-centered small-padding-top-2">
 
                 <div class="medium-5 columns small-padding-bottom-1">

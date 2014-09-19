@@ -507,12 +507,6 @@ nav.finishes ul {
 .color-thumb {
 	border: 0.25em solid #fff;
 	padding: 0 !important;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 	.color-thumb div {
 		padding-bottom: 92.77%;
@@ -530,6 +524,9 @@ nav.finishes ul {
 	cursor: pointer;
 	outline: none;
 	border: 0.25em solid #fff;
+}
+
+.finishes * {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
