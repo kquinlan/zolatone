@@ -43,7 +43,7 @@
                     }
                 ?>
 
-                <div class="small-padding-top-1 text-center">
+                <div class="small-12 columns small-padding-top-1 text-center">
                     <?
                         if(!isUserloggedIn()) {
                             echo '<a href="#top" class="login-button button">Log in / Sign Up</a>';
