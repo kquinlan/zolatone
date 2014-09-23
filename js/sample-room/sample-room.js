@@ -1,6 +1,6 @@
 angular.module('sampleRoom', [])
 
-.controller('sampleRoomCtrl', function($scope, $http) {
+.controller('sampleRoomCtrl', function($scope, $http, $element) {
 
 	// Get logged in user's samples
 	var getUserSamples = function() {
@@ -25,5 +25,30 @@ angular.module('sampleRoom', [])
 	};
 
 	getUserSamples();
+
+	$scope.colorCardColors = [];
+
+	// Select colors for the color card
+	$scope.addToColorCard = function(color) {
+		if(!color.isAdded) {
+			$scope.colorCardColors.push(color.id);
+			color.isAdded = true;
+			console.log($element);
+		} else {
+			$scope.colorCardColors.splice($scope.colorCardColors.indexOf(color.id), 1);
+			color.isAdded = false;
+		}
+	}
+
+	// Exit color card mode
+	$scope.exitColorCardMode = function() {
+		$scope.userColors.forEach(function(color) {
+			if(color.isAdded) {
+				color.isAdded = false;
+			}
+		});
+		$scope.colorCardColors = [];
+		$scope.colorCardMode = false;
+	}
 
 });

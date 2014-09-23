@@ -366,6 +366,16 @@ nav.main {
 		height: 100%;
 	}
 
+.glyph {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
 /* Form Validations */
 form.zip-code-form.ng-dirty.ng-invalid-pattern input {
 	outline: 1px solid #FF9494;
