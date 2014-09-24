@@ -33,7 +33,6 @@ angular.module('sampleRoom', [])
 		if(!color.isAdded) {
 			$scope.colorCardColors.push(color.id);
 			color.isAdded = true;
-			console.log($element);
 		} else {
 			$scope.colorCardColors.splice($scope.colorCardColors.indexOf(color.id), 1);
 			color.isAdded = false;
@@ -49,6 +48,17 @@ angular.module('sampleRoom', [])
 		});
 		$scope.colorCardColors = [];
 		$scope.colorCardMode = false;
+	}
+
+	$scope.createUserBoard = function(colorCardColors) {
+		// Get selected color and pass to script
+		$http({
+			method: 'GET', 
+			url: '/sample-room/user/class/createUserBoard.php?colorCardColors=' + colorCardColors + '&colorCardName=' + $scope.colorCardName
+		}).
+	    success(function(data, status, headers, config) {
+	    	console.log(data);
+	    });
 	}
 
 });
