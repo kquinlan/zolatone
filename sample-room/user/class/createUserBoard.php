@@ -10,8 +10,6 @@
 		$query = "INSERT INTO zol_boards (user_id, name, saved_samples) VALUES ('$user_id', '$colorCardName', '$colorCardColors')";
 		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
-		echo $colorCardColors;
-
 	} 
 
 	else {

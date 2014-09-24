@@ -48,7 +48,6 @@ angular.module('sampleRoom', [])
 		});
 		$scope.colorCardColors = [];
 		$scope.colorCardMode = false;
-		$scope.colorCardName = '';
 	}
 
 	$scope.createUserBoard = function(colorCardColors) {
@@ -58,7 +57,6 @@ angular.module('sampleRoom', [])
 			url: '/sample-room/user/class/createUserBoard.php?colorCardColors=' + colorCardColors + '&colorCardName=' + $scope.colorCardName
 		}).
 	    success(function(data, status, headers, config) {
-	    	$scope.exitColorCardMode();
 	    });
 	}
 

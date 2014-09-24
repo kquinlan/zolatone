@@ -13,7 +13,8 @@
 
     <div class="small-12 columns text-center">
     	<label ng-show="userColors.length < 9" class="text-smaller color-primary small-margin-bottom-1"><i>You must have 9 or more samples saved to create a Color On Demand Card.</i></label>
-    	<button class="small-margin-0" ng-hide="colorCardMode" ng-click="colorCardMode = true" ng-disabled="userColors.length < 9">Create Color On Demand Card</button>
+        <button class="small">Order 4 X 5 Samples</button>
+    	<button class="small" ng-hide="colorCardMode" ng-click="colorCardMode = true" ng-disabled="userColors.length < 9">Create Color On Demand Card</button>
     	
         <fieldset ng-show="colorCardMode">
             <legend class="text-smaller">Your Color On Demand Card:</legend>
