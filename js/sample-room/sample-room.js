@@ -51,11 +51,11 @@ angular.module('sampleRoom', [])
 		$scope.colorCardName = '';
 	}
 
-	$scope.createUserBoard = function(colorCardColors) {
+	$scope.createUserColorCard = function(colorCardColors) {
 		// Get selected colors and pass to script
 		$http({
 			method: 'GET', 
-			url: '/sample-room/user/class/createUserBoard.php?colorCardColors=' + colorCardColors + '&colorCardName=' + $scope.colorCardName
+			url: '/sample-room/user/class/createUserColorCard.php?colorCardColors=' + colorCardColors + '&colorCardName=' + $scope.colorCardName
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.exitColorCardMode();
