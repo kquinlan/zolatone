@@ -43,9 +43,10 @@
 
                 <div class="color-card small-12 columns text-center small-padding-top-1" ng-repeat="subCard in getNumber(number) track by $index">
 
-                    <h4>{{ selectedColorCard.name }}</h4>
+                    <p class="card-page-count text-smaller">Card {{ $index + 1 }} of {{ number }}</p>
+                    <h3 class="small-margin-bottom-1 color-primary">{{ selectedColorCard.name }}</h3>
 
-                    <div class="color-thumb small-6 medium-4 large-4 columns left" ng-repeat="color in colorCardSamples">
+                    <div class="color-thumb small-6 medium-4 large-4 columns left" ng-repeat="color in colorCardSamples[$index]">
                         <!-- Board Colors -->
                         <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
 

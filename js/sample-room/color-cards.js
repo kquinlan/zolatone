@@ -22,13 +22,25 @@ angular.module('colorCards', [])
 			url: '/sample-room/user/class/getColorCardSamples.php?selectedColorCardId=' + $scope.selectedColorCard.id
 		}).
 	    success(function(data, status, headers, config) {
-	    	$scope.colorCardSamples = data;
 	    	$scope.showAllBoards = false;
 
-	    	$scope.number = $scope.colorCardSamples.length / 9;
+	    	$scope.number = data.length / 9;
 			$scope.getNumber = function(num) {
 			    return new Array(num);   
 			}
+
+			// Split up larger boards (> 9 samples)
+			$scope.colorCardSamples = [];
+			var init = 0;
+			for(var i = 0; i < $scope.number; i++) {
+				var obj = data.splice(init, 9);
+				init = init + 9 * i;
+				$scope.colorCardSamples.push(obj);
+			}
+
+			console.log(obj);
+			console.log($scope.colorCardSamples);
+
 	    });
     }
 
