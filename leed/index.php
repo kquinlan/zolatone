@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="small-12 columns">
-                    <a href="" class="button small-margin-top-1">Download the PDF</a>
+                    <a href="" class="button small small-margin-top-1">Download the PDF</a>
                 </div>
             </div>
 

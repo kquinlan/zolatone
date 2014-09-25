@@ -45,7 +45,7 @@
                 </p>
 
                 <div class="large-12 columns small-padding-0 small-margin-top-3">
-                    <a href="/where-to-buy" class="button">Who is My Distributor?</a>
+                    <a href="/where-to-buy" class="button small">Who is My Distributor?</a>
                 </div>
             </div>
 

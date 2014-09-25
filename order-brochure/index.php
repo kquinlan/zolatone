@@ -78,7 +78,7 @@
                             <textarea placeholder="Special Instructions"></textarea>
                         </div>
 
-                        <input type="submit" class="button" value="Submit" />
+                        <input type="submit" class="button small" value="Submit" />
                     </div>
                 </form>
             </div>
