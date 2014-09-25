@@ -377,7 +377,7 @@ nav.main {
 
 
 /* Form Validations */
-form.zip-code-form.ng-dirty.ng-invalid-pattern input {
+form.ng-dirty.ng-invalid-pattern input {
 	outline: 1px solid #FF9494;
 }
 

@@ -138,7 +138,7 @@
 					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="New Password" name='passwordc' />
 					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password name must be between 8 and 50 characters in length" placeholder="Confirm Password" name='passwordcheck' />
 					<div class="small-12 small-margin-top-1">
-						<input class="button" type='submit' value='Update' />
+						<input class="button small" type='submit' value='Update' />
 					</div>
 				</form>
 			<? if(count($successes) > 0) { echo "</div>"; } ?>

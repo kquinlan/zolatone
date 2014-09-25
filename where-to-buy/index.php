@@ -43,7 +43,7 @@
         <!-- Zip Code Field -->
         <section ng-controller="zipCodesCtrl" class="row">
             <div class="medium-8 small-11 columns small-centered">
-                <form name="zipCode" class="zip-code-form">
+                <form name="zipCode">
                     <div class="small-12 medium-5 columns">
                         <input type="tel" placeholder="Zip Code" ng-required="true" maxlength="5" ng-model="search.zipCodes" ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/" />
                     </div>

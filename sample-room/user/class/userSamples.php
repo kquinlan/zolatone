@@ -20,9 +20,12 @@
         <fieldset ng-show="colorCardMode">
             <legend class="text-smaller">Your Color On Demand Card:</legend>
         	<label class="text-smaller color-primary small-margin-bottom-1"><i>Click samples above to add to your Color On Demand Card.<br>Must be a multiple of 9</i></label>
-            <input class="text-center" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" type="text" maxlength="50" placeholder="Name Your Color Card" ng-model="colorCardName"/>
-        	<button class="small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" ng-click="createUserColorCard(colorCardColors)">Continue</button>
-        	<button class="small" ng-click="exitColorCardMode()">Cancel</button>
+            <form name="cardName">
+                <input class="text-center" ng-required="true" required title="Please name your color card" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" type="text" maxlength="50" placeholder="Name Your Color Card" ng-model="colorCardName"/>
+                <input type="submit" value="Continue" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="createUserColorCard(colorCardColors)"></button>
+                <button class="small" ng-click="exitColorCardMode()">Cancel</button>
+            </form>
+        	
         </fieldset>
     </div>
 </div>
