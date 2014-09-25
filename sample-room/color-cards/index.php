@@ -23,18 +23,39 @@
             <? require_once '../../common/slider.php' ?>
         </div>
 
-        <!-- Sample Room -->
+        <!-- Color Cards -->
         <section class="row small-padding-top-4 small-margin-bottom-4">
 
         <h1 class="color-primary text-center small-margin-bottom-1">Your Previous Color Cards</h1>
-            <nav class="finishes text-center">
-                <ul>
-                    <li ng-repeat="userColorCard in userColorCards"><a>{{ userColorCard.name }}</a></li>
-                </ul>
-            </nav>
 
-            <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
-                
+            <div class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+
+                <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">&#9662; Show Boards List &#9662;</button>
+                <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">&#9652; Hide Boards List &#9652;</button>
+                <table ng-show="showAllBoards" class="small-12 columns small-padding-0">
+                    <tr>
+                        <th>Board Name:</th>
+                    </tr>
+                    <tr ng-repeat="userColorCard in userColorCards">
+                        <td><a ng-click="selectColorCard(userColorCard)">{{ userColorCard.name }}</a></td>
+                    </tr>
+                </table>
+
+                <div class="color-card small-12 columns text-center small-padding-top-1" ng-repeat="subCard in getNumber(number) track by $index">
+
+                    <h4>{{ selectedColorCard.name }}</h4>
+
+                    <div class="color-thumb small-6 medium-4 large-4 columns left" ng-repeat="color in colorCardSamples">
+                        <!-- Board Colors -->
+                        <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
+
+                        <p class="color-primary text-smaller"><b>{{ color.name }}</b></p>
+                        <p class="color-primary text-smaller right small-margin-0"></p>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
