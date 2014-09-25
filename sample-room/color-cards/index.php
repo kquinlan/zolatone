@@ -38,6 +38,14 @@
                     </tr>
                     <tr ng-repeat="userColorCard in userColorCards">
                         <td><a ng-click="selectColorCard(userColorCard)">{{ userColorCard.name }}</a></td>
+                        <td class="text-right">
+                            <a class="text-smaller" ng-hide="showConfirm" ng-click="showConfirm = true">Delete</a>
+                            <span class="text-smaller" ng-show="showConfirm">
+                                Are You Sure? 
+                                <a ng-click="deleteColorCard(userColorCard)">Yes</a> |
+                                <a ng-click="showConfirm = false">No</a>
+                            </span>
+                        </td>
                     </tr>
                 </table>
 
