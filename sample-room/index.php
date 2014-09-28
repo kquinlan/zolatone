@@ -33,7 +33,9 @@
                 <h3 class="color-primary text-center small-margin-bottom-1">Two Great Ways to Sample Zolatone</h3>
                 <p>When you’re ready to order samples, you now have two great options. We can send out loose 4x5 samples or you can create an On Demand card. On Demand cards allow you to create collections of your favorite Zolatone colors and turn them into your very own custom tip cards.</p>
                 <p>You must be logged in to create Sample Boards and On Demand cards. To create a new sample board, or add to an existing board, simply click the icon next to the sample you would like to add. </p>
+            </div>
 
+            <div class="small-12 columns small-padding-top-1">
                 <?
                     if(isUserLoggedIn()) {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
@@ -42,26 +44,26 @@
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">Log In to See Your Saved Samples</h3>';
                     }
                 ?>
+            </div>
 
-                <div class="small-12 columns small-padding-top-1 text-center">
-                    <?
-                        if(!isUserloggedIn()) {
-                            echo '<a href="#top" class="small login-button button">Log in / Sign Up</a>';
-                        } else {
-                            echo '<a href="/finishes" class="small button">Take me to the Finishes</a>';
-                        }
-                    ?>
-                </div>
+            <div class="small-12 columns small-margin-top-2 text-center">
+                <?
+                    if(!isUserloggedIn()) {
+                        echo '<a href="#top" class="small login-button button">Log in / Sign Up</a>';
+                    } else {
+                        echo '<a href="/finishes" class="small button">Take me to the Finishes</a>';
+                    }
+                ?>
             </div>
 
         </section>
 
         <? require_once '../common/footer.php' ?>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.min.js"></script>
-
         <script src="/js/vendor/jquery.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+        <script src="https://rawgithub.com/angular-ui/ui-sortable/master/src/sortable.js"
         <script src="/js/transit.min.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
