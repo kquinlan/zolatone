@@ -454,6 +454,15 @@ nav.finishes ul {
 		white-space: nowrap;
 	}
 
+.selected-counter {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	background-color: #fff;
+	z-index: 999;
+}
+
 .finish-data p {
 	padding: 0.25em 0;
 }
@@ -526,9 +535,6 @@ nav.finishes ul {
 		.video-container {
 			width: 320px;
 		}
-		.color-thumb {
-			width: 50%;
-		}
 	}
 
 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
@@ -537,9 +543,6 @@ nav.finishes ul {
 		}
 		.content h2 {
 			font-size: 1.6em;
-		}
-		.color-thumb {
-			width: 33%;
 		}
 	}
 
