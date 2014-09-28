@@ -63,7 +63,7 @@
         <script src="/js/vendor/jquery.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-        <script src="https://rawgithub.com/angular-ui/ui-sortable/master/src/sortable.js"
+        <script src="/js/sample-room/sortable.js"></script>
         <script src="/js/transit.min.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>
