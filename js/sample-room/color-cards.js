@@ -35,10 +35,8 @@ angular.module('colorCards', [])
 
 			// Split up larger boards (> 9 samples)
 			$scope.colorCardSamples = [];
-			var init = 0;
 			for(var i = 0; i < $scope.number; i++) {
-				var obj = data.splice(init, 9);
-				init = init + 9 * i;
+				var obj = data.splice(0, 9);
 				$scope.colorCardSamples.push(obj);
 			}
 	    });
