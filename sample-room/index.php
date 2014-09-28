@@ -38,7 +38,7 @@
             <div class="small-12 columns small-padding-top-1">
                 <?
                     if(isUserLoggedIn()) {
-                        echo '<h3 class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
+                        echo '<h3 ng-hide="editColorCard" class="color-primary text-center small-margin-bottom-1">' . $loggedInUser->displayname . '\'s Saved Samples</h3>';
                         require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/class/userSamples.php");
                     } else {
                         echo '<h3 class="color-primary text-center small-margin-bottom-1">Log In to See Your Saved Samples</h3>';
@@ -64,6 +64,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
         <script src="/js/sample-room/sortable.js"></script>
+        <script src="/js/vendor/jquery.ui.touch-punch.min.js"></script>
         <script src="/js/transit.min.js"></script>
         <script src="/js/foundation.min.js"></script>
         <script src="/js/vendor/fastclick.js"></script>

@@ -31,9 +31,9 @@
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
 
-                <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">&#9662; Show Boards List &#9662;</button>
-                <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">&#9652; Hide Boards List &#9652;</button>
-                <table ng-show="showAllBoards" class="small-12 columns small-padding-0">
+                <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">Show Boards List &#9662;</button>
+                <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">Hide Boards List &#9652;</button>
+                <table ng-show="showAllBoards" class="small-12 columns small-padding-0 small-margin-0">
                     <tr>
                         <th>Board Name:</th>
                     </tr>

@@ -2,7 +2,7 @@
 
     <!-- User Colors -->
     <div ng-hide="editColorCard" class="large-8 medium-9 small-centered columns">
-        <div class="color-thumb" ng-repeat="color in userColors">
+        <div class="color-thumb" ng-repeat="color in userColors" style="cursor: pointer;">
             <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}" ng-click="colorCardMode ? addToColorCard(color) : return">
             	<h1 ng-show="color.isAdded" class="glyph color-primary left small-margin-0">&#x2713;</h1>
             </div>
@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="color-card large-8 medium-9 small-centered columns small-padding-top-1" ui-sortable ng-model="colorCardColors" ng-show="editColorCard">
+    <div class="color-card large-8 medium-9 small-centered columns small-padding-top-1" ui-sortable ng-model="colorCardColors" ng-show="editColorCard" style="cursor: move;">
         <div class="color-thumb" ng-repeat="color in colorCardColors">
             <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
             <p class="color-primary text-smaller"><b>{{ color.name }}</b></p>
@@ -34,7 +34,8 @@
                 <input class="text-center" ng-required="true" required title="Please name your color card" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" type="text" maxlength="50" placeholder="Name Your Color Card" ng-model="colorCardName"/>
                 <input type="submit" ng-model="colorCardName" value="Continue" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true" />
                 <button class="small" ng-click="exitColorCardMode()">Cancel</button>
-            </form> 
+            </form>
+            <label ng-show="editColorCard" class="text-smaller color-primary small-margin-bottom-1"><i>Drag and drop your selected colors above to sort your color card.</i></label>
             <button ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</button>
             <button ng-show="editColorCard">Order</button>
             <button ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
