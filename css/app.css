@@ -405,69 +405,6 @@ form.ng-dirty.ng-invalid-pattern input {
 		display: block;
 	}
 
-	@media only screen and (max-width: 40em) { 
-		.slider-container .content {
-			padding: 2em 0;
-		}
-		.content h2 {
-			font-size: 1.2em;
-		}
-		.content h3 {
-			font-size: 1em;
-		}
-		.content p {
-			font-size: 0.8em;
-		}
-		.video-container {
-			width: 320px;
-		}
-		.color-thumb {
-			width: 50%;
-		}
-	}
-
-	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-		.video-container {
-			width: 480px;
-		}
-		.content h2 {
-			font-size: 1.6em;
-		}
-		.color-thumb {
-			width: 33%;
-		}
-	}
-
-	@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
-		.video-container {
-			width: 640px;
-		}
-		.content h2 {
-			font-size: 2.1em;
-		}
-		.content h3 {
-			font-size: 1.6em;
-		}
-		.content p {
-			font-size: 1em;
-		}
-	}
-
-	@media only screen and (min-width: 90.063em) { 
-		.video-container {
-			width: 800px;
-		}
-		.content h2 {
-			font-size: 3.1em;
-		}
-		.content h3 {
-			font-size: 2.6em;
-		}
-		.content p {
-			font-size: 1em;
-		}
-	}
-
 /* Gallery Images Styles */
 .gallery-thumb {
 	position: relative;
@@ -573,11 +510,65 @@ nav.finishes ul {
 		right: 1.8em;
 	}
 
-	.ng-repeat-reorder-parent, [ng-repeat-reorder]{
-	z-index: 10;
-	position: relative;
-}
-[ng-repeat-reorder].dragging{
-	z-index: 11;
-	position: absolute;
-}
+@media only screen and (max-width: 40em) { 
+		.slider-container .content {
+			padding: 2em 0;
+		}
+		.content h2 {
+			font-size: 1.2em;
+		}
+		.content h3 {
+			font-size: 1em;
+		}
+		.content p {
+			font-size: 0.8em;
+		}
+		.video-container {
+			width: 320px;
+		}
+		.color-thumb {
+			width: 50%;
+		}
+	}
+
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+		.video-container {
+			width: 480px;
+		}
+		.content h2 {
+			font-size: 1.6em;
+		}
+		.color-thumb {
+			width: 33%;
+		}
+	}
+
+	@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+		.video-container {
+			width: 640px;
+		}
+		.content h2 {
+			font-size: 2.1em;
+		}
+		.content h3 {
+			font-size: 1.6em;
+		}
+		.content p {
+			font-size: 1em;
+		}
+	}
+
+	@media only screen and (min-width: 90.063em) { 
+		.video-container {
+			width: 800px;
+		}
+		.content h2 {
+			font-size: 3.1em;
+		}
+		.content h3 {
+			font-size: 2.6em;
+		}
+		.content p {
+			font-size: 1em;
+		}
+	}
