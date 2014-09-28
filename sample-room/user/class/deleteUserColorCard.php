@@ -8,6 +8,7 @@
 
 		$query = "delete from zol_boards where id like '$selectedColorCardId'";
 		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
+
 	} 
 
 	else {

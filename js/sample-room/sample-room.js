@@ -1,4 +1,4 @@
-angular.module('sampleRoom', ['ui.sortable'])
+angular.module('sampleRoom', [])
 
 .controller('sampleRoomCtrl', function($scope, $http, $element) {
 
@@ -31,10 +31,10 @@ angular.module('sampleRoom', ['ui.sortable'])
 	// Select colors for the color card
 	$scope.addToColorCard = function(color) {
 		if(!color.isAdded) {
-			$scope.colorCardColors.push(color);
+			$scope.colorCardColors.push(color.id);
 			color.isAdded = true;
 		} else {
-			$scope.colorCardColors.splice($scope.colorCardColors.indexOf(color), 1);
+			$scope.colorCardColors.splice($scope.colorCardColors.indexOf(color.id), 1);
 			color.isAdded = false;
 		}
 	}
@@ -49,18 +49,13 @@ angular.module('sampleRoom', ['ui.sortable'])
 		$scope.colorCardColors = [];
 		$scope.colorCardMode = false;
 		$scope.colorCardName = '';
-		$scope.editColorCard = false;
 	}
 
 	$scope.createUserColorCard = function(colorCardColors) {
-		$scope.colorCardColorIds = [];
-		colorCardColors.forEach(function(color) {
-			$scope.colorCardColorIds.push(color.id);
-		})
 		// Get selected colors and pass to script
 		$http({
 			method: 'GET', 
-			url: '/sample-room/user/class/createUserColorCard.php?colorCardColors=' + $scope.colorCardColorIds + '&colorCardName=' + $scope.colorCardName
+			url: '/sample-room/user/class/createUserColorCard.php?colorCardColors=' + colorCardColors + '&colorCardName=' + $scope.colorCardName
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.exitColorCardMode();
