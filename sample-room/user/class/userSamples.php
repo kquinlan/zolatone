@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="color-card large-8 medium-9 small-centered columns small-padding-top-1" ui-sortable ng-model="colorCardColors" ng-show="editColorCard">
+    <div class="color-card small-padding-top-1" ui-sortable ng-model="colorCardColors" ng-show="editColorCard">
         <div class="color-thumb" ng-repeat="color in colorCardColors">
             <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
             <p class="color-primary text-smaller"><b>{{ color.name }}</b></p>
@@ -35,9 +35,9 @@
                 <input type="submit" ng-model="colorCardName" value="Continue" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true" />
                 <button class="small" ng-click="exitColorCardMode()">Cancel</button>
             </form> 
-            <button ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</button>
-            <button ng-show="editColorCard">Order</button>
-            <button ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
+            <button class="small" ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</button>
+            <button class="small" ng-show="editColorCard">Order</button>
+            <button class="small" ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
         </fieldset>
     </div>
 
