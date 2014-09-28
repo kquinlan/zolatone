@@ -55,7 +55,7 @@
                     <p class="card-page-count text-smaller">Card {{ $index + 1 }} of {{ number }}</p>
                     <h3 class="small-margin-bottom-1 color-primary">{{ selectedColorCard.name }}</h3>
 
-                    <div class="color-thumb text-left" ng-repeat="color in colorCardSamples[$index]">
+                    <div class="color-thumb small-6 medium-4 large-4 columns" ng-repeat="color in colorCardSamples[$index]">
                         
                         <!-- Board Colors -->
                         <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
