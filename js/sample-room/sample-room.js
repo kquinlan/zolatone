@@ -54,8 +54,7 @@ angular.module('sampleRoom', ['ui.sortable'])
 
 	$scope.createUserColorCard = function(colorCardColors) {
 		$scope.colorCardColorIds = [];
-		$scope.editColorCard = false;
-		
+
 		colorCardColors.forEach(function(color) {
 			$scope.colorCardColorIds.push(color.id);
 		})

@@ -34,7 +34,7 @@
     <div class="large-8 medium-9 small-centered columns text-center small-margin-top-2">
     	<label ng-show="userColors.length < 9" class="text-smaller color-primary small-margin-bottom-1"><i>You must have 9 or more samples saved to create a Color On Demand Card.</i></label>
         <button class="small" ng-hide="colorCardMode">Order 4 X 5 Samples</button>
-    	<button class="small" ng-hide="colorCardMode" ng-click="colorCardMode = true" ng-disabled="userColors.length < 9">Create Color On Demand Card</button>
+    	<a href="#top" class="button small" ng-hide="colorCardMode" ng-click="colorCardMode = true" ng-disabled="userColors.length < 9">Create Color On Demand Card</a>
         <a ng-hide="editColorCard" href="/sample-room/color-cards/" class="button small">View Saved Color On Demand Cards</a>
     	
         <fieldset ng-show="colorCardMode">
@@ -45,7 +45,7 @@
                 <input type="submit" ng-model="colorCardName" value="Continue" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true" />
                 <button class="small" ng-click="exitColorCardMode()">Cancel</button>
             </form>
-            <button class="small small-margin-0" ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</button>
+            <button class="small small-margin-0" ng-show="editColorCard" ng-disabled="isSaved" ng-click="createUserColorCard(colorCardColors)">Save</button>
             <button class="small small-margin-0" ng-show="editColorCard">Order</button>
             <button class="small small-margin-0" ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
         </fieldset>
