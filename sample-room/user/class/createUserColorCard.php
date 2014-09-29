@@ -6,9 +6,10 @@
 		$user_id = $loggedInUser->user_id;
 		$colorCardName = mysql_real_escape_string($_GET['colorCardName']);
 		$colorCardColors = $_GET['colorCardColors'];
+		$date = date("F jS Y h:i A");
 
 		if($colorCardName != undefined) {
-			$query = "INSERT INTO zol_boards (user_id, name, saved_samples) VALUES ('$user_id', '$colorCardName', '$colorCardColors')";
+			$query = "INSERT INTO zol_boards (user_id, name, date_created, saved_samples) VALUES ('$user_id', '$colorCardName', '$date', '$colorCardColors')";
 			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 		}
 

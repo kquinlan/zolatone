@@ -13,6 +13,8 @@ angular.module('colorCards', [])
 	    	
 	    	var last = $scope.userColorCards.length - 1;
     		$scope.selectColorCard($scope.userColorCards[last]);
+
+    		console.log(data);
 	    });
 	}
 

@@ -45,7 +45,7 @@
                 <a href="#" type="submit" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true">Continue</a>
                 <button class="small" ng-click="exitColorCardMode()">Cancel</button>
             </form>
-            <a class="button small" ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save & Order</a>
+            <a class="button small" ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</a>
             <button class="small" ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
         </fieldset>
     </div>

@@ -40,9 +40,11 @@
                 <table ng-show="showAllBoards" class="small-12 columns small-padding-0 small-margin-0">
                     <tr>
                         <th>Board Name:</th>
+                        <th>Created On:</th>
                     </tr>
                     <tr ng-repeat="userColorCard in userColorCards">
                         <td><a ng-click="selectColorCard(userColorCard)">{{ userColorCard.name }}</a></td>
+                        <td>{{ userColorCard.date_created }}</td>
                         <td class="text-right">
                             <a class="text-smaller" ng-hide="showConfirm" ng-click="showConfirm = true">Delete</a>
                             <span class="text-smaller" ng-show="showConfirm">
@@ -72,6 +74,8 @@
                     </div>
 
                 </div>
+
+                <button class="small small-12 columns">Order This Card</button>
 
             </div>
 
