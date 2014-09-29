@@ -132,10 +132,10 @@
 
 			<? if(count($successes) > 0) { echo "<div style='display:none'>"; } ?>
 			    <form name='newUser' action="#login-form" method='post'>
-					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
+					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username / Email" name='username' />
 					<input type='password' maxlength="50" pattern=".{8,50}" required title="Your password must be between 8 and 50 characters in length" placeholder="Password" name='password' />
 					<div class="small-12 small-margin-top-1">
-						<input class="button" type='submit' value='Login' />
+						<input class="button small" type='submit' value='Login' />
 					</div>
 				</form>
 			<? if(count($successes) > 0) { echo "</div>"; } ?>
