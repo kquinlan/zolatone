@@ -295,43 +295,97 @@ function fetchAllUsers()
 	return ($row);
 }
 
-//Retrieve complete user information by username, token or ID
-function fetchUserDetails($username=NULL,$token=NULL, $id=NULL)
+//Retrieve complete user information by username, token, ID or Email
+function fetchUserDetails($username=NULL,$token=NULL, $id=NULL, $email=NULL)
 {
-	if($username!=NULL) {
-		$column = "user_name";
-		$data = $username;
-	}
-	elseif($token!=NULL) {
-		$column = "activation_token";
-		$data = $token;
-	}
-	elseif($id!=NULL) {
-		$column = "id";
-		$data = $id;
-	}
 	global $mysqli,$db_table_prefix; 
-	$stmt = $mysqli->prepare("SELECT 
-		id,
-		user_name,
-		display_name,
-		password,
-		email,
-		activation_token,
-		last_activation_request,
-		lost_password_request,
-		active,
-		title,
-		sign_up_stamp,
-		last_sign_in_stamp
-		FROM ".$db_table_prefix."users
-		WHERE
-		$column = ?
-		LIMIT 1");
-		$stmt->bind_param("s", $data);
-	
+	if($username!=NULL) 
+	{  
+		$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			password,
+			email,
+			activation_token,
+			last_activation_request,
+			lost_password_request,
+			active,
+			title,
+			sign_up_stamp,
+			last_sign_in_stamp
+			FROM ".$db_table_prefix."users
+			WHERE
+			user_name = ?
+			LIMIT 1");
+		$stmt->bind_param("s", $username);
+	}
+	elseif($id!=NULL)
+	{
+		$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			password,
+			email,
+			activation_token,
+			last_activation_request,
+			lost_password_request,
+			active,
+			title,
+			sign_up_stamp,
+			last_sign_in_stamp
+			FROM ".$db_table_prefix."users
+			WHERE
+			id = ?
+			LIMIT 1");
+		$stmt->bind_param("i", $id);
+	}
+	elseif($token!=NULL)
+	{
+		$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			password,
+			email,
+			activation_token,
+			last_activation_request,
+			lost_password_request,
+			active,
+			title,
+			sign_up_stamp,
+			last_sign_in_stamp
+			FROM ".$db_table_prefix."users
+			WHERE
+			activation_token = ?
+			LIMIT 1");
+		$stmt->bind_param("s", $token);
+	}
+	else
+	{
+		$stmt = $mysqli->prepare("SELECT 
+			id,
+			user_name,
+			display_name,
+			password,
+			email,
+			activation_token,
+			last_activation_request,
+			lost_password_request,
+			active,
+			title,
+			sign_up_stamp,
+			last_sign_in_stamp
+			FROM ".$db_table_prefix."users
+			WHERE
+			email = ?
+			LIMIT 1");
+		$stmt->bind_param("s", $email);
+	}
 	$stmt->execute();
 	$stmt->bind_result($id, $user, $display, $password, $email, $token, $activationRequest, $passwordRequest, $active, $title, $signUp, $signIn);
+	$row = array('id' => 0, 'user_name' => '', 'display_name' => '', 'password' => '', 'email' => '', 'activation_token' => '', 'last_activation_request' => '', 'lost_password_request' => '', 'active' => '', 'title' => '', 'sign_up_stamp' => '', 'last_sign_in_stamp' => '');
 	while ($stmt->fetch()){
 		$row = array('id' => $id, 'user_name' => $user, 'display_name' => $display, 'password' => $password, 'email' => $email, 'activation_token' => $token, 'last_activation_request' => $activationRequest, 'lost_password_request' => $passwordRequest, 'active' => $active, 'title' => $title, 'sign_up_stamp' => $signUp, 'last_sign_in_stamp' => $signIn);
 	}

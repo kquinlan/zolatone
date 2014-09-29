@@ -29,7 +29,11 @@
 
         <h1 class="color-primary text-center small-margin-bottom-1">Your Previous Color Cards</h1>
 
-            <div class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+            <div ng-show="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+                <p>It looks like you don't have any saved Color On Demand cards. Head over to the sample room to create some.</p>
+            </div>
+
+            <div ng-hide="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
 
                 <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">Show Boards List &#9662;</button>
                 <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">Hide Boards List &#9652;</button>
@@ -50,10 +54,12 @@
                     </tr>
                 </table>
 
-                <div class="color-card small-12 columns text-center small-padding-top-1" ng-repeat="subCard in getNumber(number) track by $index">
+                <div class="color-card small-12 columns text-center small-padding-top-1" ng-show="userColorCard !== null" ng-repeat="subCard in getNumber(number) track by $index">
 
-                    <p class="card-page-count text-smaller">Card {{ $index + 1 }} of {{ number }}</p>
-                    <h3 class="small-margin-bottom-1 color-primary">{{ selectedColorCard.name }}</h3>
+                    <div class="small-margin-bottom-1">
+                        <h3 class="small-margin-bottom-0 color-primary">{{ selectedColorCard.name }}</h3>
+                        <p class="card-page-count text-smaller small-margin-0" ng-show="number > 1">Card {{ $index + 1 }} of {{ number }}</p>
+                    </div>
 
                     <div class="color-thumb text-left" ng-repeat="color in colorCardSamples[$index]">
                         
@@ -67,10 +73,10 @@
 
                 </div>
 
-                <div class="small-12 columns text-center small-padding-top-1">
-                    <a class="button small" href="/sample-room">Take me to the Sample Soom</a>
-                </div>
+            </div>
 
+            <div class="small-12 columns text-center small-padding-top-1">
+                <a class="button small" href="/sample-room">Take me to the Sample Room</a>
             </div>
 
         </section>

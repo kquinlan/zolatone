@@ -12,31 +12,68 @@
 		$password = trim($_POST["password"]);
 		
 		//Perform some validation
-		if($username == "") {
+		if($username == "")
+		{
 			$errors[] = lang("ACCOUNT_SPECIFY_USERNAME");
 		}
-		if($password == "") {
+		if($password == "")
+		{
 			$errors[] = lang("ACCOUNT_SPECIFY_PASSWORD");
 		}
 
-		if(count($errors) == 0) {
+		if(count($errors) == 0)
+		{
 			//A security note here, never tell the user which credential was incorrect
-			if(!usernameExists($username)) {
+			
+			// Allow user to login with username or email
+			$flag_is_username = FALSE;
+			$flag_is_email = FALSE;
+			if(usernameExists($username))
+			{
+				$flag_is_username = TRUE;
+				$flag_is_email = FALSE;
+			}
+			elseif(emailExists($username))
+			{
+				$flag_is_username = FALSE;
+				$flag_is_email = TRUE;
+			}
+			else
+			{
 				$errors[] = lang("ACCOUNT_USER_OR_PASS_INVALID");
-			} else {
-				$userdetails = fetchUserDetails($username);
+			}
+			
+			if ($flag_is_username or $flag_is_email)
+			{
+				if ($flag_is_username)
+				{
+					$userdetails = fetchUserDetails($username);
+				}
+				elseif ($flag_is_email)
+				{
+					$userdetails = fetchUserDetails(NULL,NULL,NULL,$username);
+				}
 				//See if the user's account is activated
-				if($userdetails["active"]==0) {
+				if($userdetails["active"]==0)
+				{
 					$errors[] = lang("ACCOUNT_INACTIVE");
-				} else {
+				}
+				else
+				{
 					//Hash the password and use the salt from the database to compare the password.
 					$entered_pass = generateHash($password,$userdetails["password"]);
 					
-					if($entered_pass != $userdetails["password"]) {
+					if($entered_pass != $userdetails["password"])
+					{
 						//Again, we know the password is at fault here, but lets not give away the combination incase of someone bruteforcing
 						$errors[] = lang("ACCOUNT_USER_OR_PASS_INVALID");
-					} else {
+					}
+					else
+					{
+						//Passwords match! we're good to go'
+						
 						//Construct a new logged in user object
+						//Transfer some db data to the session object
 						$loggedInUser = new loggedInUser();
 						$loggedInUser->email = $userdetails["email"];
 						$loggedInUser->user_id = $userdetails["id"];
@@ -49,13 +86,13 @@
 						$loggedInUser->updateLastSignIn();
 						$_SESSION["userCakeUser"] = $loggedInUser;
 						
-						//Redirect to user account page
+						//Redirect to user index page
 						header("Location: /sample-room/index.php");
 						die();
 					}
 				}
 			}
-		} 
+		}
 	}
 ?>
 

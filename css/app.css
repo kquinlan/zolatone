@@ -514,10 +514,7 @@ nav.finishes ul {
 	-moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.25);
 	box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.25);
 }
-	.card-page-count {
-		position: absolute;
-		right: 1.8em;
-	}
+
 
 @media only screen and (max-width: 40em) { 
 		.slider-container .content {
@@ -534,6 +531,9 @@ nav.finishes ul {
 		}
 		.video-container {
 			width: 320px;
+		}
+		.color-thumb p {
+			font-size: 66%;
 		}
 	}
 
