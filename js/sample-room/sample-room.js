@@ -1,6 +1,6 @@
 angular.module('sampleRoom', ['ui.sortable'])
 
-.controller('sampleRoomCtrl', function($scope, $http, $element) {
+.controller('sampleRoomCtrl', function($scope, $http, $element, $window) {
 
 	// Get logged in user's samples
 	var getUserSamples = function() {
@@ -64,7 +64,7 @@ angular.module('sampleRoom', ['ui.sortable'])
 			url: '/sample-room/user/class/createUserColorCard.php?colorCardColors=' + $scope.colorCardColorIds + '&colorCardName=' + $scope.colorCardName
 		}).
 	    success(function(data, status, headers, config) {
-	    	$scope.exitColorCardMode();
+	    	$window.location.href = '/sample-room/color-cards/';
 	    });
 	}
 

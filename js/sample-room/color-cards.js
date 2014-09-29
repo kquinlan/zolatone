@@ -10,7 +10,9 @@ angular.module('colorCards', [])
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.userColorCards = data;
-	    	console.log(data);
+	    	
+	    	var last = $scope.userColorCards.length - 1;
+    		$scope.selectColorCard($scope.userColorCards[last]);
 	    });
 	}
 
@@ -30,7 +32,7 @@ angular.module('colorCards', [])
 
 	    	$scope.number = data.length / 9;
 			$scope.getNumber = function(num) {
-			    return new Array(num);   
+			    return new Array(num);
 			}
 
 			// Split up larger boards (> 9 samples)

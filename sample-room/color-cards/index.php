@@ -27,7 +27,7 @@
         <!-- Color Cards -->
         <section class="row small-padding-top-4 small-margin-bottom-4">
 
-        <h1 class="color-primary text-center small-margin-bottom-1">Your Previous Color Cards</h1>
+        <h1 class="color-primary text-center small-margin-bottom-1">Your Saved Color Cards</h1>
 
             <div ng-show="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
                 <p>It looks like you don't have any saved Color On Demand cards. Head over to the sample room to create some.</p>
@@ -35,8 +35,8 @@
 
             <div ng-hide="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
 
-                <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">Show Boards List &#9662;</button>
-                <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">Hide Boards List &#9652;</button>
+                <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">Show Cards List &#9662;</button>
+                <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">Hide Cards List &#9652;</button>
                 <table ng-show="showAllBoards" class="small-12 columns small-padding-0 small-margin-0">
                     <tr>
                         <th>Board Name:</th>
