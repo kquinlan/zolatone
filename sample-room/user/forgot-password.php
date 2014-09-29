@@ -208,7 +208,7 @@
 					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
 					<input type='email' maxlength="50" placeholder="Email" required name='email' />
 					<div class="small-12 small-margin-top-1">
-						<input class="button" type='submit' value='Submit' />
+						<input class="button small" type='submit' value='Submit' />
 					</div>
 				</form>
 			<? if(count($successes) > 0) { echo "</div>"; } ?>

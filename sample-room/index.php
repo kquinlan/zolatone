@@ -64,7 +64,7 @@
             <div class="small-12 columns small-margin-top-2 text-center">
                 <?
                     if(!isUserloggedIn()) {
-                        echo '<a href="#top" class="small login-button button">Log in / Sign Up</a>';
+                        echo '<a href="#" class="small login-button button">Log in / Sign Up</a>';
                     } else {
                         echo '<a href="/finishes" class="small button">Take me to the Finishes</a>';
                     }
