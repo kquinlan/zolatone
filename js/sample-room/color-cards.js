@@ -64,16 +64,16 @@ angular.module('colorCards', [])
     	$http({
 			method: 'GET', 
 			url: '/sample-room/user/class/orderColorCard.php?selectedColorCardId=' + $scope.selectedColorCard.id +
-															'&fname=' + $scope.fname +
-															'&lname=' + $scope.lname +
-															'&company=' + $scope.company +
-															'&tel=' + $scope.tel +
-															'&address1=' + $scope.address1 +
-															'&address2=' + $scope.address2 +
-															'&city=' + $scope.city +
-															'&state=' + $scope.state +
-															'&zip=' + $scope.zip +
-															'&instructions=' + $scope.instructions +
+				'&fname=' + $scope.fname +
+				'&lname=' + $scope.lname +
+				'&company=' + $scope.company +
+				'&tel=' + $scope.tel +
+				'&address1=' + $scope.address1 +
+				'&address2=' + $scope.address2 +
+				'&city=' + $scope.city +
+				'&state=' + $scope.state +
+				'&zip=' + $scope.zip +
+				'&instructions=' + $scope.instructions 
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.orderMode = false;
