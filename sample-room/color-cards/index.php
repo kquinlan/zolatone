@@ -29,12 +29,13 @@
 
         <h1 class="color-primary text-center small-margin-bottom-1">Your Saved Color Cards</h1>
 
-            <div ng-show="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+            <div ng-show="userColorCards.length < 1 && !orderMode" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
                 <p>It looks like you don't have any saved Color On Demand cards. Head over to the sample room to create some.</p>
             </div>
 
-            <div ng-hide="userColorCards.length < 1" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+            <div ng-hide="userColorCards.length < 1 || orderMode" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
 
+                <!-- Color Cards List -->
                 <button class="small small-12 small-margin-0 columns" ng-show="!showAllBoards" ng-click="showAllBoards = true">Show Cards List &#9662;</button>
                 <button class="small small-12 small-margin-0 columns" ng-show="showAllBoards" ng-click="showAllBoards = false">Hide Cards List &#9652;</button>
                 <table ng-show="showAllBoards" class="small-12 columns small-padding-0 small-margin-0">
@@ -56,6 +57,7 @@
                     </tr>
                 </table>
 
+                <!-- Selected Color Card -->
                 <div class="color-card small-12 columns text-center small-padding-top-1" ng-show="userColorCard !== null" ng-repeat="subCard in getNumber(number) track by $index">
 
                     <div class="small-margin-bottom-1">
@@ -75,10 +77,58 @@
 
                 </div>
 
-                <button class="small small-12 columns">Order This Card</button>
+                <button class="small small-12 columns" ng-click="orderMode = true">Order This Card</button>
 
             </div>
 
+            <div ng-show="orderMode" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
+                <form class="brochure" ng-submit="orderColorCard()">
+                    <div class="small-6 columns small-padding-0">
+                        <input ng-model="fname" type="text" placeholder="First Name" required />
+                    </div>
+
+                    <div class="small-6 columns small-padding-0">
+                        <input ng-model="lname" type="text" placeholder="Last Name" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="tel" type="tel" placeholder="Phone" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="company" type="text" placeholder="Company" />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="address1" type="text" placeholder="Address 1" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="address2" type="text" placeholder="Address 2" required />
+                    </div>
+
+                    <div class="small-6 columns small-padding-0">
+                        <input ng-model="city" type="text" placeholder="City" required />
+                    </div>
+
+                    <div class="small-3 columns small-padding-0">
+                        <input ng-model="state" type="text" placeholder="State" maxlength="2" onkeyup="javascript:this.value=this.value.toUpperCase();" required />
+                    </div>
+
+                    <div class="small-3 columns small-padding-0">
+                        <input ng-model="zip" type="text" placeholder="Zip" maxlength="5" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <textarea ng-model="instructions" placeholder="Special Instructions"></textarea>
+                    </div>
+
+                    <input type="submit" class="button small" value="Submit" />
+                    <button class="small" ng-click="orderMode = false">Cancel</button>
+                </form>
+            </div>
+
+            <!-- Sample Room Button -->
             <div class="small-12 columns text-center small-padding-top-1">
                 <a class="button small" href="/sample-room">Take me to the Sample Room</a>
             </div>

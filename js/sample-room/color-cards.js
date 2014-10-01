@@ -2,6 +2,7 @@ angular.module('colorCards', [])
 
 .controller('colorCardsCtrl', function($scope, $http, $element) {
 
+	//Get all color cards
 	var getColorCards = function() {
 		// Get logged in user's samples
 		$http({
@@ -13,8 +14,6 @@ angular.module('colorCards', [])
 	    	
 	    	var last = $scope.userColorCards.length - 1;
     		$scope.selectColorCard($scope.userColorCards[last]);
-
-    		console.log(data);
 	    });
 	}
 
@@ -22,6 +21,7 @@ angular.module('colorCards', [])
 
     $scope.showAllBoards = true;
 
+    // Assign the selected color card on click
     $scope.selectColorCard = function(userColorCard) {
     	$scope.selectedColorCard = userColorCard;
 
@@ -46,6 +46,7 @@ angular.module('colorCards', [])
 	    });
     }
 
+    // Delete color card
     $scope.deleteColorCard = function(userColorCard) {
     	$scope.selectedColorCard = userColorCard;
 
@@ -55,6 +56,27 @@ angular.module('colorCards', [])
 		}).
 	    success(function(data, status, headers, config) {
 	    	getColorCards();
+	    });
+    }
+
+    // Order color card
+    $scope.orderColorCard =  function() {
+    	$http({
+			method: 'GET', 
+			url: '/sample-room/user/class/orderColorCard.php?selectedColorCardId=' + $scope.selectedColorCard.id +
+															'&fname=' + $scope.fname +
+															'&lname=' + $scope.lname +
+															'&company=' + $scope.company +
+															'&tel=' + $scope.tel +
+															'&address1=' + $scope.address1 +
+															'&address2=' + $scope.address2 +
+															'&city=' + $scope.city +
+															'&state=' + $scope.state +
+															'&zip=' + $scope.zip +
+															'&instructions=' + $scope.instructions +
+		}).
+	    success(function(data, status, headers, config) {
+	    	$scope.orderMode = false;
 	    });
     }
 })

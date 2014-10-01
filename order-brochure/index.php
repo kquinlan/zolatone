@@ -51,6 +51,10 @@
                         </div>
 
                         <div class="small-12 columns small-padding-0">
+                            <input type="tel" placeholder="Phone" required />
+                        </div>
+
+                        <div class="small-12 columns small-padding-0">
                             <input type="text" placeholder="Company" />
                         </div>
 
