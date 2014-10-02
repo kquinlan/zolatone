@@ -7,16 +7,16 @@
 		$user_id = $loggedInUser->user_id;
 
 		$selectedColorCardId = $_POST['orderInfo']['selectedColorCardId'];
-		$fname = $_POST['orderInfo']['fname'];
-		$lname = $_POST['orderInfo']['lname'];
-		$company = $_POST['orderInfo']['company'];
-		$tel = $_POST['orderInfo']['tel'];
-		$address1 = $_POST['orderInfo']['address1'];
-		$address2 = $_POST['orderInfo']['address2'];
-		$city = $_POST['orderInfo']['city'];
-		$state = $_POST['orderInfo']['state'];
-		$zip = $_POST['orderInfo']['zip'];
-		$instructions = $_POST['orderInfo']['instructions'];
+		$fname = isset($_POST['orderInfo']['fname']) ? $_POST['orderInfo']['fname'] : ' ';
+		$lname = isset($_POST['orderInfo']['lname']) ? $_POST['orderInfo']['lname'] : ' ';
+		$company = isset($_POST['orderInfo']['company']) ? $_POST['orderInfo']['company'] : ' ';
+		$tel = isset($_POST['orderInfo']['tel']) ? $_POST['orderInfo']['tel'] : ' ';
+		$address1 = isset($_POST['orderInfo']['address1']) ? $_POST['orderInfo']['address1'] : ' ';
+		$address2 = isset($_POST['orderInfo']['address2']) ? $_POST['orderInfo']['address2'] : ' ';
+		$city = isset($_POST['orderInfo']['city']) ? $_POST['orderInfo']['city'] : ' ';
+		$state = isset($_POST['orderInfo']['state']) ? $_POST['orderInfo']['state'] : ' ';
+		$zip = isset($_POST['orderInfo']['zip']) ? $_POST['orderInfo']['zip'] : ' ';
+		$instructions = isset($_POST['orderInfo']['instructions']) ? $_POST['orderInfo']['instructions'] : ' ';
 
 		$query = "select saved_samples, name from zol_boards where id like '$selectedColorCardId'";
 		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
@@ -89,8 +89,6 @@
 			'From:' . $loggedInUser->email . "\r\n" .
 		    'Reply-To:' . $loggedInUser->email . "\r\n" .
 		    'X-Mailer: PHP/' . phpversion();
-
-		echo $fname . " " . $lname;
 
 		mail($to, $subject, $message, $headers);
 
