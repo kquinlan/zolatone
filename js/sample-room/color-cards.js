@@ -60,23 +60,22 @@ angular.module('colorCards', [])
     }
 
     // Order color card
-    $scope.orderColorCard =  function() {
+    $scope.orderColorCard =  function(orderInfo) {
+
+// Update the scope from the markup
+    	$scope.orderInfo = angular.copy(orderInfo);
+    	$scope.orderInfo.selectedColorCardId = $scope.selectedColorCard.id;
+    	console.log($scope.orderInfo);
+
     	$http({
-			method: 'GET', 
-			url: '/sample-room/user/class/orderColorCard.php?selectedColorCardId=' + $scope.selectedColorCard.id +
-				'&fname=' + $scope.fname +
-				'&lname=' + $scope.lname +
-				'&company=' + $scope.company +
-				'&tel=' + $scope.tel +
-				'&address1=' + $scope.address1 +
-				'&address2=' + $scope.address2 +
-				'&city=' + $scope.city +
-				'&state=' + $scope.state +
-				'&zip=' + $scope.zip +
-				'&instructions=' + $scope.instructions 
+			method: 'POST',
+			url: '/sample-room/user/class/orderColorCard.php',
+			data: $.param({'orderInfo': $scope.orderInfo}),
+    		headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.orderMode = false;
+	    	console.log(data);
 	    });
     }
 })

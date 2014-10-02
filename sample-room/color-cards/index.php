@@ -82,46 +82,48 @@
             </div>
 
             <div ng-show="orderMode" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
-                <form class="brochure" ng-submit="orderColorCard()">
+                <form class="brochure" ng-submit="orderColorCard(orderInfo)">
                     <div class="small-6 columns small-padding-0">
-                        <input ng-model="fname" type="text" placeholder="First Name" required />
-                    </div>
-
-                    <div class="small-6 columns small-padding-0">
-                        <input ng-model="lname" type="text" placeholder="Last Name" required />
-                    </div>
-
-                    <div class="small-12 columns small-padding-0">
-                        <input ng-model="tel" type="tel" placeholder="Phone" required />
-                    </div>
-
-                    <div class="small-12 columns small-padding-0">
-                        <input ng-model="company" type="text" placeholder="Company" />
-                    </div>
-
-                    <div class="small-12 columns small-padding-0">
-                        <input ng-model="address1" type="text" placeholder="Address 1" required />
-                    </div>
-
-                    <div class="small-12 columns small-padding-0">
-                        <input ng-model="address2" type="text" placeholder="Address 2" required />
+                        <input ng-model="orderInfo.fname" type="text" placeholder="First Name" required />
                     </div>
 
                     <div class="small-6 columns small-padding-0">
-                        <input ng-model="city" type="text" placeholder="City" required />
+                        <input ng-model="orderInfo.lname" type="text" placeholder="Last Name" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="orderInfo.tel" type="tel" placeholder="Phone" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="orderInfo.company" type="text" placeholder="Company" />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="orderInfo.address1" type="text" placeholder="Address 1" required />
+                    </div>
+
+                    <div class="small-12 columns small-padding-0">
+                        <input ng-model="orderInfo.address2" type="text" placeholder="Address 2" required />
+                    </div>
+
+                    <div class="small-6 columns small-padding-0">
+                        <input ng-model="orderInfo.city" type="text" placeholder="City" required />
                     </div>
 
                     <div class="small-3 columns small-padding-0">
-                        <input ng-model="state" type="text" placeholder="State" maxlength="2" onkeyup="javascript:this.value=this.value.toUpperCase();" required />
+                        <input ng-model="orderInfo.state" type="text" placeholder="State" maxlength="2" onkeyup="javascript:this.value=this.value.toUpperCase();" required />
                     </div>
 
                     <div class="small-3 columns small-padding-0">
-                        <input ng-model="zip" type="text" placeholder="Zip" maxlength="5" required />
+                        <input ng-model="orderInfo.zip" type="text" placeholder="Zip" maxlength="5" required />
                     </div>
 
                     <div class="small-12 columns small-padding-0">
-                        <textarea ng-model="instructions" placeholder="Special Instructions"></textarea>
+                        <textarea ng-model="orderInfo.instructions" placeholder="Special Instructions"></textarea>
                     </div>
+
+                    {{ orderinfo }}
 
                     <input type="submit" class="button small" value="Submit" />
                     <button class="small" ng-click="orderMode = false">Cancel</button>

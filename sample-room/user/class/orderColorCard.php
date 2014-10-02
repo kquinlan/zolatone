@@ -3,24 +3,20 @@
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/db-settings.php");
 
 	if(isUserloggedIn()) {
-		function clean($string) {
-		   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
-
-		   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
-		}
 
 		$user_id = $loggedInUser->user_id;
-		$selectedColorCardId = clean($_GET['selectedColorCardId']);
-		$fname = clean($_GET['fname']);
-		$lname = $_GET['lname'];
-		$company = $_GET['company'];
-		$tel = $_GET['tel'];
-		$address1 = $_GET['address1'];
-		$address2 = strval($_GET['address2']);
-		$city = $_GET['city'];
-		$state = $_GET['state'];
-		$zip = $_GET['zip'];
-		$instructions = $_GET['instructions'];
+
+		$selectedColorCardId = $_POST['orderInfo']['selectedColorCardId'];
+		$fname = $_POST['orderInfo']['fname'];
+		$lname = $_POST['orderInfo']['lname'];
+		$company = $_POST['orderInfo']['company'];
+		$tel = $_POST['orderInfo']['tel'];
+		$address1 = $_POST['orderInfo']['address1'];
+		$address2 = $_POST['orderInfo']['address2'];
+		$city = $_POST['orderInfo']['city'];
+		$state = $_POST['orderInfo']['state'];
+		$zip = $_POST['orderInfo']['zip'];
+		$instructions = $_POST['orderInfo']['instructions'];
 
 		$query = "select saved_samples, name from zol_boards where id like '$selectedColorCardId'";
 		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
@@ -54,7 +50,7 @@
 			$i++;
 		}
 
-		$samplesList = implode("\n", $samplesList);
+		$samplesList = implode("<br />", $samplesList);
 
 		$to      = '09egrego@gmail.com';
 
@@ -66,7 +62,20 @@
 						</head>
 						<body>
 							<h1>Zolatone Color on Demand Order</h1>
-							<p>Color on demand card: ' . $address2 . '</p>
+							<h3>Color on demand card: ' . $cardName . '</h3>
+							User: ' . $loggedInUser->username . '<br />
+							Phone: ' . $tel . '<br />
+							Email: ' . $loggedInUser->email . '</p><br />
+
+							<h3>Shipping Address:</h3>
+							<p>' . $company . '<br />
+							Attn: ' . $fname . " " . $lname . '<br />
+							' . $address1 . '<br />
+							' . $address2 . '<br />
+							' . $city . $state . $zip . '</p><br />
+
+							<h3>Samples on this card:</h3>
+							<p>' . $samplesList . '</p>
 						</body>
 					</html>';
 
@@ -100,6 +109,8 @@
 			'From:' . $loggedInUser->email . "\r\n" .
 		    'Reply-To:' . $loggedInUser->email . "\r\n" .
 		    'X-Mailer: PHP/' . phpversion();
+
+		echo $fname . " " . $lname;
 
 		mail($to, $subject, $message, $headers);
 
