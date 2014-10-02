@@ -65,44 +65,24 @@
 							<h3>Color on demand card: ' . $cardName . '</h3>
 							User: ' . $loggedInUser->username . '<br />
 							Phone: ' . $tel . '<br />
-							Email: ' . $loggedInUser->email . '</p><br />
+							Email: ' . $loggedInUser->email . '</p><br /><br />
+
+							<fieldset>
+								<legend>Special Instructions:</legend>
+								<p>' . $instructions . '</p>
+							</fieldset>
 
 							<h3>Shipping Address:</h3>
 							<p>' . $company . '<br />
 							Attn: ' . $fname . " " . $lname . '<br />
 							' . $address1 . '<br />
 							' . $address2 . '<br />
-							' . $city . $state . $zip . '</p><br />
+							' . $city . ", " . $state . " " . $zip . '</p>
 
 							<h3>Samples on this card:</h3>
 							<p>' . $samplesList . '</p>
 						</body>
 					</html>';
-
-
-
-
-
-		/*'Zolatone Sample Request:' . "\r\n\r\n" .
-
-					'Color On Demand Card: ' . $cardName . "\r\n\r\n" .
-
-					'User: ' . $loggedInUser->username . "\r\n" .
-					'Phone: ' . $tel . "\r\n" .
-					'Email: ' . $loggedInUser->email . "\r\n\r\n" .
-
-					'Shipping Address:' . "\r\n" .
-					$company . "\r\n" .
-					'Attn: ' . $fname . " " . $lname . "\r\n" .
-					$address1 . "\r\n" .
-					$address2 . "\r\n" .
-					$city . ' , ' . $state . " " . $zip . "\r\n\r\n" .
-
-					'Special Instructions: ' . "\r\n" .
-					$instructions . "\r\n\r\n" .
-
-					'Samples on this color card:' . "\r\n" .
-					$samplesList;*/
 
 		$headers = 'MIME-Version: 1.0' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
