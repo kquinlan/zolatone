@@ -59,10 +59,17 @@ angular.module('sampleRoom', ['ui.sortable'])
 		colorCardColors.forEach(function(color) {
 			$scope.colorCardColorIds.push(color.id);
 		})
+
+		var newColorCard = [];
+		newColorCard.push({'colorCardColors': $scope.colorCardColorIds});
+		newColorCard.push({'colorCardName': $scope.colorCardName});
+
 		// Get selected colors and pass to script
 		$http({
-			method: 'GET', 
-			url: '/sample-room/user/class/createUserColorCard.php?colorCardColors=' + $scope.colorCardColorIds + '&colorCardName=' + $.param($scope.colorCardName)
+			method: 'POST', 
+			url: '/sample-room/user/class/createUserColorCard.php',
+			data: $.param({'newColorCard': newColorCard}),
+    		headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
 		}).
 	    success(function(data, status, headers, config) {
 	    	$window.location.href = '/sample-room/color-cards/';

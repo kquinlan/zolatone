@@ -4,14 +4,12 @@
 	
 	if(isUserloggedIn()) {
 		$user_id = $loggedInUser->user_id;
-		$colorCardName = mysql_real_escape_string($_GET['colorCardName']);
-		$colorCardColors = $_GET['colorCardColors'];
+		$colorCardName = $_POST['newColorCard'][1]['colorCardName'];
+		$colorCardColors = implode(',', $_POST['newColorCard'][0]['colorCardColors']);
 		$date = date("F jS Y h:i A");
 
-		if($colorCardName != undefined) {
-			$query = "INSERT INTO zol_boards (user_id, name, date_created, saved_samples) VALUES ('$user_id', '$colorCardName', '$date', '$colorCardColors')";
-			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
-		}
+		$query = "INSERT INTO zol_boards (user_id, name, date_created, saved_samples) VALUES ('$user_id', '$colorCardName', '$date', '$colorCardColors')";
+		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 	} 
 
