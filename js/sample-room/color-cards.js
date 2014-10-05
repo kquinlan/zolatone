@@ -73,7 +73,6 @@ angular.module('colorCards', [])
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.orderMode = false;
-	    	console.log(data);
 	    });
     }
 })

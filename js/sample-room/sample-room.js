@@ -60,9 +60,10 @@ angular.module('sampleRoom', ['ui.sortable'])
 			$scope.colorCardColorIds.push(color.id);
 		})
 
-		var newColorCard = [];
-		newColorCard.push({'colorCardColors': $scope.colorCardColorIds});
-		newColorCard.push({'colorCardName': $scope.colorCardName});
+		var newColorCard = {
+			'colorCardColors': $scope.colorCardColorIds,
+			'colorCardName': $scope.colorCardName
+		};
 
 		// Get selected colors and pass to script
 		$http({
