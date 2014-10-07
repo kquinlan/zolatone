@@ -54,7 +54,7 @@
 
                         <div class="medium-2 columns">
                             <label class="text-smaller">Color:</label>
-                            <select ng-model="search.color" ng-change="toStart()">
+                            <select ng-model="search.color" ng-change="toggleAllSelect()">
                                 <option value="">All</option>
                                 <option>Black</option>
                                 <option>White</option>
@@ -73,7 +73,7 @@
 
                         <div class="medium-2 columns">
                             <label class="text-smaller">Tone:</label>
-                            <select ng-model="search.tone" ng-change="toStart()">
+                            <select ng-model="search.tone" ng-change="toggleAllSelect()">
                                 <option value="">All</option>
                                 <option>Warm</option>
                                 <option>Cool</option>
@@ -82,7 +82,7 @@
 
                         <div class="medium-2 columns">
                             <label class="text-smaller">Effect:</label>
-                            <select ng-model="search.effect" ng-change="toStart()">
+                            <select ng-model="search.effect" ng-change="toggleAllSelect()">
                                 <option value="">All</option>
                                 <option>Accent</option>
                                 <option>Neutral</option>

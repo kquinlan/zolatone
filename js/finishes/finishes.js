@@ -77,8 +77,16 @@ angular.module('finishes', ['ngRoute'])
 			$scope.search.color = '';
 			$scope.search.tone = '';
 			$scope.search.effect = '';
+			$scope.toStart();
 		});
+
+		// Remove search filters based on filters selected
+		$scope.toggleAllSelect = function() {
+			$scope.search.finish = ($scope.search.color != 0 || $scope.search.tone != 0 || $scope.search.effect != 0) ? '': finish;
+			$scope.toStart();
+		}
 	}
+	
 })
 
 // Configure SPA routes
