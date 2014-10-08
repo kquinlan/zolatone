@@ -117,7 +117,7 @@ angular.module('finishes', ['ngRoute'])
 			$scope.toggleAll('polomyx');
 		}
 	}).
-		when('/polomyx-airless', {
+		when('/airless', {
 		templateUrl: 'partials/polomyx-airless.tpl.html',
 		controller: function($scope) {
 			$scope.toggleAll('airless');
@@ -129,7 +129,7 @@ angular.module('finishes', ['ngRoute'])
 			$scope.toggleAll('flex');
 		}
 	}).
-		when('/light-vision', {
+		when('/lightvision', {
 		templateUrl: 'partials/light-vision.tpl.html',
 		controller: function($scope) {
 			$scope.toggleAll('lightvision');
