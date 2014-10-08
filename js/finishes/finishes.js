@@ -72,6 +72,8 @@ angular.module('finishes', ['ngRoute'])
 	}
 	// Remove search filters based on form input
 	$scope.toggleAll = function(finish) {
+		$scope.search.finish = finish;
+
 		$scope.$watch('colorFilter.$valid', function(validity) { 
 			$scope.search.finish = validity ? '' : finish;
 			$scope.search.color = '';
@@ -82,11 +84,10 @@ angular.module('finishes', ['ngRoute'])
 
 		// Remove search filters based on filters selected
 		$scope.toggleAllSelect = function() {
-			$scope.search.finish = ($scope.search.color != 0 || $scope.search.tone != 0 || $scope.search.effect != 0) ? '': finish;
+			$scope.search.finish = ($scope.search.color != 0 || $scope.search.tone != 0 || $scope.search.effect != 0) ? '' : finish;
 			$scope.toStart();
 		}
-	}
-	
+	}	
 })
 
 // Configure SPA routes
