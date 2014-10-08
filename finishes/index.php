@@ -34,9 +34,9 @@
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lluminations' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'metal' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
-                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'airless' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/airless">Polomyx Airless</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx-airless' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'flex' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/flex">Flex</a></li>
-                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lightvision' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lightvision">Light Vision</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'light-vision' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
                     </ul>
                 </nav>
             
@@ -123,7 +123,7 @@
                 <div class="medium-7 columns small-padding-0">
 
                     <div class="small-12 columns color-thumbs">
-                        <div ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <div ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | filter:search.finish:true | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
                             <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                         </div>
 
