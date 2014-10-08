@@ -120,7 +120,7 @@ angular.module('finishes', ['ngRoute'])
 		when('/polomyx-airless', {
 		templateUrl: 'partials/polomyx-airless.tpl.html',
 		controller: function($scope) {
-			$scope.toggleAll('polomyx-airless');
+			$scope.toggleAll('airless');
 		}
 	}).
 		when('/flex', {
@@ -132,7 +132,7 @@ angular.module('finishes', ['ngRoute'])
 		when('/light-vision', {
 		templateUrl: 'partials/light-vision.tpl.html',
 		controller: function($scope) {
-			$scope.toggleAll('light-vision');
+			$scope.toggleAll('lightvision');
 		}
 	}).
 		otherwise({

@@ -34,9 +34,9 @@
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lluminations' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/lluminations">Lluminations</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'metal' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/metal">Metal</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx">Polomyx</a></li>
-                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'polomyx-airless' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'airless' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/polomyx-airless">Polomyx Airless</a></li>
                         <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'flex' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/flex">Flex</a></li>
-                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'light-vision' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
+                        <li ng-class="{ 'color-primary border-primary-bottom': search.finish === 'lightvision' }" ng-init="search.finish = search.finish" ng-click="toStart(); search.finish = search.finish"><a href="#/light-vision">Light Vision</a></li>
                     </ul>
                 </nav>
             
