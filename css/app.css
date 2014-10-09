@@ -485,7 +485,7 @@ nav.finishes ul {
 		width: 100%; 
 		background-size: 200%;
 	}
-	.color-thumb div:hover {
+	.color-thumb.clickable div:hover {
 		outline: 3px solid #f79320;
 	}
 .selected-color {

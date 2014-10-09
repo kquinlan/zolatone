@@ -123,7 +123,7 @@
                 <div class="medium-7 columns small-padding-0">
 
                     <div class="small-12 columns color-thumbs">
-                        <div ng-click="select(color); search.name = ''" class="color-thumb small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <div ng-click="select(color); search.name = ''" class="color-thumb clickable small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
                             <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                         </div>
 

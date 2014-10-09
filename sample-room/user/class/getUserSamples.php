@@ -34,7 +34,8 @@
 	} 
 
 	else {
-		echo "You are not logged in";
+		$loggedIn = null;
+		echo var_export($loggedIn);
 	}
 
 	

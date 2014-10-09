@@ -18,13 +18,15 @@ angular.module('finishes', ['ngRoute'])
 	    success(function(data, status, headers, config) {
 	    	var userColors = data;
 
-	    	$scope.colors.forEach(function(color) {
-	    		userColors.forEach(function(userColor) {
-	    			if(color.id === userColor.id) {
-	    				color.isSaved = true;
-	    			}
-	    		})
-	    	})
+	    	if(userColors !== 'NULL') {
+		    	$scope.colors.forEach(function(color) {
+		    		userColors.forEach(function(userColor) {
+		    			if(color.id === userColor.id) {
+		    				color.isSaved = true;
+		    			}
+		    		})
+		    	})
+		    }
 
 	    	// Save the sample selected
 			$scope.saveSample = function(color) {
