@@ -80,21 +80,22 @@
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
-                    <h4 class="color-primary border-primary-bottom">Light Vision</h4>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Guide Spec</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Product Data Sheet</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">MSDS</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Application Guide</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Consejos de Aplicacion</a></p>
-                </div>
-
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                    <img src="/img/flx-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Flex</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_GuideSpec.pdf">Guide Spec</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ProductDataSheet.pdf">Product Data Sheet</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_MSDS.pdf">MSDS</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ApplicationGuide.pdf">Application Guide</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
+                </div>
+
+                <div class="small-12 medium-6 large-4 columns left small-padding-top-2 clear">
+                    <h4 class="color-primary border-primary-bottom">Light Vision</h4>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Guide Spec</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Product Data Sheet</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">MSDS</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Application Guide</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Consejos de Aplicacion</a></p>
                 </div>
             </div>
 
