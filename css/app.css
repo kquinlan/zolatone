@@ -97,7 +97,7 @@ nav.mobile.show {
 }
 	
 	nav.mobile aside {
-		width: 12em;
+		width: 14em;
 		background-color: #fff;
 		white-space: nowrap;
 		position: fixed;
@@ -354,7 +354,7 @@ nav.main {
 			margin: 0;
 		}
 .scroll-down {
-	z-index: 9999;
+	z-index: 2;
 	position: relative;
 	top: -4.5em;
 	margin: 0 auto;

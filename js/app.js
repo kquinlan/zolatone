@@ -36,7 +36,7 @@ $('.off-canvas-toggle').click(function() {
 });
 
 $('nav.mobile aside, nav.mobile').click(function() { 
-    $('nav.mobile aside').transition({ x:'12em' }, function() { 
+    $('nav.mobile aside').transition({ x:'14em' }, timing, 'ease-in', function() { 
         $('nav.mobile').removeClass('show'); 
     }) 
 });
@@ -100,4 +100,9 @@ $('.gallery-thumb').click(function() {
 // Scroll down click events
 $('.scroll-down').click(function() {
     $("html, body").animate({ scrollTop: $('.slider-container').height() }, "slow");
+})
+
+// Scroll down click events
+$('.to-top').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 })

@@ -104,7 +104,7 @@
 							<li><a href="/finishes/#/airless">Polomyx Airless</a></li>
 							<li><a href="/finishes/#/flex">Flex</a></li>
 							<li><a href="/finishes/#/lightvision">Light Vision</a></li>
-							<li><a href="">Order a Brochure</a></li>
+							<li><a href="/order-brochure">Order a Brochure</a></li>
 						</ul>
 					</li>
 					<li><a href="/ideas">Ideas</a></li>
@@ -164,7 +164,11 @@
 		<ul class="off-canvas-list">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
-			<li><a href="/finishes">Finishes</a></li>
+			<li><a href="/finishes">Finishes</a>
+				<ul>
+					<li><a href="/order-brochure">Order a Brochure</a></li>
+				</ul>
+			</li>
 			<li><a href="/ideas">Ideas</a></li>
 			<li><a href="/technical-documents">Tech Info</a>
 				<ul>
