@@ -5,30 +5,34 @@
 			<div class="medium-6 columns small-padding-1">
 				<b>CONNECT</b>
 				<!-- Facebook Icon -->
-				<div class="icon small-margin-left-1">
-					<object data="/img/facebook.svg">
+				<a href="https://www.facebook.com/Zolatone">
+					<div class="icon small-margin-left-1">
 						<img src="/img/facebook.png" />
-					</object>
-				</div>
+					</div>
+				</a>
 				<!-- Twitter Icon -->
-				<div class="icon small-margin-left-1">
-					<object data="/img/twitter.svg">
+				<a href="https://twitter.com/zolatonefinish">
+					<div class="icon small-margin-left-1">
 						<img src="/img/twitter.png" />
-					</object>
-				</div>
+					</div>
+				</a>
 				<!-- YouTube Icon -->
-				<div class="icon small-margin-left-1">
-					<object data="/img/youtube.svg">
+				<a href="https://www.youtube.com/user/ZolatonePaint">
+					<div class="icon small-margin-left-1">
 						<img src="/img/youtube.png" />
-					</object>
-				</div>
+					</div>
+				</a>
+				<!-- Pinterest Icon -->
+				<a href="http://www.pinterest.com/ZolatonePaint/">
+					<div class="icon small-margin-left-1">
+						<img src="/img/pinterest.png" />
+					</div>
+				</a>
 			</div>
 			<div class="medium-6 columns small-padding-1">
 				<!-- Where to Buy Icon -->
 				<div class="icon small-margin-right-1">
-					<object data="/img/buyicon-white.svg">
-						<img src="/img/buyicon-white.png" />
-					</object>
+					<img src="/img/buyicon-white.png" />
 				</div>
 				<a href="/where-to-buy"><b>WHERE TO BUY</b></a>
 			</div>
