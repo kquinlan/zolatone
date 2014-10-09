@@ -96,3 +96,8 @@ $('.gallery-thumb').click(function() {
         });
     }
 });
+
+// Scroll down click events
+$('.scroll-down').click(function() {
+    $("html, body").animate({ scrollTop: $('.slider-container').height() }, "slow");
+})

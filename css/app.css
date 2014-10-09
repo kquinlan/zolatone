@@ -308,7 +308,7 @@ nav.main {
 	position: relative;
 	height: 100%;
 	width: 100%;
-	border-bottom: 2em solid #f79320;
+	border-bottom: 8px solid #f79320;
 }
 	.slider {
 		position: relative;
@@ -353,6 +353,14 @@ nav.main {
 			padding: 0;
 			margin: 0;
 		}
+.scroll-down {
+	z-index: 9999;
+	position: relative;
+	top: -4.5em;
+	margin: 0 auto;
+	width: 130px;
+	cursor: s-resize;
+}
 
 /* Shared UI Styles */
 .close {
@@ -476,6 +484,9 @@ nav.finishes ul {
 		padding-bottom: 92.77%;
 		width: 100%; 
 		background-size: 200%;
+	}
+	.color-thumb div:hover {
+		outline: 3px solid #f79320;
 	}
 .selected-color {
 	border: 0.25em solid #fff;

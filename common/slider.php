@@ -5,3 +5,7 @@
     <li class="columns-counterpointe"></li>
     <li class="hospital-waiting-room"></li>
 </ul>
+
+<div class="scroll-down">
+	<img src="/img/scroll-down.png">
+</div>
