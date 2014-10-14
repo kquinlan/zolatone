@@ -29,7 +29,7 @@
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
                 <h1 class="color-primary text-center small-margin-bottom-1">Finishes</h1>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/pfx-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Counterpointe</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Counterpointe_GuideSpec.pdf">Guide Spec</a></p>
@@ -39,7 +39,7 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Counterpointe_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/zfx-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Lluminations</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Lluminations_GuideSpec.pdf">Guide Spec</a></p>
@@ -49,7 +49,7 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Lluminations_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/zml-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Metal</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Metal_GuideSpec.pdf">Guide Spec</a></p>
@@ -59,7 +59,7 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Metal_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/plx-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Polomyx</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Polomyx_GuideSpec.pdf">Guide Spec</a></p>
@@ -69,7 +69,7 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Polomyx_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/pxa-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Polomyx Airless</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/PolomyxAirless_GuideSpec.pdf">Guide Spec</a></p>
@@ -79,7 +79,7 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/PolomyxAirless_ConsejosDeAplicacion.pdf">Consejos de Aplicacion</a></p>
                 </div>
 
-                <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
+                <div class="small-12 medium-6 large-4 columns small-padding-top-2">
                     <img src="/img/flx-can.jpg" style="max-width: 128px;">
                     <h4 class="color-primary border-primary-bottom">Flex</h4>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_GuideSpec.pdf">Guide Spec</a></p>
