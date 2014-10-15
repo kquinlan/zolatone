@@ -1,7 +1,7 @@
 <? require_once($_SERVER['DOCUMENT_ROOT'] . "/sample-room/user/models/config.php"); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="orderBrochure">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
     </head>
-    <body>
+    <body ng-controller="brochureCtrl">
 
         <? require_once '../common/header.php' ?>
 
@@ -32,64 +32,65 @@
             </div>
 
             <div class="small-11 columns small-centered">
+
                 <div class="medium-6 small-12 columns small-padding-bottom-4">
                     <img src="/img/brochure.jpg">
                 </div>
 
-                <form class="brochure">
-                    <div class="medium-6 small-12 columns">
+                <div class="medium-6 small-12 columns">
+
+                    <form name="brochureForm" class="brochure" ng-submit="orderBrochure(brochureInfo)">
                         <div class="small-6 columns small-padding-0">
-                            <input type="text" placeholder="First Name" required />
-                        </div>
-
-                        <div class="small-6 columns small-padding-0">
-                            <input type="text" placeholder="Last Name" required />
-                        </div>
-
-                        <div class="small-12 columns small-padding-0">
-                            <input type="email" placeholder="Email" required />
-                        </div>
-
-                        <div class="small-12 columns small-padding-0">
-                            <input type="tel" placeholder="Phone" required />
-                        </div>
-
-                        <div class="small-12 columns small-padding-0">
-                            <input type="text" placeholder="Company" />
-                        </div>
-
-                        <div class="small-12 columns small-padding-0">
-                            <input type="text" placeholder="Address 1" required />
-                        </div>
-
-                        <div class="small-12 columns small-padding-0">
-                            <input type="text" placeholder="Address 2" required />
+                            <input ng-model="brochureInfo.fname" type="text" placeholder="First Name" ng-required="true" required />
                         </div>
 
                         <div class="small-6 columns small-padding-0">
-                            <input type="text" placeholder="City" required />
+                            <input ng-model="brochureInfo.lname" type="text" placeholder="Last Name" ng-required="true" required />
+                        </div>
+
+                        <div class="small-12 columns small-padding-0">
+                            <input ng-model="brochureInfo.company" type="text" placeholder="Company" ng-required="true" required />
+                        </div>
+
+                        <div class="small-12 columns small-padding-0">
+                            <input ng-model="brochureInfo.tel" type="tel" placeholder="Phone" ng-required="true" required />
+                        </div>
+
+                        <div class="small-12 columns small-padding-0">
+                            <input ng-model="brochureInfo.address1" type="text" placeholder="Address 1" ng-required="true" required />
+                        </div>
+
+                        <div class="small-12 columns small-padding-0">
+                            <input ng-model="brochureInfo.address2" type="text" placeholder="Address 2" />
+                        </div>
+
+                        <div class="small-6 columns small-padding-0">
+                            <input ng-model="brochureInfo.city" type="text" placeholder="City" ng-required="true" required />
                         </div>
 
                         <div class="small-3 columns small-padding-0">
-                            <input type="text" placeholder="State" maxlength="2" onkeyup="javascript:this.value=this.value.toUpperCase();" required />
+                            <input ng-model="brochureInfo.state" type="text" placeholder="State" maxlength="2" onkeyup="javascript:this.value=this.value.toUpperCase();" ng-required="true" required />
                         </div>
 
                         <div class="small-3 columns small-padding-0">
-                            <input type="text" placeholder="Zip" maxlength="5" required />
+                            <input ng-model="brochureInfo.zip" type="text" placeholder="Zip" maxlength="5" ng-required="true" required />
                         </div>
 
                         <div class="small-12 columns small-padding-0">
-                            <textarea placeholder="Special Instructions"></textarea>
+                            <textarea ng-model="brochureInfo.instructions" placeholder="Special Instructions"></textarea>
                         </div>
 
-                        <input type="submit" class="button small" value="Submit" />
-                    </div>
-                </form>
+                        <input type="submit" ng-disabled="!brochureForm.$valid" class="button small" value="Submit" />
+                    </form>
+
+                </div>
             </div>
 
         </section>
 
         <? require_once '../common/footer.php' ?>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
 
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/transit.min.js"></script>
@@ -97,5 +98,6 @@
         <script src="/js/vendor/fastclick.js"></script>
         <script src="/js/responsiveslides.min.js"></script>
         <script src="/js/app.js"></script>
+        <script src="/js/order-brochure/order-brochure.js"></script>
     </body>
 </html>

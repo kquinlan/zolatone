@@ -58,7 +58,7 @@
 
 		$message = 	'<html>
 						<head>
-						  <title>Birthday Reminders for August</title>
+						  <title>Zolatone Color on Demand Order</title>
 						</head>
 						<body>
 							<h1>Zolatone Color on Demand Order</h1>
