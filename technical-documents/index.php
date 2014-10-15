@@ -91,11 +91,14 @@
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2 clear">
                     <h4 class="color-primary border-primary-bottom">Light Vision</h4>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Guide Spec</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Product Data Sheet</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">MSDS</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Application Guide</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/">Consejos de Aplicacion</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-pfx-lva-guide-spec.pdf" target="_BLANK">Guide Spec - Counterpointe LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-pfx-lva-msds.pdf" target="_BLANK">MSDS - Counterpointe LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-plx-lva-guide-spec.pdf" target="_BLANK">Guide Spec - Polomyx LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-plx-lva-msds.pdf" target="_BLANK">MSDS - Polomyx LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-pxa-lva-guide-spec.pdf" target="_BLANK">Guide Spec - Polomyx Airless LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-pxa-lva-msds.pdf" target="_BLANK">MSDS - Polomyx Airless LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-zfx-lva-guide-spec.pdf" target="_BLANK">Guide Spec - Lluminations LVA</a></p>
+                    <p class="small-margin-0"><a class="text-smaller" href="/documents/lva-zfx-lva-msds.pdf" target="_BLANK">MSDS - Lluminations LVA</a></p>
                 </div>
             </div>
 
