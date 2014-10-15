@@ -4,30 +4,35 @@
 		<div class="row">
 			<div class="medium-6 columns small-padding-1">
 				<b>CONNECT</b>
+
 				<!-- Facebook Icon -->
-				<a href="https://www.facebook.com/Zolatone">
+				<a href="https://www.facebook.com/Zolatone" target="_BLANK">
 					<div class="icon small-margin-left-1">
 						<img src="/img/facebook.png" />
 					</div>
 				</a>
+
 				<!-- Twitter Icon -->
-				<a href="https://twitter.com/zolatonefinish">
+				<a href="https://twitter.com/zolatonefinish" target="_BLANK">
 					<div class="icon small-margin-left-1">
 						<img src="/img/twitter.png" />
 					</div>
 				</a>
+
 				<!-- YouTube Icon -->
-				<a href="https://www.youtube.com/user/ZolatonePaint">
+				<a href="https://www.youtube.com/user/ZolatonePaint" target="_BLANK">
 					<div class="icon small-margin-left-1">
 						<img src="/img/youtube.png" />
 					</div>
 				</a>
+
 				<!-- Pinterest Icon -->
-				<a href="http://www.pinterest.com/ZolatonePaint/">
+				<a href="http://www.pinterest.com/ZolatonePaint/" target="_BLANK">
 					<div class="icon small-margin-left-1">
 						<img src="/img/pinterest.png" />
 					</div>
 				</a>
+
 			</div>
 			<div class="medium-6 columns small-padding-1">
 				<!-- Where to Buy Icon -->
