@@ -86,7 +86,6 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ProductDataSheet.pdf" target="_BLANK">Product Data Sheet</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_MSDS.pdf" target="_BLANK">MSDS</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ApplicationGuide.pdf" target="_BLANK">Application Guide</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/Flex_ConsejosDeAplicacion.pdf" target="_BLANK">Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2 clear">
@@ -117,7 +116,6 @@
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/SP1000_ProductDataSheet.pdf" target="_BLANK">Product Data Sheet</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/SP1000_MSDS.pdf" target="_BLANK">MSDS</a></p>
                     <p class="small-margin-0"><a class="text-smaller" href="/documents/SP1000_ApplicationGuide.pdf" target="_BLANK">Application Guide</a></p>
-                    <p class="small-margin-0"><a class="text-smaller" href="/documents/SP1000_ConsejosDeAplicacion.pdf" target="_BLANK">Consejos de Aplicacion</a></p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
