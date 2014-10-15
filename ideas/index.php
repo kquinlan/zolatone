@@ -52,8 +52,35 @@
                         </div>
                     </div>
 
-                    <!-- ??? Airport -->
-                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/atl-airport.jpg');"></div>
+                    <!-- World Market Center -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/world-market-center.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>World Market Center</h5>
+                            <p class="text-smaller small-margin-0">The World Market Center in Las Vegas, Nevada, was looking to make a statement with their walls and architectural details. They chose our Metal finish in a few color options to really make their space special. We think the columns featuring metal are really spectacular.</p>
+                        </div>
+                    </div>
+
+                    <!-- The Javits Center -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/jacob-javits-center.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>The Javits Center</h5>
+                            <p class="text-smaller small-margin-0">Zolatone has been used in New York’s Javits Convention Center from the beginning. When the time came to renovate and expanded the center, it was Javits’s own painting and maintenance team that pushed to keep on using Zolatone. Over the years they were impressed with Zolatone’s great looks, durability and easy application and maintenance.</p>
+                        </div>
+                    </div>
+
+                    <!-- University of Wisconsin - Stout -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/uw-stout-main.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>University of Wisconsin - Stout - Lluminations</h5>
+                            <p class="text-smaller small-margin-0">The University of Wisconsin at Stout built a beautiful new addition and wanted to keep it looking good throughout the year. They chose Zolatone’s Lluminations finish of it’s great looks and extended life-cycle. Nice choice UW, move to the head of the class!</p>
+                        </div>
+                    </div>
+
+                    <!-- McCarran International Airport -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/mccarran-intl-airport.jpg');"></div>
                     <div class="gallery-description color-white text-left">
                         <div class="small-padding-1">
                             <h5>McCarran International Airport - Lluminations & Polomyx</h5>
@@ -67,6 +94,33 @@
                         <div class="small-padding-1">
                             <h5>Bank of America Stadium - Metal</h5>
                             <p class="text-smaller small-margin-0">Bank of America Stadium in Charlotte, North Carolina is home to the Carolina Panthers and an impressive amount of Zolatone paint! The stadium features Zolatone’s Metal finish for its world-class good looks that can handle everything that Panther players and fans dish out.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hartsfield Jackson Airport -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/hartsfield-jackson-airport.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Hartsfield Jackson Airport - Polomyx Airless</h5>
+                            <p class="text-smaller small-margin-0">Imagine needing to repaint every 45 days! Being the busiest airport in the world, you’re bound to see a lot of hustle and bustle and the original semi-gloss paint used on the walls and common areas just couldn’t take it. Polomyx Airless from Zolatone was tested due to its legendary durability and ease of application, two years later, the walls finally needed some touch-up. Going from needing to repaint every 45 days to needing to retouch every two years has made the team at Hartsfield-Jackson true believers in Zolatone.</p>
+                        </div>
+                    </div>
+
+                    <!-- The Q Arena -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/the-q-arena.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>The Q Arena - Polomyx</h5>
+                            <p class="text-smaller small-margin-0">Basketball. Hockey. Monster trucks and more…When a venue sees this type of action, it better bring its “A” game. The Quicken Loans arena in Cleveland needed to find a low VOC paint that could handle the wear and tear and regular touch-ups a busy arena experiences. They chose Polomyx from Zolatone and the result has been great, plus the low odor and low VOC levels mean far less down time.</p>
+                        </div>
+                    </div>
+
+                    <!-- W Hotels -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/w-hotel.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>W Hotels, New York - Counterpointe PFX-C3023</h5>
+                            <p class="text-smaller small-margin-0">Trend setter The W Hotel has just recently specified Counterpointe on the general walls and ceilings of their New York hotel. The color PFX-C3023 was selected for it’s high design finish and it’s legendary durability. Color us flattered, W Hotels, and thanks for using Zolatone.</p>
                         </div>
                     </div>
 
