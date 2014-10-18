@@ -1221,7 +1221,7 @@ function securePage($uri){
 			return true;
 		}
 		else {
-			header("Location: account.php");
+			header("Location: /sample-room/");
 			return false;	
 		}
 	}

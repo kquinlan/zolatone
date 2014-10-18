@@ -3,7 +3,7 @@
 	if (!securePage($_SERVER['PHP_SELF'])){ die(); }
 
 	//Prevent the user visiting the logged in page if he/she is already logged in
-	if(isUserLoggedIn()) { header("Location: /sample-room/index.php"); die(); }
+	if(isUserLoggedIn()) { header("Location: /sample-room/"); die(); }
 
 	//Forms posted
 	if(!empty($_POST)) {
