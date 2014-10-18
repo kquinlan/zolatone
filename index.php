@@ -8,6 +8,9 @@
         <title>Zolatone | Welcome</title>
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
+
+        <meta name="description" content="Paint manufacturers of multi color paint, textured paint, and decorative finishes for professionals. Waterbased and low VOC." />
+        <meta name="google-site-verification" content="vDwzu_JKCjXWrfYhtQVFDos-3m-1h78Tr447RuL6okg" />
     </head>
     <body id="top">
 
