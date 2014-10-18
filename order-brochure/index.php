@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="small-12 columns small-padding-0">
-                            <input ng-model="brochureInfo.company" type="text" placeholder="Company" ng-required="true" required />
+                            <input ng-model="brochureInfo.email" type="email" placeholder="Email" ng-required="true" required />
                         </div>
 
                         <div class="small-12 columns small-padding-0">

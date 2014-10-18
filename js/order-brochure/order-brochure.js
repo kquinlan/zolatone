@@ -14,6 +14,8 @@ angular.module('orderBrochure', [])
     		headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
 		}).
 	    success(function(data, status, headers, config) {
+	    	$scope.brochureForm.$setPristine();
+	    	$scope.brochureInfo = {};
 	    	console.log(data);
 	    });
     }
