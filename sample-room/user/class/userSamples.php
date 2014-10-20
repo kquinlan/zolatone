@@ -13,8 +13,8 @@
     </div>
 
     <div class="selected-counter text-center small-padding-1 border-primary-bottom" ng-show="colorCardMode && !editColorCard">
-        <h4 class="small-margin-0">{{ colorCardColors.length }} colors selected</h4>
-        <label ng-show="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" class="text-smaller color-primary small-margin-0"><i>Must be a multiple of 9</i></label>
+        <h4 class="small-margin-0">{{ selectedColors.length }} colors selected</h4>
+        <label ng-show="selectedColors.length % 9 !== 0 || selectedColors.length === 0" class="text-smaller color-primary small-margin-0"><i>Must be a multiple of 9</i></label>
     </div>
 
     <div class="selected-counter text-center small-padding-1 border-primary-bottom" ng-show="colorCardMode && editColorCard">
@@ -22,8 +22,8 @@
     </div>
 
     <!-- Selected for Color Card -->
-    <div class="color-card large-8 medium-9 small-centered columns small-padding-top-1" ui-sortable ng-model="colorCardColors" ng-show="editColorCard" style="cursor: move;">
-        <div class="color-thumb" ng-repeat="color in colorCardColors">
+    <div class="color-card large-8 medium-9 small-centered columns small-padding-top-1" ui-sortable ng-model="selectedColors" ng-show="editColorCard" style="cursor: move;">
+        <div class="color-thumb" ng-repeat="color in selectedColors">
             <div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div>
             <p class="color-primary text-smaller"><b>{{ color.name }}</b></p>
         </div>
@@ -41,11 +41,11 @@
             <legend class="text-smaller">Your Color On Demand Card:</legend>
         	<label ng-hide="editColorCard" class="text-smaller color-primary small-margin-bottom-1"><i>Click samples above to add to your Color On Demand Card.</i></label>
             <form ng-hide="editColorCard" name="cardName" class="small-margin-0">
-                <input class="text-center" ng-required="true" required title="Please name your color card" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0" type="text" maxlength="50" placeholder="Name Your Color Card" ng-model="colorCardName"/>
-                <a href="#" type="submit" class="button small" ng-disabled="colorCardColors.length % 9 !== 0 || colorCardColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true">Continue</a>
+                <input class="text-center" ng-required="true" required title="Please name your color card" ng-disabled="selectedColors.length % 9 !== 0 || selectedColors.length === 0" type="text" maxlength="50" placeholder="Name Your Color Card" ng-model="colorCardName"/>
+                <a href="#" type="submit" class="button small" ng-disabled="selectedColors.length % 9 !== 0 || selectedColors.length === 0 || !cardName.$valid" ng-click="editColorCard = true">Continue</a>
                 <button class="small" ng-click="exitColorCardMode()">Cancel</button>
             </form>
-            <a class="button small" ng-show="editColorCard" ng-click="createUserColorCard(colorCardColors)">Save</a>
+            <a class="button small" ng-show="editColorCard" ng-click="createUserColorCard(selectedColors)">Save</a>
             <button class="small" ng-show="editColorCard" ng-click="exitColorCardMode()">Cancel</button>      	
         </fieldset>
     </div>

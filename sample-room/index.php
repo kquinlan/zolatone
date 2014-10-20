@@ -28,7 +28,7 @@
 
             <div ng-hide="colorCardMode" class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
                 <h1 class="color-primary text-center small-margin-bottom-1">The Sample Room</h1>
-                <p>Zolatone’s Sample Room lets you store, access and order samples of your favorite Zolatone finishes all in one convenient place. With the Sample Room, you can create individual Sample Boards to be used as personalized tip cards of your favorite colors for all of your unique projects and clients.</p>
+                <p>Zolatone’s Sample Room lets you store, access and order samples of your favorite Zolatone finishes all in one convenient place. With the Sample Room, you can create individual On Demand cards to be used as personalized tip cards of your favorite colors for all of your unique projects and clients.</p>
 
                 <h3 class="color-primary text-center small-margin-bottom-1">Two Great Ways to Sample Zolatone</h3>
                 <p>When you’re ready to order samples, you now have two great options. We can send out loose 4x5 samples or you can create an On Demand card. On Demand cards allow you to create collections of your favorite Zolatone colors and turn them into your very own custom tip cards.</p>

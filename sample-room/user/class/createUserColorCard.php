@@ -5,7 +5,7 @@
 	if(isUserloggedIn()) {
 		$user_id = $loggedInUser->user_id;
 		$colorCardName = $_POST['newColorCard']['colorCardName'];
-		$colorCardColors = implode(',', $_POST['newColorCard']['colorCardColors']);
+		$colorCardColors = implode(',', $_POST['newColorCard']['selectedColors']);
 		$date = date("F jS Y h:i A");
 
 		$query = "INSERT INTO zol_boards (user_id, name, date_created, saved_samples) VALUES ('$user_id', '$colorCardName', '$date', '$colorCardColors')";

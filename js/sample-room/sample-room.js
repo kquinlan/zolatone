@@ -26,15 +26,15 @@ angular.module('sampleRoom', ['ui.sortable'])
 
 	getUserSamples();
 
-	$scope.colorCardColors = [];
+	$scope.selectedColors = [];
 
 	// Select colors for the color card
 	$scope.addToColorCard = function(color) {
 		if(!color.isAdded) {
-			$scope.colorCardColors.push(color);
+			$scope.selectedColors.push(color);
 			color.isAdded = true;
 		} else {
-			$scope.colorCardColors.splice($scope.colorCardColors.indexOf(color), 1);
+			$scope.selectedColors.splice($scope.selectedColors.indexOf(color), 1);
 			color.isAdded = false;
 		}
 	}
@@ -46,22 +46,22 @@ angular.module('sampleRoom', ['ui.sortable'])
 				color.isAdded = false;
 			}
 		});
-		$scope.colorCardColors = [];
+		$scope.selectedColors = [];
 		$scope.colorCardMode = false;
 		$scope.colorCardName = '';
 		$scope.editColorCard = false;
 	}
 
 	// Create the color card instance on the DB
-	$scope.createUserColorCard = function(colorCardColors) {
+	$scope.createUserColorCard = function(selectedColors) {
 		$scope.colorCardColorIds = [];
 
-		colorCardColors.forEach(function(color) {
+		selectedColors.forEach(function(color) {
 			$scope.colorCardColorIds.push(color.id);
 		})
 
 		var newColorCard = {
-			'colorCardColors': $scope.colorCardColorIds,
+			'selectedColors': $scope.colorCardColorIds,
 			'colorCardName': $scope.colorCardName
 		};
 
