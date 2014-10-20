@@ -50,6 +50,8 @@ angular.module('sampleRoom', ['ui.sortable'])
 		$scope.colorCardMode = false;
 		$scope.colorCardName = '';
 		$scope.editColorCard = false;
+		$scope.orderSamplesMode = false;
+		$scope.orderSamplesForm = false;
 	}
 
 	// Create the color card instance on the DB
