@@ -33,7 +33,8 @@
 
             <div class="small-11 columns small-centered">
 
-                <div class="medium-6 small-12 columns small-padding-bottom-4">
+                <div class="medium-5 small-12 columns small-padding-bottom-4">
+                    <img src="/img/overview-brochure.jpg">
                     <img src="/img/brochure.jpg">
                 </div>
 
