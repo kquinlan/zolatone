@@ -79,4 +79,6 @@ angular.module('sampleRoom', ['ui.sortable'])
 	    });
 	}
 
+	//TODO: Add an orderSamples function and finish backend script
+
 })
