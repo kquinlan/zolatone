@@ -124,6 +124,78 @@
                         </div>
                     </div>
 
+                    <!-- Hospital with Yellow Ceiling -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/hospital-yellow-ceiling.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Hospital with Yellow Ceiling - Lluminations ZFX-10240</h5>
+                            <p class="text-smaller small-margin-0">Hospitals see a lot of action, and a lot of cleaning chemicals. They needed something that would hold up to the harsh chemicals, save on touch up time, and low on VOC. Zolatone was the perfect match, meeting all of their criteria! Having used Polomyx for the main walls and corridors and heavily traveled areas in the hospital, the designer chose Lluminations ZFX-10240 for a nice accent to pop and brighten the area on this ceiling.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hospital Waiting Room -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/hospital-waiting-room.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Hospital Waiting Room - Flex-001, Flex-0033</h5>
+                            <p class="text-smaller small-margin-0">This hospital was tired of wasting time and money closing down wings to repaint and wanted a better option. They needed something that was quickly and cost effectively applied, could hold up to the heavy traffic they experienced, and would survive the harsh cleaning chemicals used. The solution was Zolatone’s newest finish, Flex.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hospital Hallway -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/hospital-hallway.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Hospital Hallway - Flex-0043</h5>
+                            <p class="text-smaller small-margin-0">More and more hospitals are turning their heads toward Flex as it saves them both time and money. This particular hospital had previously used Zolatone’s Polomyx finish, and after 10 years (can you believe that?!) they were looking to update their hallways. They loved Polomyx, but didn’t want to shut down the wing of the hospital this time around to spray apply a finish and found Flex to be the perfect (rollable) solution. Hiding the scuffs and stains and holding up to cleaning chemicals, all while allowing the hospital to remain open, was a big win for them.</p>
+                        </div>
+                    </div>
+
+                    <!-- Windowed Hallway -->
+                    <div class="gallery-thumb portrait" style="background-image: url('/img/gallery/windowed-hallway.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Windowed Hallway - Lluminations ZFX-01042, Metal ZML-C1008</h5>
+                            <p class="text-smaller small-margin-0">Using a combination of materials, the designer wanted something to compliment this interior that utilized metal and glass. Lluminations and Metal were great compliments, illuminating the space while straying from the flat and boring appearance of regular paints.</p>
+                        </div>
+                    </div>
+
+                    <!-- Curved Hallway -->
+                    <div class="gallery-thumb portrait" style="background-image: url('/img/gallery/curved-hallway.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Curved Hallway - Polomyx Airless A2L-C1009</h5>
+                            <p class="text-smaller small-margin-0">The hallways saw a ton of traffic in this office building, and they were tired of paying for repaints. Repainting every two years with regular paint was costing them more money than they were willing to accept, so they decided to make the switch to Polomyx Airless. An easy install, incredible durability and fantastic looking, Polomyx Airless is protecting their walls and hiding their scuffs and stains.</p>
+                        </div>
+                    </div>
+
+                    <!-- School Hallway -->
+                    <div class="gallery-thumb portrait" style="background-image: url('/img/gallery/school-hallway.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>School Hallway - Lluminations ZFX-02019 and Polomyx P2L-C1193</h5>
+                            <p class="text-smaller small-margin-0">Schools see a ton of traffic. This elementary school wanted to go a little further with the durability of their paint in their hallways to protect their walls and prevent from having to constantly repaint. They decided to make it fun and colorful as well, choosing two finishes, Lluminations ZFX-02019 and Polomyx P2L-C1193.</p>
+                        </div>
+                    </div>
+
+                    <!-- Columns -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/columns.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Columns - Counterpointe PFX-10230</h5>
+                            <p class="text-smaller small-margin-0">The columns in this professional center are an architectural highlight, and the designer wanted to make them a focal pointe for the entryway. After debating between Lluminations and Counterpointe the designer settled on Counterpointe as being the perfect combination of ‘pop’ while being a more soft look. Eye catching, indeed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chair and Wall -->
+                    <div class="gallery-thumb portrait" style="background-image: url('/img/gallery/chair-and-wall.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Chair and wall - Polomyx PLX-3639</h5>
+                            <p class="text-smaller small-margin-0">Bright and cheery, who doesn’t love a good yellow? Even better, this isn’t your ordinary flat yellow paint. This dental office wanted something better for their waiting room, something that had more movement and could hold up to years of wear and tear. The designer ultimately chose our Polomyx PLX-3639.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
