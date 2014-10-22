@@ -107,7 +107,7 @@
 							<li><a href="/order-brochure">Order a Brochure</a></li>
 						</ul>
 					</li>
-					<li><a href="/ideas">Ideas</a></li>
+					<li><a href="/gallery">Gallery</a></li>
 					<li>
 						<a href="/technical-documents">Tech Info &#9662;</a>
 						<ul>
@@ -169,7 +169,7 @@
 					<li><a href="/order-brochure">Order a Brochure</a></li>
 				</ul>
 			</li>
-			<li><a href="/ideas">Ideas</a></li>
+			<li><a href="/gallery">Gallery</a></li>
 			<li><a href="/technical-documents">Tech Info</a>
 				<ul>
 					<li><a href="/technical-documents">Tech Docs</a></li>

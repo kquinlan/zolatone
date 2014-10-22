@@ -67,7 +67,7 @@
 			<!-- Second column -->
 			<div class="medium-3 large-3 columns">
 				<p class="small-margin-0 text-smaller">
-					<a href="/ideas">Ideas</a>
+					<a href="/gallery">Gallery</a>
 				</p>
 				<p class="small-margin-0 text-smaller">
 					<a href="/technical-documents">Technical Documents</a>

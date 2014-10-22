@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <title>Zolatone | Request a Free Brochure</title>
+        <title>Zolatone | Gallery</title>
         <link rel="stylesheet" href="/css/app.css" />
         <link rel="stylesheet" href="/css/foundation.css" />
     </head>
@@ -27,7 +27,7 @@
         <section class="row small-margin-bottom-4">
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
-                <h1 class="color-primary text-center small-margin-bottom-1">Ideas</h1>
+                <h1 class="color-primary text-center small-margin-bottom-1">Gallery</h1>
                 <p>Need some inspiration for your next project? Wether it’s large or small, Zolatone has plenty of possibilities to fit your every need. Check out the gallery below for some ideas! Click images to view larger.</p>
             </div>
 
