@@ -46,23 +46,29 @@
 			<!-- Sign Up -->
 			<div class="medium-6 columns color-white">
 				<h3 class="color-white">Sign Up</h3>
-				<form>
 
-					<div class="row">
-						<div class="medium-6 columns left">
-							<input type="text" placeholder="Name" required />
-						</div>
+				<form action="//mastercoating.us1.list-manage.com/subscribe/post?u=c9368dcfd7d67c55f1860443c&amp;id=62f103263e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+					<div id="mc_embed_signup_scroll">
+					<div class="mc-field-group">
+						<input placeholder="Email" type="email" value="" name="EMAIL" required class="required email" id="mce-EMAIL">
 					</div>
 
-					<div class="row">
-						<div class="medium-6 columns">
-							<input type="email" placeholder="Email Address" required />
-						</div>
-						<div class="medium-4 columns left small-padding-0">
-							<input type="submit" value="Subscribe" class="button secondary" required />
-						</div>
+					<div class="mc-field-group medium-6 columns small-padding-0">
+						<input placeholder="First Name" type="text" value="" name="FNAME" class="" id="mce-FNAME">
 					</div>
 
+					<div class="mc-field-group medium-6 columns small-padding-0">
+						<input placeholder="Last Name" type="text" value="" name="LNAME" class="" id="mce-LNAME">
+					</div>
+
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    
+			    	<div style="position: absolute; left: -5000px;"><input type="text" name="b_c9368dcfd7d67c55f1860443c_62f103263e" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button secondary"></div>
+				    </div>
 				</form>
 			</div>
 		</div>
@@ -241,24 +247,30 @@
 		<!-- Sign Up -->
 		<div class="small-12 columns color-white">
 			<h3 class="color-white">Sign Up</h3>
-			<form>
-
-				<div class="row">
-					<div class="small-12 columns left">
-						<input type="text" placeholder="Name" required />
+			
+			<form action="//mastercoating.us1.list-manage.com/subscribe/post?u=c9368dcfd7d67c55f1860443c&amp;id=62f103263e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+					<div id="mc_embed_signup_scroll">
+					<div class="mc-field-group">
+						<input placeholder="Email" type="email" value="" name="EMAIL" required class="required email" id="mce-EMAIL">
 					</div>
-				</div>
 
-				<div class="row">
-					<div class="small-12 columns">
-						<input type="email" placeholder="Email Address" required />
+					<div class="mc-field-group medium-6 columns small-padding-0">
+						<input placeholder="First Name" type="text" value="" name="FNAME" required class="" id="mce-FNAME">
 					</div>
-					<div class="small-11 columns left">
-						<input type="submit" value="Subscribe" class="button secondary" required />
-					</div>
-				</div>
 
-			</form>
+					<div class="mc-field-group medium-6 columns small-padding-0">
+						<input placeholder="Last Name" type="text" value="" name="LNAME" class="" id="mce-LNAME">
+					</div>
+
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    
+			    	<div style="position: absolute; left: -5000px;"><input type="text" name="b_c9368dcfd7d67c55f1860443c_62f103263e" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button secondary"></div>
+				    </div>
+				</form>
 		</div>
 	</div>
 </section>
