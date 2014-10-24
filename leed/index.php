@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="small-12 columns">
-                    <a href="" class="button small small-margin-top-1">See our Solar Energy</a>
+                    <a href="http://live.deckmonitoring.com/?id=master_coatings" target="_BLANK" class="button small small-margin-top-1">See our Solar Panels in Action</a>
                 </div>
             </div>
 
