@@ -44,82 +44,82 @@
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Counterpointe</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/8ZPRm6aSuUs?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/8ZPRm6aSuUs?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Q03VLOI8-9U?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Q03VLOI8-9U?autoplay=1&rel=0&showinfo=0" target="video-frame">Touch Up / Spot Repair</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/U2dUYWkENPM?autoplay=1" target="video-frame">Cleaning</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/U2dUYWkENPM?autoplay=1&rel=0&showinfo=0" target="video-frame">Cleaning</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Lluminations</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/4Mzt80dy0-s?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/4Mzt80dy0-s?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/cc0zTGsZvaU?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/cc0zTGsZvaU?autoplay=1&rel=0&showinfo=0" target="video-frame">Touch Up / Spot Repair</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/CXEkc2mHsuE?autoplay=1" target="video-frame">Cleaning</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/CXEkc2mHsuE?autoplay=1&rel=0&showinfo=0" target="video-frame">Cleaning</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Metal</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/4Mzt80dy0-s?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/4Mzt80dy0-s?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/T_IPegEcOeQ?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/T_IPegEcOeQ?autoplay=1&rel=0&showinfo=0" target="video-frame">Touch Up / Spot Repair</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/U2dUYWkENPM?autoplay=1" target="video-frame">Cleaning</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/U2dUYWkENPM?autoplay=1&rel=0&showinfo=0" target="video-frame">Cleaning</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Polomyx</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/s761e92eQXw?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/s761e92eQXw?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/cc0zTGsZvaU?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/cc0zTGsZvaU?autoplay=1&rel=0&showinfo=0" target="video-frame">Touch Up / Spot Repair</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zz0PuUzFe04?autoplay=1" target="video-frame">Cleaning</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zz0PuUzFe04?autoplay=1&rel=0&showinfo=0" target="video-frame">Cleaning</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Polomyx Airless</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/pYjTBRwpPh8?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/pYjTBRwpPh8?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/YbbOj0ZMDhI?autoplay=1" target="video-frame">Touch Up / Spot Repair</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/YbbOj0ZMDhI?autoplay=1&rel=0&showinfo=0" target="video-frame">Touch Up / Spot Repair</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zz0PuUzFe04?autoplay=1" target="video-frame">Cleaning</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zz0PuUzFe04?autoplay=1&rel=0&showinfo=0" target="video-frame">Cleaning</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2">
                     <h4 class="color-primary border-primary-bottom">Light Vision</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/niq4Eo-VmCI?autoplay=1" target="video-frame">Safety Additive</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/niq4Eo-VmCI?autoplay=1&rel=0&showinfo=0" target="video-frame">Safety Additive</a>
                     </p>
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-top-2 medium-clear">
                     <h4 class="color-primary border-primary-bottom">Flex</h4>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/xNLJpgSS470?autoplay=1" target="video-frame">Application</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/xNLJpgSS470?autoplay=1&rel=0&showinfo=0" target="video-frame">Application</a>
                     </p>
                     <p class="small-margin-0">
-                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zp3Pb6gjJSI?autoplay=1" target="video-frame">Introducing Flex</a>
+                        <a class="text-smaller no-wrap video-trigger" href="//www.youtube.com/embed/Zp3Pb6gjJSI?autoplay=1&rel=0&showinfo=0" target="video-frame">Introducing Flex</a>
                     </p>
                 </div>
             </div>
