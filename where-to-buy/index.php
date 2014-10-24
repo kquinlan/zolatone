@@ -57,7 +57,7 @@
                         <p class="small-margin-0" ng-repeat="addressLine in distributor.address">{{ addressLine }}</p>
                         <p class="small-margin-0">{{ distributor.phone }}</p>
                         <p class="small-margin-0">
-                            <a ng-href="{{ distributor.url.href }}" class="small-margin-0">{{ distributor.url.display }}</a>
+                            <a ng-href="{{ distributor.url.href }}" target="_BLANK" class="small-margin-0">{{ distributor.url.display }}</a>
                         </p>
                     </div>
                 </div>
