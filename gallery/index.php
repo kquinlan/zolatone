@@ -196,6 +196,15 @@
                         </div>
                     </div>
 
+                    <!-- Seating Area -->
+                    <div class="gallery-thumb landscape" style="background-image: url('/img/gallery/seating-area.jpg');"></div>
+                    <div class="gallery-description color-white text-left">
+                        <div class="small-padding-1">
+                            <h5>Seating Area - Flex FLX-0033</h5>
+                            <p class="text-smaller small-margin-0">This office building did a remodel of their space and decided to reevaluate their paint while they were at it. Previously, their seating areas and waiting room walls took a beating and they were constantly having to repaint. They chose our Flex finish, FLX-0033, to take care of the job. Not only has it held up well, but it looks fantastic too! It’s a win-win.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
