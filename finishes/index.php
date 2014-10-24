@@ -132,6 +132,7 @@
 
                     <div class="text-center small-12 columns" ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
                         <button class="arrow prev small left" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
+                        <span class="color-primary text-smaller page-counter">Page: {{ currentPage + 1 }} of {{ Math.ceil((colors | filter:search:strict).length / pageSize) }}</span>
                         <button class="arrow next small right" ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">&#9658;</button>
                     </div>
 

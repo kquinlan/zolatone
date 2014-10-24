@@ -462,6 +462,11 @@ nav.finishes ul {
 		white-space: nowrap;
 	}
 
+.page-counter {
+	position: relative;
+	top: 3em;
+}
+
 .selected-counter {
 	position: fixed; 
 	top: 0; 

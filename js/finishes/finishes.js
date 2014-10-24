@@ -56,6 +56,7 @@ angular.module('finishes', ['ngRoute'])
 
     $scope.currentPage = 0; // Init page to load
     $scope.pageSize = 12; // Number of colors for each page
+    $scope.Math = Math;
 
     // Navigate forward one page
 	$scope.nextPage = function() {
