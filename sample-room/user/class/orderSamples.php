@@ -16,26 +16,7 @@
 		$state = isset($_POST['orderInfo']['state']) ? $_POST['orderInfo']['state'] : ' ';
 		$zip = isset($_POST['orderInfo']['zip']) ? $_POST['orderInfo']['zip'] : ' ';
 		$instructions = isset($_POST['orderInfo']['instructions']) ? $_POST['orderInfo']['instructions'] : ' ';
-
-		$samples = explode(',' , $arr[0]['saved_samples']);
-		$arr = array();
-		foreach ($samples as $sample) {
-			$query = "select name from zol_samples where id like '$sample'";
-			$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
-
-			if($result->num_rows > 0) {
-				while($row = $result->fetch_assoc()) {
-					$arr[] = $row;	
-				}
-			}
-		}
-
-		$i = 0;
-		$samplesList = array();
-		foreach ($arr as $fetchedSample) {
-			$samplesList[$i] = $fetchedSample['name'];
-			$i++;
-		}
+		$samplesList = ($_POST['orderInfo']['orderedColors']);
 
 		$samplesList = implode("<br />", $samplesList);
 
@@ -45,10 +26,10 @@
 
 		$message = 	'<html>
 						<head>
-						  <title>Zolatone Color on Demand Order</title>
+						  <title>Zolatone 4X5 Samples Order</title>
 						</head>
 						<body>
-							<h1>Zolatone Color on Demand Order</h1>
+							<h1>Zolatone 4X5 Samples Order</h1>
 							User: ' . $loggedInUser->username . '<br />
 							Phone: ' . $tel . '<br />
 							Email: ' . $loggedInUser->email . '</p><br /><br />
@@ -65,15 +46,15 @@
 							' . $address2 . '<br />
 							' . $city . ", " . $state . " " . $zip . '</p>
 
-							<h3>Samples on this card:</h3>
+							<h3>Samples ordered:</h3>
 							<p>' . $samplesList . '</p>
 						</body>
 					</html>';
 
 		$headers = 'MIME-Version: 1.0' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-			'From:' . $loggedInUser->email . "\r\n" .
-		    'Reply-To:' . $loggedInUser->email . "\r\n" .
+			'From:' . 'noreply@zolatone.com' . "\r\n" .
+		    'Reply-To:' . 'noreply@zolatone.com' . "\r\n" .
 		    'X-Mailer: PHP/' . phpversion();
 
 		mail($to, $subject, $message, $headers);

@@ -86,8 +86,8 @@
 
 		$headers = 'MIME-Version: 1.0' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-			'From:' . $loggedInUser->email . "\r\n" .
-		    'Reply-To:' . $loggedInUser->email . "\r\n" .
+			'From:' . 'noreply@zolatone.com' . "\r\n" .
+		    'Reply-To:' . 'noreply@zolatone.com' . "\r\n" .
 		    'X-Mailer: PHP/' . phpversion();
 
 		mail($to, $subject, $message, $headers);

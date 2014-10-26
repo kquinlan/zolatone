@@ -79,6 +79,26 @@ angular.module('sampleRoom', ['ui.sortable'])
 	    });
 	}
 
-	//TODO: Add an orderSamples function and finish backend script
+	// Set up the sample ordering transaction
+	$scope.orderColors = function(orderInfo, selectedColors) {
+		$scope.orderInfo.orderedColors = [];
 
-})
+		selectedColors.forEach(function(color) {
+			$scope.orderInfo.orderedColors.push(color.name);
+		})
+
+		console.log($scope.orderInfo);
+
+		// Get selected colors and pass to script
+		$http({
+			method: 'POST', 
+			url: '/sample-room/user/class/orderSamples.php',
+			data: $.param({'orderInfo': $scope.orderInfo}),
+    		headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+		}).
+	    success(function(data, status, headers, config) {
+	    	$scope.exitColorCardMode();
+	    });
+	}
+
+});

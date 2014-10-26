@@ -30,22 +30,19 @@
 						</fieldset>
 
 						<h3>Shipping Address:</h3>
-						<p>' . $company . '<br />
-						Attn: ' . $fname . " " . $lname . '<br />
+						' . $fname . " " . $lname . '<br />
 						' . $address1 . '<br />
 						' . $address2 . '<br />
-						' . $city . ", " . $state . " " . $zip . '<br />
-						' . $tel . '<br />
-						' . $email . '</p>
-
+						' . $city . ", " . $state . " " . $zip . '<br /><br />
+						Phone: ' . $tel . '</p>
 					</body>
 				</html>';
 
-	$headers = 'MIME-Version: 1.0 \r\n
-		Content-type: text/html; charset=iso-8859-1 \r\n 
-		From: noreply@zolatone.ejgregoire.x10.mx \r\n
-	    Reply-To: noreply@zolatone.ejgregoire.x10.mx \r\n
-	    X-Mailer: PHP/' . phpversion();
+		$headers = 'MIME-Version: 1.0' . "\r\n" .
+			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
+			'From:' . 'noreply@zolatone.com' . "\r\n" .
+		    'Reply-To:' . 'noreply@zolatone.com' . "\r\n" .
+		    'X-Mailer: PHP/' . phpversion();
 
 	mail($to, $subject, $message, $headers);
 

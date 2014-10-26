@@ -23,7 +23,7 @@
 
     <!-- Order Samples Form -->
     <div ng-show="orderSamplesForm" class="medium-8 small-11 columns small-centered small-padding-top-2 small-padding-bottom-1">
-        <form name="orderSamples" class="brochure" ng-submit="orderSamples(orderInfo)">
+        <form name="orderSamples" class="brochure" ng-submit="orderColors(orderInfo, selectedColors)">
             <div class="small-6 columns small-padding-0">
                 <input ng-model="orderInfo.fname" type="text" placeholder="First Name" ng-required="true" required />
             </div>
