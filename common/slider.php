@@ -6,6 +6,6 @@
     <li class="hospital-waiting-room"></li>
 </ul>
 
-<div class="scroll-down">
+<div class="scroll-down container">
 	<img src="/img/scroll-down.png">
 </div>

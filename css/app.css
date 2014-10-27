@@ -353,13 +353,14 @@ nav.main {
 			padding: 0;
 			margin: 0;
 		}
-.scroll-down {
+.scroll-down.container {
 	z-index: 2;
 	position: relative;
 	top: -4.5em;
 	margin: 0 auto;
 	width: 130px;
 	cursor: s-resize;
+
 }
 
 /* Shared UI Styles */

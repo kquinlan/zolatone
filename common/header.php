@@ -103,13 +103,13 @@
 					<li>
 						<a href="/finishes">Finishes &#9662;</a>
 						<ul>
-							<li><a href="/finishes/#/counterpointe">Counterpointe</a></li>
-							<li><a href="/finishes/#/lluminations">Lluminations</a></li>
-							<li><a href="/finishes/#/metal">Metal</a></li>
-							<li><a href="/finishes/#/polomyx">Polomyx</a></li>
-							<li><a href="/finishes/#/airless">Polomyx Airless</a></li>
-							<li><a href="/finishes/#/flex">Flex</a></li>
-							<li><a href="/finishes/#/lightvision">Light Vision</a></li>
+							<li><a href="/finishes/#/counterpointe" class="scroll-down">Counterpointe</a></li>
+							<li><a href="/finishes/#/lluminations" class="scroll-down">Lluminations</a></li>
+							<li><a href="/finishes/#/metal" class="scroll-down">Metal</a></li>
+							<li><a href="/finishes/#/polomyx" class="scroll-down">Polomyx</a></li>
+							<li><a href="/finishes/#/airless" class="scroll-down">Polomyx Airless</a></li>
+							<li><a href="/finishes/#/flex" class="scroll-down">Flex</a></li>
+							<li><a href="/finishes/#/lightvision" class="scroll-down">Light Vision</a></li>
 							<li><a href="/order-brochure">Order a Brochure</a></li>
 						</ul>
 					</li>
