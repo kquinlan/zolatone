@@ -2,8 +2,6 @@ angular.module('finishes', ['ngRoute'])
 
 .controller('finishesCtrl', function($scope, $rootScope, $http, $filter) {
 
-	$scope.selectedColor = "";
-
 	// Get all colors file
 	$http({
 		method: 'GET', 
@@ -11,6 +9,7 @@ angular.module('finishes', ['ngRoute'])
 	}).
     success(function(data, status, headers, config) {
     	$scope.colors = data;
+    	$scope.selectedColor = $scope.colors[0];
 
     	// Get users colors to determine if any are already saved
 		$http({
