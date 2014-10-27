@@ -47,7 +47,7 @@
                             <label class="text-smaller">Search all colors by name i.e. ‘PFX-10287’</label>
 
                             <div ng-show="colorFilter.$valid" class="border-primary-bottom small-padding-1">
-                                <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | limitTo : 5"><a ng-click="select(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
+                                <p class="small-margin-0 text-smaller" style="padding: 0.25em;" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | limitTo : 5"><a ng-click="selectColor(color); search.name = ''" ng-href="/finishes/#/{{ color.finish }}">{{ color.name }}</a></p>
                                 <p class="small-margin-0 text-smaller" ng-show="(colors | filter:search:strict).length === 0"><i>No results found.</i></p>
                             </div>
                         </div>
@@ -123,10 +123,10 @@
                 <div class="medium-7 columns small-padding-0">
 
                     <div class="small-12 columns color-thumbs">
-                        <div ng-click="select(color); search.name = ''" class="color-thumb clickable small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
+                        <div ng-click="selectColor(color); search.name = ''" class="color-thumb clickable small-4 medium-3 large-3 columns" ng-repeat="color in colors | filter:search:strict | orderBy:'name' | startFrom:currentPage * pageSize | limitTo:pageSize">
                             <a href="/finishes/#/{{ color.finish }}"><div ng-style="{'background-image':'url(/img/samples/thumbs/' + color.name + '.jpg)'}"></div></a>
                         </div>
-
+                        
                         <p class="text-smaller" ng-show="(colors | filter:search:strict).length === 0">Oh, no! We had trouble finding the color you're looking for. Please modify your search or contact our customer service team.</p>
                     </div>
 
@@ -175,5 +175,16 @@
         <script src="/js/responsiveslides.min.js"></script>
         <script src="/js/app.js"></script>
         <script src="/js/finishes/finishes.js"></script>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-15965138-1");
+                pageTracker._trackPageview();
+            } catch(err) {}
+        </script>
     </body>
 </html>
