@@ -20,7 +20,7 @@
 
 		$samplesList = implode("<br />", $samplesList);
 
-		$to      = '09egrego@gmail.com';
+		$to      = 'samples@mastercoating.com';
 
 		$subject = 'Color on Demand Order Alert';
 

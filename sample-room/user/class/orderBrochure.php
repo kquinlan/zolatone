@@ -13,7 +13,7 @@
 	$zip = isset($_POST['brochureInfo']['zip']) ? $_POST['brochureInfo']['zip'] : ' ';
 	$instructions = isset($_POST['brochureInfo']['instructions']) ? $_POST['brochureInfo']['instructions'] : ' ';
 
-	$to      = '09egrego@gmail.com';
+	$to      = 'samples@mastercoating.com';
 
 	$subject = 'Brochure Order Alert';
 
