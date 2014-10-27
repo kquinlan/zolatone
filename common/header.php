@@ -54,7 +54,7 @@
 					</div>
 
 					<div class="mc-field-group medium-6 columns small-padding-0">
-						<input placeholder="First Name" type="text" value="" name="FNAME" class="" id="mce-FNAME">
+						<input placeholder="First Name" type="text" value="" name="FNAME" required class="" id="mce-FNAME">
 					</div>
 
 					<div class="mc-field-group medium-6 columns small-padding-0">

@@ -1,6 +1,8 @@
 angular.module('finishes', ['ngRoute'])
 
-.controller('finishesCtrl', function($scope, $rootScope, $http) {
+.controller('finishesCtrl', function($scope, $rootScope, $http, $filter) {
+
+	$scope.selectedColor = "";
 
 	// Get all colors file
 	$http({
@@ -71,7 +73,7 @@ angular.module('finishes', ['ngRoute'])
 		$scope.currentPage = 0;
 	}
 	// Load color to enlarged square
-	$scope.select = function(color) {
+	$scope.selectColor = function(color) {
 		$scope.selectedColor = color;
 	}
 	// Remove search filters based on form input
@@ -142,6 +144,7 @@ angular.module('finishes', ['ngRoute'])
 		otherwise({
 		redirectTo: '/counterpointe'
 	});
+
 }])
 
 // Filter to find pagination start point
@@ -152,3 +155,4 @@ angular.module('finishes', ['ngRoute'])
         return input.slice(start);
     }
 });
+
