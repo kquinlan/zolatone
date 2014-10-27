@@ -73,6 +73,7 @@
                 <p>Not in the USA? No problem, contact one of our distributors near you below.</p>
                     
                 <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <h4 class="color-primary border-primary-bottom">Puerto Rico</h4>
                     <p class="small-margin-0"><b>Architectural Options</b></p>
                     <p class="small-margin-0 text-smaller">PMB 162</p>
                     <p class="small-margin-0 text-smaller">405 Ave Esmeralda, Ste 2</p>
@@ -82,6 +83,7 @@
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <h4 class="color-primary border-primary-bottom">Middle East</h4>
                     <p class="small-margin-0"><b>Kristal</b></p>
                     <p class="small-margin-0 text-smaller">7 Hadafina St.</p>
                     <p class="small-margin-0 text-smaller">Moshav Rishpon 46915</p>
@@ -93,6 +95,7 @@
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2">
+                    <h4 class="color-primary border-primary-bottom">Canada</h4>
                     <p class="small-margin-0"><b>The Woeller Group</b></p>
                     <p class="small-margin-0 text-smaller">200 Trillium Drive, Kitchener</p>
                     <p class="small-margin-0 text-smaller">Ontario, Canada N2E 1X7</p>
@@ -103,6 +106,7 @@
                 </div>
 
                 <div class="small-12 medium-6 large-4 columns left small-padding-bottom-2 large-clear">
+                    <h4 class="color-primary border-primary-bottom">New Zealand</h4>
                     <p class="small-margin-0"><b>Zone Architectural Products</b></p>
                     <p class="small-margin-0 text-smaller">4A Edwin St</p>
                     <p class="small-margin-0 text-smaller">Mount Eden</p>
