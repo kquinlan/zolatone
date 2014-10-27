@@ -4,7 +4,7 @@
 	
 	if(isUserloggedIn()) {
 		$user_id = $loggedInUser->user_id;
-		$colorCardName = $_POST['newColorCard']['colorCardName'];
+		$colorCardName = mysql_escape_string ($_POST['newColorCard']['colorCardName']);
 		$colorCardColors = implode(',', $_POST['newColorCard']['selectedColors']);
 		$date = date("F jS Y h:i A");
 
