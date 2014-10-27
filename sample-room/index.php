@@ -13,6 +13,18 @@
 
         <? require_once '../common/header.php' ?>
 
+        <div class="video-overlay">
+            <div class="close right small-margin-1">
+                <img src="/img/close-white.png" />
+            </div>
+
+            <div class="video-container">
+                <div class="flex-video">
+                    <iframe name="video-frame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
         <div ng-hide="colorCardMode" class="slider-container">
             <section class="content">
                 <div class="text-center">
@@ -41,7 +53,10 @@
                 <p>Have you got a selection of whites that you are always specifying? Maybe school colors are your thing? With Zolatone’s Color On Demand cards, you can design your own color collection online and in about a week you’ll receive a printed Color On Demand card featuring real samples of the colors you selected. You choose the colors, we’ll create the card!</p>
 
                 <h3 class="color-primary text-center small-margin-bottom-1">Simple, fun, unique!</h3>
-                <p>Watch our <a href="">video</a> to discover the benefits of Color On Demand and to see how easy it is to make your very own custom color cards.</p>
+                <p>Watch our <a class="no-wrap video-trigger" href="//www.youtube.com/embed/14AGhTY7Hvg?autoplay=1&rel=0&showinfo=0" target="video-frame">video</a> to discover the benefits of Color On Demand and to see how easy it is to make your very own custom color cards.</p>
+                <div class="text-center">
+                    <a class="text-smaller no-wrap video-trigger button small" href="//www.youtube.com/embed/14AGhTY7Hvg?autoplay=1&rel=0&showinfo=0" target="video-frame">Watch the Video</a>
+                </div>
             </div>
 
             <div ng-show="colorCardMode && editColorCard" class="medium-8 small-11 columns small-centered small-margin-top-2 small-padding-top-5 small-padding-bottom-1">
