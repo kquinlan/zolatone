@@ -44,6 +44,9 @@
 
                 <h3 class="color-primary text-center small-margin-bottom-1">Two Great Ways to Sample Zolatone</h3>
                 <p>When you’re ready to order samples, you now have two great options. We can send out loose 4x5 samples or you can create an On Demand card. On Demand cards allow you to create collections of your favorite Zolatone colors and turn them into your very own custom tip cards.</p>
+                <div class="text-center">
+                    <a class="text-smaller no-wrap video-trigger button small" href="//www.youtube.com/embed/14AGhTY7Hvg?autoplay=1&rel=0&showinfo=0" target="video-frame">Watch the Video</a>
+                </div>
                 <p>You must be logged in to create On Demand cards. To create a new On Demand card, simply start by clicking the button below.</p>
             </div>
 
