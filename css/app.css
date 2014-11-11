@@ -464,8 +464,10 @@ nav.finishes ul {
 	}
 
 .page-counter {
-	position: relative;
+	position: absolute !important;
 	top: 3em;
+	text-align: center;
+	width: 90%;
 }
 
 .selected-counter {
