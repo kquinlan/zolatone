@@ -123,7 +123,7 @@
                         <textarea ng-model="orderInfo.instructions" placeholder="Special Instructions"></textarea>
                     </div>
 
-                    <input type="submit" ng-disabled="!orderForm.$valid" class="button small" value="Submit" />
+                    <input type="submit" ng-disabled="!orderForm.$valid || disableButton" class="button small" value="Submit" />
                     <button class="small" ng-click="orderMode = false">Cancel</button>
                 </form>
             </div>

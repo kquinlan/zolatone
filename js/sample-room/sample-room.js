@@ -87,6 +87,8 @@ angular.module('sampleRoom', ['ui.sortable'])
 			$scope.orderInfo.orderedColors.push(color.name);
 		})
 
+		$scope.disableButton = true;
+
 		console.log($scope.orderInfo);
 
 		// Get selected colors and pass to script
@@ -98,6 +100,7 @@ angular.module('sampleRoom', ['ui.sortable'])
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.exitColorCardMode();
+	    	$scope.disableButton = false;
 	    });
 	}
 

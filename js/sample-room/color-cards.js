@@ -64,6 +64,7 @@ angular.module('colorCards', [])
 		// Update the scope from the markup
     	$scope.orderInfo = orderInfo;
     	$scope.orderInfo.selectedColorCardId = $scope.selectedColorCard.id;
+    	$scope.disableButton = true;
 
     	$http({
 			method: 'POST',
@@ -73,6 +74,7 @@ angular.module('colorCards', [])
 		}).
 	    success(function(data, status, headers, config) {
 	    	$scope.orderMode = false;
+	    	$scope.disableButton = false;
 	    });
     }
 })

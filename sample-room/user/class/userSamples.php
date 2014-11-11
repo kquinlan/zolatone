@@ -64,7 +64,7 @@
                 <textarea ng-model="orderInfo.instructions" placeholder="Special Instructions"></textarea>
             </div>
 
-            <input type="submit" ng-disabled="!orderSamples.$valid" class="button small" value="Submit" />
+            <input type="submit" ng-disabled="!orderSamples.$valid || disableButton" class="button small" value="Submit" />
             <button class="small" ng-click="exitColorCardMode()">Cancel</button>
         </form>
     </div>
