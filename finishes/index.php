@@ -131,16 +131,16 @@
                     </div>
 
                     <div class="text-center small-12 columns" ng-show="(colors | filter:search:strict).length > pageSize" class="clear">
-                        <button class="arrow prev small left" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
+                        <button class="arrow prev small" ng-disabled="currentPage == 0" ng-click="prevPage()">&#9668;</button>
                         <div class="color-primary text-smaller text-center page-counter">Page: {{ currentPage + 1 }} of {{ Math.ceil((colors | filter:search:strict).length / pageSize) }}</div>
-                        <button class="arrow next small right" ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">&#9658;</button>
+                        <button class="arrow next small" ng-disabled="currentPage >= (colors | filter:search:strict).length / pageSize - 1" ng-click="nextPage()">&#9658;</button>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <section class="row">
+        <section class="row small-padding-top-4 medium-padding-top-2">
 
             <!-- Templates are loaded into here from /finishes/partials/ folder -->
             <div ng-view></div>

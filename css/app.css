@@ -502,12 +502,20 @@ nav.finishes ul {
 }
 
 .arrow {
+	position: absolute;
 	font-weight: bold; 
-	margin-top: 14px;
+	margin: 1.125em;
 	cursor: pointer;
 	outline: none;
 	border: 0.25em solid #fff;
+	z-index: 1;
 }
+	.next {
+		right: 0;
+	}
+	.prev {
+		left: 0;
+	}
 
 .finishes * {
 	-webkit-touch-callout: none;
