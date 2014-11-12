@@ -140,7 +140,7 @@
             </div>
         </section>
 
-        <section class="row small-padding-top-4 medium-padding-top-2">
+        <section class="row small-padding-top-4">
 
             <!-- Templates are loaded into here from /finishes/partials/ folder -->
             <div ng-view></div>
