@@ -108,7 +108,7 @@
             <div class="small-11 columns small-centered small-padding-top-2">
 
                 <div class="medium-5 columns small-padding-bottom-1">
-                    <div class="selected-color" ng-style="{'background-image':'url(/img/samples/' + selectedColor.name + '.jpg)'}" style="padding-bottom: 97.77%;"></div>
+                    <img class="selected-color" ng-src="/img/samples/{{ selectedColor.name }}.jpg"/>
                     <p class="color-primary left text-smaller small-margin-0" style="padding: 0.25em"><b>{{ selectedColor.name }}</b></p>
                     <?
                         if(isUserloggedIn()) {
