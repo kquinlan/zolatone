@@ -151,7 +151,7 @@
             <div class="small-11 columns small-centered">
 
                 <div class="medium-5 columns">
-                    <a class="button small" href="/sample-room">Take me to the Sample Soom</a>
+                    <a class="button small" href="/sample-room">Take me to the Sample Room</a>
                     <a class="button small" href="/order-brochure">Order a Brochure</a>
                 </div>
 
