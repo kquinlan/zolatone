@@ -14,7 +14,7 @@
 	$zip = isset($_POST['brochureInfo']['zip']) ? $_POST['brochureInfo']['zip'] : ' ';
 	$instructions = isset($_POST['brochureInfo']['instructions']) ? $_POST['brochureInfo']['instructions'] : ' ';
 
-	$to      = '09egrego@gmail.com';
+	$to      = 'jhollander@mastercoating.com​';
 
 	$subject = 'Brochure Order Alert';
 
@@ -31,7 +31,7 @@
 						</fieldset>
 
 						<h3>Shipping Address:</h3>
-						' . $company . .'<br />
+						' . $company . '<br />
 						Attn: ' . $fname . " " . $lname . '<br />
 						' . $address1 . '<br />
 						' . $address2 . '<br />
