@@ -4,6 +4,7 @@
 
 	$fname = isset($_POST['brochureInfo']['fname']) ? $_POST['brochureInfo']['fname'] : ' ';
 	$lname = isset($_POST['brochureInfo']['lname']) ? $_POST['brochureInfo']['lname'] : ' ';
+	$company = isset($_POST['brochureInfo']['company']) ? $_POST['brochureInfo']['company'] : ' ';
 	$email = isset($_POST['brochureInfo']['email']) ? $_POST['brochureInfo']['email'] : ' ';
 	$tel = isset($_POST['brochureInfo']['tel']) ? $_POST['brochureInfo']['tel'] : ' ';
 	$address1 = isset($_POST['brochureInfo']['address1']) ? $_POST['brochureInfo']['address1'] : ' ';
@@ -13,7 +14,7 @@
 	$zip = isset($_POST['brochureInfo']['zip']) ? $_POST['brochureInfo']['zip'] : ' ';
 	$instructions = isset($_POST['brochureInfo']['instructions']) ? $_POST['brochureInfo']['instructions'] : ' ';
 
-	$to      = 'samples@mastercoating.com';
+	$to      = '09egrego@gmail.com';
 
 	$subject = 'Brochure Order Alert';
 
@@ -30,7 +31,8 @@
 						</fieldset>
 
 						<h3>Shipping Address:</h3>
-						' . $fname . " " . $lname . '<br />
+						' . $company . .'<br />
+						Attn: ' . $fname . " " . $lname . '<br />
 						' . $address1 . '<br />
 						' . $address2 . '<br />
 						' . $city . ", " . $state . " " . $zip . '<br /><br />
