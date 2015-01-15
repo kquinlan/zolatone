@@ -36,3 +36,5 @@ Icon
 .Trashes
 
 ftpsync.settings
+
+sftp-config.json
