@@ -38,3 +38,5 @@ Icon
 ftpsync.settings
 
 sftp-config.json
+
+.htaccess
