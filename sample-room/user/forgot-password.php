@@ -42,7 +42,7 @@
 					}
 					else
 					{	
-						if(!flagLostPasswordRequest($userdetails["user_name"],0))
+						if(!flagLostPasswordRequest($userdetails["email"],0))
 						{
 							$errors[] = lang("SQL_ERROR");
 						}
@@ -69,7 +69,7 @@
 			
 			$userdetails = fetchUserDetails(NULL,$token);
 			
-			if(!flagLostPasswordRequest($userdetails["user_name"],0))
+			if(!flagLostPasswordRequest($userdetails["email"],0))
 			{
 				$errors[] = lang("SQL_ERROR");
 			}
@@ -83,7 +83,6 @@
 	if(!empty($_POST))
 	{
 		$email = $_POST["email"];
-		$username = sanitize($_POST["username"]);
 		
 		//Perform some validation
 		//Feel free to edit / change as required
@@ -98,73 +97,55 @@
 			$errors[] = lang("ACCOUNT_INVALID_EMAIL");
 		}
 		
-		if(trim($username) == "")
-		{
-			$errors[] = lang("ACCOUNT_SPECIFY_USERNAME");
-		}
-		else if(!usernameExists($username))
-		{
-			$errors[] = lang("ACCOUNT_INVALID_USERNAME");
-		}
-		
 		if(count($errors) == 0)
 		{
-			
-			//Check that the username / email are associated to the same account
-			if(!emailUsernameLinked($email,$username))
+			//Check if the user has any outstanding lost password requests
+			$userdetails = fetchUserDetails(NULL, NULL, NULL, $email);
+			if($userdetails["lost_password_request"] == 1)
 			{
-				$errors[] =  lang("ACCOUNT_USER_OR_EMAIL_INVALID");
+				$errors[] = lang("FORGOTPASS_REQUEST_EXISTS");
 			}
 			else
 			{
-				//Check if the user has any outstanding lost password requests
-				$userdetails = fetchUserDetails($username);
-				if($userdetails["lost_password_request"] == 1)
+				//Email the user asking to confirm this change password request
+				//We can use the template builder here
+				
+				//We use the activation token again for the url key it gets regenerated everytime it's used.
+				
+				$mail = new userCakeMail();
+				$confirm_url = lang("CONFIRM")."\n".$websiteUrl."/sample-room/user/forgot-password.php?confirm=".$userdetails["activation_token"];
+				$deny_url = lang("DENY")."\n".$websiteUrl."/sample-room/user/forgot-password.php?deny=".$userdetails["activation_token"];
+				
+				//Setup our custom hooks
+				$hooks = array(
+					"searchStrs" => array("#CONFIRM-URL#","#DENY-URL#","#USERNAME#"),
+					"subjectStrs" => array($confirm_url,$deny_url,$userdetails["user_name"])
+					);
+				
+				if(!$mail->newTemplateMsg("lost-password-request.txt",$hooks))
 				{
-					$errors[] = lang("FORGOTPASS_REQUEST_EXISTS");
+					$errors[] = lang("MAIL_TEMPLATE_BUILD_ERROR");
 				}
 				else
 				{
-					//Email the user asking to confirm this change password request
-					//We can use the template builder here
-					
-					//We use the activation token again for the url key it gets regenerated everytime it's used.
-					
-					$mail = new userCakeMail();
-					$confirm_url = lang("CONFIRM")."\n".$websiteUrl."/sample-room/user/forgot-password.php?confirm=".$userdetails["activation_token"];
-					$deny_url = lang("DENY")."\n".$websiteUrl."/sample-room/user/forgot-password.php?deny=".$userdetails["activation_token"];
-					
-					//Setup our custom hooks
-					$hooks = array(
-						"searchStrs" => array("#CONFIRM-URL#","#DENY-URL#","#USERNAME#"),
-						"subjectStrs" => array($confirm_url,$deny_url,$userdetails["user_name"])
-						);
-					
-					if(!$mail->newTemplateMsg("lost-password-request.txt",$hooks))
+					if(!$mail->sendMail($userdetails["email"],"Lost password request"))
 					{
-						$errors[] = lang("MAIL_TEMPLATE_BUILD_ERROR");
+						$errors[] = lang("MAIL_ERROR");
 					}
 					else
 					{
-						if(!$mail->sendMail($userdetails["email"],"Lost password request"))
+						//Update the DB to show this account has an outstanding request
+						if(!flagLostPasswordRequest($userdetails["email"],1))
 						{
-							$errors[] = lang("MAIL_ERROR");
+							$errors[] = lang("SQL_ERROR");
 						}
-						else
-						{
-							//Update the DB to show this account has an outstanding request
-							if(!flagLostPasswordRequest($userdetails["user_name"],1))
-							{
-								$errors[] = lang("SQL_ERROR");
-							}
-							else {
-								
-								$successes[] = lang("FORGOTPASS_REQUEST_SUCCESS");
-							}
+						else {
+							
+							$successes[] = lang("FORGOTPASS_REQUEST_SUCCESS");
 						}
 					}
 				}
-			}
+			}	
 		}
 	}
 ?>
@@ -205,7 +186,6 @@
 
 			<? if(count($successes) > 0) { echo "<div style='display:none'>"; } ?>
 			    <form name='newUser' action="#forgot-pw-form" method='post'>
-					<input type='text' maxlength="25" pattern=".{5,25}" required title="Your username must be between 5 and 25 characters in length" placeholder="Username" name='username' />
 					<input type='email' maxlength="50" placeholder="Email" required name='email' />
 					<div class="small-12 small-margin-top-1">
 						<input class="button small" type='submit' value='Submit' />

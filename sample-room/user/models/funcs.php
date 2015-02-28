@@ -394,16 +394,16 @@ function fetchUserDetails($username=NULL,$token=NULL, $id=NULL, $email=NULL)
 }
 
 //Toggle if lost password request flag on or off
-function flagLostPasswordRequest($username,$value)
+function flagLostPasswordRequest($email,$value)
 {
 	global $mysqli,$db_table_prefix;
 	$stmt = $mysqli->prepare("UPDATE ".$db_table_prefix."users
 		SET lost_password_request = ?
 		WHERE
-		user_name = ?
+		email = ?
 		LIMIT 1
 		");
-	$stmt->bind_param("ss", $value, $username);
+	$stmt->bind_param("ss", $value, $email);
 	$result = $stmt->execute();
 	$stmt->close();
 	return $result;
