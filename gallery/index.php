@@ -28,7 +28,7 @@
 
             <div class="medium-8 small-11 columns small-centered small-padding-top-4 small-padding-bottom-1">
                 <h1 class="color-primary text-center small-margin-bottom-1">Gallery</h1>
-                <p>Need some inspiration for your next project? Wether it’s large or small, Zolatone has plenty of possibilities to fit your every need. Check out the gallery below for some ideas! Click images to view larger.</p>
+                <p>Need some inspiration for your next project? Whether it’s large or small, Zolatone has plenty of possibilities to fit your every need. Check out the gallery below for some ideas! Click images to view larger.</p>
             </div>
 
             <div class="small-11 columns small-centered small-padding-bottom-1">
